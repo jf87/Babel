@@ -37,7 +37,7 @@ func init() {
 	ss2 = append(ss2, s4)
 	ss2 = append(ss2, s5)
 	ss2 = append(ss2, s6)
-	d2 := Device{Kind: "thermostat", Location: "", Sequence: ss2}
+	d2 := Device{Kind: "thermostat", Location: "", Temperature: " ", Sequence: ss2}
 	devices = append(devices, d2)
 
 }

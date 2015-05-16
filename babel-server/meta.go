@@ -1,13 +1,12 @@
 package main
 
-import ()
-
 var devices Devices
 
 type Device struct {
-	Kind     string `json:"kind"`
-	Location string `json:"location"`
-	Sequence []Seq  `json:"sequence"`
+	Kind        string `json:"kind"`
+	Location    string `json:"location"`
+	Temperature string `json:"temperature,omitempty"`
+	Sequence    []Seq  `json:"sequence"`
 }
 
 type Seq struct {
