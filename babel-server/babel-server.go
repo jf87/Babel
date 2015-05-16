@@ -1,7 +1,6 @@
 package main
 
 import (
-	"database/sql"
 	"flag"
 	"log"
 	"net/http"
@@ -10,7 +9,6 @@ import (
 )
 
 type appContext struct {
-	db  *sql.DB
 	bms string
 }
 
@@ -44,36 +42,11 @@ func init() {
 
 func main() {
 	var (
-		//user = flag.String("user", "", "The database user.")
-		//pw   = flag.String("pw", "", "The password to the db.")
-		//db   = flag.String("db", "", "The database name.")
 		port = flag.String("port", "8888", "Port to listen on (optional)")
 	)
 
 	flag.Parse()
 
-	/*
-				if len(os.Args) == 1 || *user == "" || *db == "" || *pw == "" {
-					fmt.Fprintln(os.Stderr, "Babel-server - Connecting Humans and Buildings")
-					fmt.Fprintln(os.Stderr, "Too few arguments.")
-					fmt.Fprintln(os.Stderr, `Usage:
-			  go-adder [flags]
-			Flags:`)
-					flag.PrintDefaults()
-
-					os.Exit(1)
-				}
-
-		mydb, err := ConnectDB(*db, *user, *pw)
-		if err != nil {
-			panic(err)
-		}
-		context := &appContext{
-			db: mydb,
-		}
-
-		context.InitDB()
-	*/
 	context := &appContext{bms: "http://localhost:8889"}
 	router := NewRouter(context)
 	log.Fatal(http.ListenAndServe(":"+*port, router))

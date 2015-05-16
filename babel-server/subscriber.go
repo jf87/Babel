@@ -72,28 +72,6 @@ func checkForSequence(a *appContext, d Device) error {
 
 	}
 
-	/*
-		for _, k := range seq {
-
-			for i := 0; i < 1000; i++ {
-				act := strconv.Itoa(i)
-				resp, err := http.Get(a.bms + "/api/actuators/" + act)
-				if err != nil {
-					return err
-				}
-				defer resp.Body.Close()
-				body, err := ioutil.ReadAll(resp.Body)
-				r := float64(int(body[0]))
-				if r == k {
-
-					p[i] = r
-				}
-				fmt.Println(r)
-
-			}
-		}
-	*/
-
 	return nil
 
 }
