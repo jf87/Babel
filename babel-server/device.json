@@ -1,1 +1,0 @@
-{"kind":"light","location":"4D21","sequence":[{"instruction":"Turn the light on.","setpoint":1,"time":5},{"instruction":"Turn the light off.","setpoint":0,"time":5},{"instruction":"Turn the light on.","setpoint":1,"time":5}]}
