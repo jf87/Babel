@@ -61,7 +61,14 @@ func checkForSequence(a *appContext, d Device) error {
 
 	}
 	for _, v := range matches {
-		fmt.Printf("MATCH: %s", e[v])
+		fmt.Println(v)
+	}
+	for _, v := range matches {
+		fmt.Printf("Match for Actuator %v:\n", v)
+		for i, _ := range seq {
+			fmt.Printf("with setpoint: %v at time %v\n", e[v].v[i], e[v].t[i])
+		}
+		fmt.Printf("\n")
 
 	}
 
