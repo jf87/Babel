@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Babel</string>
+
+    <string name="type">Type</string>
+    <string name="action">Action</string>
+    <string name="start">Start</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
