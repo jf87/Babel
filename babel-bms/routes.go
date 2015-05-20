@@ -26,4 +26,10 @@ var routes = Routes{
 		`/api/actuators/{act:[0-9]+}`,
 		ActuatorsHandler,
 	},
+	Route{
+		"ActuatorsSet",
+		"POST",
+		`/api/actuators/{act:[0-9]+}`,
+		SetActuatorsHandler,
+	},
 }
