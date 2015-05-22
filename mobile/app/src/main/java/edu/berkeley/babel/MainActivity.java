@@ -24,8 +24,8 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.Iterator;
 
-import edu.berkeley.babel.util.JSONArrayHttpGetTask;
-import edu.berkeley.babel.util.JSONArrayHttpGetTask.onJSONArrayHttpGetRespondedListener;
+import edu.berkeley.babel.util.JSONObjectHttpGetTask;
+import edu.berkeley.babel.util.JSONObjectHttpGetTask.onJSONObjectHttpGetRespondedListener;
 import edu.berkeley.babel.util.JSONObjectHttpPostTask;
 import edu.berkeley.babel.util.JSONObjectHttpPostTask.onJSONObjectHttpPostRespondedListener;
 import edu.berkeley.babel.util.KeyValueListAdapter;
@@ -49,9 +49,9 @@ public class MainActivity extends ActionBarActivity {
     /**
      * response to the AsyncTask that GETs metadata from server
      */
-    private class GetMetadataArrayListener implements onJSONArrayHttpGetRespondedListener {
+    private class GetMetadataArrayListener implements onJSONObjectHttpGetRespondedListener {
         @Override
-        public void onJSONArrayHttpGetResponded(JSONArray response) {
+        public void onJSONObjectHttpGetResponded(JSONObject response) {
             if (response == null) {
                 // user has to restart the app
                 Toast.makeText(getApplicationContext(), getString(R.string.no_conn), Toast.LENGTH_LONG).show();
@@ -61,7 +61,11 @@ public class MainActivity extends ActionBarActivity {
             setUIEnabled(true);
             mBusy = false;
 
-            mMetadataArray = response;
+            try {
+                mMetadataArray = response.getJSONArray("library");
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
             refreshType();
         }
     }
@@ -80,7 +84,47 @@ public class MainActivity extends ActionBarActivity {
                 return;
             }
 
+            try {
+                boolean success = response.getBoolean("success");
+                if (success == false) {
+                    setUIEnabled(true);
+                    mBusy = false;
+                    Toast.makeText(getApplicationContext(), getString(R.string.server_error), Toast.LENGTH_LONG).show();
+                    return;
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
             startInstruction();
+        }
+    }
+
+    /**
+     * response to the AsyncTask that GETs result from server
+     */
+    private class GetResultListener implements onJSONObjectHttpGetRespondedListener {
+        @Override
+        public void onJSONObjectHttpGetResponded(JSONObject response) {
+            setUIEnabled(true);
+            mBusy = false;
+
+            if (response == null) {
+                Toast.makeText(getApplicationContext(), getString(R.string.no_conn), Toast.LENGTH_LONG).show();
+                return;
+            }
+
+            try {
+                boolean success = response.getBoolean("success");
+                if (success == false) {
+                    Toast.makeText(getApplicationContext(), getString(R.string.server_error), Toast.LENGTH_LONG).show();
+                    return;
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            Toast.makeText(getApplicationContext(), getString(R.string.success), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -158,9 +202,13 @@ public class MainActivity extends ActionBarActivity {
 
             if (seqArray.length() <= mIndex) {
                 mActionDesc.setText("");
-                // TODO verify success from server (async)
-                setUIEnabled(true);
-                mBusy = false;
+
+                JSONObjectHttpGetTask httpGetTask = new JSONObjectHttpGetTask(new GetResultListener());
+                URL url = getHttpURL(getString(R.string.server), Integer.parseInt(getString(R.string.port)), getString(R.string.result_path));
+                mBusy = true;
+                setUIEnabled(false);
+                httpGetTask.execute(url);
+
                 return;
             }
 
@@ -255,7 +303,7 @@ public class MainActivity extends ActionBarActivity {
      * start an AsyncTask to GET the metadata array from the server
      */
     private void getMetadataArrayFromServer() {
-        JSONArrayHttpGetTask httpGetTask = new JSONArrayHttpGetTask(new GetMetadataArrayListener());
+        JSONObjectHttpGetTask httpGetTask = new JSONObjectHttpGetTask(new GetMetadataArrayListener());
         URL url = getHttpURL(getString(R.string.server), Integer.parseInt(getString(R.string.port)), getString(R.string.types_path));
         mBusy = true;
         setUIEnabled(false);

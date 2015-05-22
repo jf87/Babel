@@ -35,8 +35,8 @@ package edu.berkeley.babel.util;
 
 import android.os.AsyncTask;
 
-import org.json.JSONObject;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -63,25 +63,21 @@ public class JSONObjectHttpPostTask extends AsyncTask<Object, Void, JSONObject> 
         this.listener = listener;
     }
 
-    private InputStream httpPost(final HttpURLConnection connection,
-                                 final URL url, final JSONObject entity) throws IOException {
+    private InputStream httpPost(final HttpURLConnection connection, final URL url, final JSONObject entity) throws IOException {
         final int contentLength = entity.toString().getBytes().length;
         connection.setRequestMethod("POST");
         connection.setRequestProperty("Content-Type", "application/json");
-        connection.setRequestProperty("Content-Length",
-                Integer.toString(contentLength));
+        connection.setRequestProperty("Content-Length", Integer.toString(contentLength));
         connection.setFixedLengthStreamingMode(contentLength);
         connection.setDoInput(true);
         connection.setDoOutput(true);
 
-        final OutputStream out = new BufferedOutputStream(
-                connection.getOutputStream());
+        final OutputStream out = new BufferedOutputStream(connection.getOutputStream());
         out.write(entity.toString().getBytes());
         out.flush();
         out.close();
 
-        final InputStream in = new BufferedInputStream(
-                connection.getInputStream());
+        final InputStream in = new BufferedInputStream(connection.getInputStream());
 
         return in;
     }
@@ -101,8 +97,7 @@ public class JSONObjectHttpPostTask extends AsyncTask<Object, Void, JSONObject> 
             connection = (HttpURLConnection) url.openConnection();
             final InputStream in = httpPost(connection, url, entity);
 
-            final BufferedReader reader = new BufferedReader(
-                    new InputStreamReader(in));
+            final BufferedReader reader = new BufferedReader(new InputStreamReader(in));
 
             String line;
             final StringBuilder sb = new StringBuilder();

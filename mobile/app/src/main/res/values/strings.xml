@@ -11,6 +11,9 @@
     <string name="port">50005</string>
     <string name="types_path">/api/types</string>
     <string name="link_path">/api/link</string>
+    <string name="result_path">/api/result</string>
 
     <string name="no_conn">"Cannot connect to server"</string>
+    <string name="server_error">"Server failure"</string>
+    <string name="success">"Succeeded!"</string>
 </resources>

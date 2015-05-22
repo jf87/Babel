@@ -41,38 +41,36 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import org.json.JSONArray;
+import org.json.JSONObject;
 import org.json.JSONException;
 
 import android.os.AsyncTask;
 
 /* 
- * HTTP Get Task posts with JSON Array and gets JSON Array returned
+ * HTTP Get Task posts with JSON Object and gets JSON Object returned
  */
-public class JSONArrayHttpGetTask extends AsyncTask<Object, Void, JSONArray> {
+public class JSONObjectHttpGetTask extends AsyncTask<Object, Void, JSONObject> {
 
-    private final onJSONArrayHttpGetRespondedListener listener;
+    private final onJSONObjectHttpGetRespondedListener listener;
 
-    public static interface onJSONArrayHttpGetRespondedListener {
-        void onJSONArrayHttpGetResponded(JSONArray response);
+    public static interface onJSONObjectHttpGetRespondedListener {
+        void onJSONObjectHttpGetResponded(JSONObject response);
     }
 
-    public JSONArrayHttpGetTask(final onJSONArrayHttpGetRespondedListener listener) {
+    public JSONObjectHttpGetTask(final onJSONObjectHttpGetRespondedListener listener) {
         this.listener = listener;
     }
 
-    private InputStream httpGet(final HttpURLConnection connection,
-                                final URL url) throws IOException {
+    private InputStream httpGet(final HttpURLConnection connection, final URL url) throws IOException {
         connection.setRequestMethod("GET");
 
-        final InputStream in = new BufferedInputStream(
-                connection.getInputStream());
+        final InputStream in = new BufferedInputStream(connection.getInputStream());
 
         return in;
     }
 
     @Override
-    protected JSONArray doInBackground(final Object... params) {
+    protected JSONObject doInBackground(final Object... params) {
         final URL url = (URL) params[0];
 
         if (url == null) {
@@ -95,7 +93,7 @@ public class JSONArrayHttpGetTask extends AsyncTask<Object, Void, JSONArray> {
             }
             reader.close();
 
-            return new JSONArray(sb.toString());
+            return new JSONObject(sb.toString());
         } catch (final IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -112,9 +110,9 @@ public class JSONArrayHttpGetTask extends AsyncTask<Object, Void, JSONArray> {
     }
 
     @Override
-    protected void onPostExecute(final JSONArray response) {
+    protected void onPostExecute(final JSONObject response) {
         if (!isCancelled() && listener != null) {
-            listener.onJSONArrayHttpGetResponded(response);
+            listener.onJSONObjectHttpGetResponded(response);
         }
     }
 }
