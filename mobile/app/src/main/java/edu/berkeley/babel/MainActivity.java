@@ -26,6 +26,7 @@ import edu.berkeley.babel.util.JSONArrayHttpGetTask;
 import edu.berkeley.babel.util.JSONArrayHttpGetTask.onJSONArrayHttpGetRespondedListener;
 import edu.berkeley.babel.util.JSONObjectHttpPostTask;
 import edu.berkeley.babel.util.JSONObjectHttpPostTask.onJSONObjectHttpPostRespondedListener;
+import edu.berkeley.babel.util.KeyValueListAdapter;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -33,7 +34,7 @@ public class MainActivity extends ActionBarActivity {
     private Spinner mTypeSpinner;
     private ArrayAdapter<String> mTypeSpinnerAdapter;
     private ListView mAttributeList;
-    private AttributeListAdapter mAttributeListAdapter;
+    private KeyValueListAdapter mKeyValueListAdapter;
     private Button mStartButton;
     private TextView mActionText;
     private TextView mActionDesc;
@@ -79,15 +80,14 @@ public class MainActivity extends ActionBarActivity {
      */
     private class TypeSpinnerListener implements AdapterView.OnItemSelectedListener {
         @Override
-        public void onItemSelected(AdapterView<?> parent, View view,
-                                   int pos, long id) {
+        public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
             // An item was selected. You can retrieve the selected item using
             // parent.getItemAtPosition(pos)
             if (mBusy) { // this should not happen
                 return;
             }
 
-            updateCurMetadataRef();
+            updateCurMetadataRefOnType();
             refreshAttributes();
         }
 
@@ -108,8 +108,26 @@ public class MainActivity extends ActionBarActivity {
                 return;
             }
 
-            updateCurMetadataFromUI();
             postCurMetadataToServer();
+        }
+    }
+
+    private class OnAttributeChangedListener implements KeyValueListAdapter.OnKeyValueChangedListener {
+        @Override
+        public void OnValueChanged(String key, String newValue) {
+            // key won't be in mCurMetadata if these sequence happens:
+            // 1. attribute is changed
+            // 2. type is changed, then mCurMetadata is changed
+            // 3. this OnValueChanged is called
+            if (mCurMetadata == null || !mCurMetadata.has(key)) {
+                return;
+            }
+
+            try {
+                mCurMetadata.put(key, newValue);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -139,7 +157,7 @@ public class MainActivity extends ActionBarActivity {
             return;
         }
 
-        mAttributeListAdapter.clear();
+        mKeyValueListAdapter.clear();
 
         Iterator<String> iter = mCurMetadata.keys();
 
@@ -150,19 +168,19 @@ public class MainActivity extends ActionBarActivity {
             }
             try {
                 String value = mCurMetadata.getString(name);
-                mAttributeListAdapter.add(new AttributeListAdapter.Pair<>(name, value));
+                mKeyValueListAdapter.add(new KeyValueListAdapter.Pair<>(name, value));
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
 
-        mAttributeListAdapter.notifyDataSetChanged();
+        mKeyValueListAdapter.notifyDataSetChanged();
     }
 
     /**
      * Update the mCurMetadata based on the type spinner selection
      */
-    private void updateCurMetadataRef() {
+    private void updateCurMetadataRefOnType() {
         String curType = mTypeSpinner.getSelectedItem().toString();
 
         // TODO optimize lookup by indexing by kind
@@ -194,25 +212,6 @@ public class MainActivity extends ActionBarActivity {
     }
 
     /**
-     * Update mCurMetadata from UI
-     */
-    private void updateCurMetadataFromUI() {
-        if (mCurMetadata == null) {
-            return;
-        }
-
-        try {
-            int count = mAttributeListAdapter.getCount();
-            for (int i = 0; i < count; i++) {
-                AttributeListAdapter.Pair<String, String> attr = mAttributeListAdapter.getItem(i);
-                mCurMetadata.put(attr.first, attr.second);
-            }
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-    }
-
-    /**
      * start an AsyncTask to POST the user-updated metadata to the server
      */
     private void postCurMetadataToServer() {
@@ -237,7 +236,7 @@ public class MainActivity extends ActionBarActivity {
     private void setUIEnabled(boolean enabled) {
         mTypeText.setEnabled(enabled);
         mTypeSpinner.setEnabled(enabled);
-        mAttributeListAdapter.setEnabled(enabled);
+        mKeyValueListAdapter.setEnabled(enabled);
         mStartButton.setEnabled(enabled);
         mActionText.setEnabled(enabled);
         mActionDesc.setEnabled(enabled);
@@ -272,8 +271,9 @@ public class MainActivity extends ActionBarActivity {
         mTypeSpinner.setAdapter(mTypeSpinnerAdapter);
 
         mAttributeList = (ListView) findViewById(R.id.attributes_list);
-        mAttributeListAdapter = new AttributeListAdapter(this);
-        mAttributeList.setAdapter(mAttributeListAdapter);
+        mKeyValueListAdapter = new KeyValueListAdapter(this);
+        mKeyValueListAdapter.setOnKeyValueChangedListener(new OnAttributeChangedListener());
+        mAttributeList.setAdapter(mKeyValueListAdapter);
 
         mStartButton = (Button) findViewById(R.id.start_button);
         mStartButton.setOnClickListener(new StartOnClickListener());
