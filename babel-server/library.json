@@ -1,0 +1,71 @@
+[
+    {
+        "kind": "Light",
+        "location": " ",
+        "model": "Philips Hue",
+        "sequence": [
+            {
+                "instruction": "Turn the light on.",
+                "setpoint": 1,
+                "time": 5
+            },
+            {
+                "instruction": "Turn the light off.",
+                "setpoint": 0,
+                "time": 5
+            },
+            {
+                "instruction": "Turn the light on.",
+                "setpoint": 1,
+                "time": 5
+            }
+        ],
+        "uuid": "90b0292a-78d4-4f64-9efb-8c3838798236"
+    },
+    {
+        "kind": "HVAC",
+        "location": " ",
+        "temperature": "22",
+        "model": "Thermostat XYZ",
+        "sequence": [
+            {
+                "instruction": "Read the current setpoint and enter it.",
+                "time": 30
+            },
+            {
+                "instruction": "Turn the setpoint to %s degrees.",
+                "setpoint": 23,
+                "time": 10
+            },
+            {
+                "instruction": "Turn the setpoint to %s degrees.",
+                "setpoint": 33,
+                "time": 10
+            },
+            {
+                "instruction": "Turn the setpoint to %s degrees.",
+                "setpoint": 16,
+                "time": 10
+            }
+        ]
+    },
+    {
+        "kind": "Window",
+        "location": " ",
+        "model": " ",
+        "sequence": [
+            {
+                "instruction": "Open window fully.",
+                "time": 30
+            },
+            {
+                "instruction": "Leave open.",
+                "time": 30
+            },
+            {
+                "instruction": "Close window fully.",
+                "time": 30
+            }
+        ]
+    }
+]
