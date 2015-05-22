@@ -32,4 +32,10 @@ var routes = Routes{
 		"/api/link",
 		LinkHandler,
 	},
+	Route{
+		"Success",
+		"GET",
+		"/api/success",
+		SuccessHandler,
+	},
 }

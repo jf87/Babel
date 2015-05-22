@@ -8,6 +8,8 @@ import (
 	"time"
 )
 
+var su = make(chan int)
+
 type Events struct {
 	t []time.Time
 	v []float64
@@ -20,13 +22,17 @@ func checkForSequence(a *appContext, d Device) error {
 	p := make([]int, 1000)
 	e := make([]Events, 1000)
 	var matches []int
+	t_total := 0
 	//matches := make([]int, 1000)
 	seq := make([]float64, len(d.Sequence))
 	for i, k := range d.Sequence {
 		seq[i] = k.Setpoint
+		t_total = t_total + k.Time
 	}
-
-	for !found {
+	t_total = t_total * 2
+	tt := time.Duration(t_total) * time.Second
+	t0 := time.Now()
+	for !found && (time.Since(t0) < tt) {
 		// get current state
 		for i := 0; i < 1000; i++ {
 			act := strconv.Itoa(i)
@@ -60,6 +66,16 @@ func checkForSequence(a *appContext, d Device) error {
 		time.Sleep(1000 * time.Millisecond)
 
 	}
+	if !found {
+		fmt.Println("not found :-()")
+		if time.Since(t0) > tt {
+			fmt.Println("we ran out of time before a match was found")
+		}
+		su <- 2
+	} else {
+		su <- 1
+	}
+
 	for _, v := range matches {
 		fmt.Println(v)
 	}
