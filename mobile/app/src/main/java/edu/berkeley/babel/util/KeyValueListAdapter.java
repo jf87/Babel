@@ -118,6 +118,7 @@ public class KeyValueListAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // not using convertView because i don't want to deal with removing TextChangedListener of old valueView
+        mListener = null;
 
         LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View itemView = inflater.inflate(R.layout.key_value_item, null);

@@ -1,6 +1,7 @@
 package edu.berkeley.babel;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,6 +12,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -29,6 +31,7 @@ import edu.berkeley.babel.util.JSONObjectHttpPostTask.onJSONObjectHttpPostRespon
 import edu.berkeley.babel.util.KeyValueListAdapter;
 
 public class MainActivity extends ActionBarActivity {
+    private Handler mHandler;
 
     private TextView mTypeText;
     private Spinner mTypeSpinner;
@@ -49,13 +52,14 @@ public class MainActivity extends ActionBarActivity {
     private class GetMetadataArrayListener implements onJSONArrayHttpGetRespondedListener {
         @Override
         public void onJSONArrayHttpGetResponded(JSONArray response) {
-            setUIEnabled(true);
-            mBusy = false;
-
             if (response == null) {
-                // TODO show error message
+                // user has to restart the app
+                Toast.makeText(getApplicationContext(), getString(R.string.no_conn), Toast.LENGTH_LONG).show();
                 return;
             }
+
+            setUIEnabled(true);
+            mBusy = false;
 
             mMetadataArray = response;
             refreshType();
@@ -68,8 +72,13 @@ public class MainActivity extends ActionBarActivity {
     private class PostMetadataListener implements onJSONObjectHttpPostRespondedListener {
         @Override
         public void onJSONObjectHttpPostResponded(JSONObject response) {
-            setUIEnabled(true);
-            mBusy = false;
+            if (response == null) {
+                // only enable UI when connection fails
+                setUIEnabled(true);
+                mBusy = false;
+                Toast.makeText(getApplicationContext(), getString(R.string.no_conn), Toast.LENGTH_LONG).show();
+                return;
+            }
 
             startInstruction();
         }
@@ -128,6 +137,48 @@ public class MainActivity extends ActionBarActivity {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    private class ShowInstructionRunnale implements Runnable {
+        private int mIndex;
+
+        public ShowInstructionRunnale(int index) {
+            mIndex = index;
+        }
+
+        @Override
+        public void run() {
+            JSONArray seqArray = null;
+            try {
+                seqArray = mCurMetadata.getJSONArray("sequence");
+            } catch (JSONException e) { // fatal
+                e.printStackTrace();
+            }
+
+            if (seqArray.length() <= mIndex) {
+                mActionDesc.setText("");
+                // TODO verify success from server (async)
+                setUIEnabled(true);
+                mBusy = false;
+                return;
+            }
+
+            JSONObject instObject;
+            String desc = "";
+            int duration = 0;
+            try {
+                instObject = seqArray.getJSONObject(mIndex);
+                desc = instObject.getString("instruction");
+                duration = instObject.getInt("time");
+            } catch (JSONException e) { // fatal
+                e.printStackTrace();
+            }
+
+            String fullDesc = desc + " during the next " + Integer.toString(duration) + " second(s).";
+            mActionDesc.setText(fullDesc);
+
+            mHandler.postDelayed(new ShowInstructionRunnale(mIndex + 1), duration * 1000);
         }
     }
 
@@ -227,7 +278,7 @@ public class MainActivity extends ActionBarActivity {
      * start showing instruction to user to control the device
      */
     private void startInstruction() {
-
+        mHandler.postDelayed(new ShowInstructionRunnale(0), 0);
     }
 
     /**
@@ -260,6 +311,8 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mHandler = new Handler();
 
         // Set up UI
         mTypeText = (TextView) findViewById(R.id.type_text);
