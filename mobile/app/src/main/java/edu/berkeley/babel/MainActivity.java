@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -19,45 +20,74 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.util.Iterator;
 
 import edu.berkeley.babel.util.JSONArrayHttpGetTask;
 import edu.berkeley.babel.util.JSONArrayHttpGetTask.onJSONArrayHttpGetRespondedListener;
-
+import edu.berkeley.babel.util.JSONObjectHttpPostTask;
+import edu.berkeley.babel.util.JSONObjectHttpPostTask.onJSONObjectHttpPostRespondedListener;
 
 public class MainActivity extends ActionBarActivity {
 
+    private TextView mTypeText;
     private Spinner mTypeSpinner;
     private ArrayAdapter<String> mTypeSpinnerAdapter;
-    private TextView mActionView;
+    private ListView mAttributeList;
+    private AttributeListAdapter mAttributeListAdapter;
     private Button mStartButton;
+    private TextView mActionText;
+    private TextView mActionDesc;
 
     private boolean mBusy = false;
-    private JSONArray mMetadata = null;
+    private JSONArray mMetadataArray = null;
+    private JSONObject mCurMetadata = null;
 
-    private class MetadataListener implements onJSONArrayHttpGetRespondedListener {
+    /**
+     * response to the AsyncTask that GETs metadata from server
+     */
+    private class GetMetadataArrayListener implements onJSONArrayHttpGetRespondedListener {
         @Override
         public void onJSONArrayHttpGetResponded(JSONArray response) {
+            setUIEnabled(true);
+            mBusy = false;
+
             if (response == null) {
-                mBusy = false;
+                // TODO show error message
                 return;
             }
 
-            mMetadata = response;
+            mMetadataArray = response;
             refreshType();
-            mBusy = false;
         }
     }
 
+    /**
+     * response to the AsyncTask that POSTs user-updated metadata to server
+     */
+    private class PostMetadataListener implements onJSONObjectHttpPostRespondedListener {
+        @Override
+        public void onJSONObjectHttpPostResponded(JSONObject response) {
+            setUIEnabled(true);
+            mBusy = false;
+
+            startInstruction();
+        }
+    }
+
+    /**
+     * response to user selecting the type spinner
+     */
     private class TypeSpinnerListener implements AdapterView.OnItemSelectedListener {
         @Override
         public void onItemSelected(AdapterView<?> parent, View view,
                                    int pos, long id) {
             // An item was selected. You can retrieve the selected item using
             // parent.getItemAtPosition(pos)
-            if (mBusy) {
+            if (mBusy) { // this should not happen
                 return;
             }
 
+            updateCurMetadataRef();
             refreshAttributes();
         }
 
@@ -67,23 +97,30 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 
+    /**
+     * response to user pressing the start button
+     */
     private class StartOnClickListener implements View.OnClickListener {
         @Override
         public void onClick(View v) {
             // Perform action on click
-            // TODO
-            if (mBusy) {
+            if (mBusy) { // this should not happen
                 return;
             }
 
+            updateCurMetadataFromUI();
+            postCurMetadataToServer();
         }
     }
 
+    /**
+     * Refresh the types in type spinner using mMetadataArray
+     */
     private void refreshType() {
         mTypeSpinnerAdapter.clear();
-        for (int i = 0; i < mMetadata.length(); i++) {
+        for (int i = 0; i < mMetadataArray.length(); i++) {
             try {
-                JSONObject typeObj = mMetadata.getJSONObject(i);
+                JSONObject typeObj = mMetadataArray.getJSONObject(i);
                 String typeName = typeObj.getString("kind");
                 mTypeSpinnerAdapter.add(typeName);
             } catch (JSONException e) {
@@ -93,15 +130,117 @@ public class MainActivity extends ActionBarActivity {
         mTypeSpinnerAdapter.notifyDataSetChanged();
     }
 
+    /**
+     * Refresh the attributes based on the current selected Type
+     */
     private void refreshAttributes() {
-        // TODO pop up attributes
+        // dynamically populate UI
+        if (mCurMetadata == null) {
+            return;
+        }
+
+        mAttributeListAdapter.clear();
+
+        Iterator<String> iter = mCurMetadata.keys();
+
+        while (iter.hasNext()) {
+            String name = iter.next();
+            if (name.equals("kind") || name.equals("sequence")) {
+                continue;
+            }
+            try {
+                String value = mCurMetadata.getString(name);
+                mAttributeListAdapter.add(new AttributeListAdapter.Pair<>(name, value));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+
+        mAttributeListAdapter.notifyDataSetChanged();
     }
 
-    private void getMetadata() {
-        JSONArrayHttpGetTask httpGetTask = new JSONArrayHttpGetTask(new MetadataListener());
-        URL url = getHttpURL("130.226.142.195", 4444, "/api/types");
+    /**
+     * Update the mCurMetadata based on the type spinner selection
+     */
+    private void updateCurMetadataRef() {
+        String curType = mTypeSpinner.getSelectedItem().toString();
+
+        // TODO optimize lookup by indexing by kind
+        JSONObject metadata = null;
+        for (int i = 0; i < mMetadataArray.length(); i++) {
+            try {
+                metadata = mMetadataArray.getJSONObject(i);
+                String typeName = metadata.getString("kind");
+                if (typeName.equals(curType)) {
+                    break;
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+
+        mCurMetadata = metadata;
+    }
+
+    /**
+     * start an AsyncTask to GET the metadata array from the server
+     */
+    private void getMetadataArrayFromServer() {
+        JSONArrayHttpGetTask httpGetTask = new JSONArrayHttpGetTask(new GetMetadataArrayListener());
+        URL url = getHttpURL(getString(R.string.server), Integer.parseInt(getString(R.string.port)), getString(R.string.types_path));
         mBusy = true;
+        setUIEnabled(false);
         httpGetTask.execute(url);
+    }
+
+    /**
+     * Update mCurMetadata from UI
+     */
+    private void updateCurMetadataFromUI() {
+        if (mCurMetadata == null) {
+            return;
+        }
+
+        try {
+            int count = mAttributeListAdapter.getCount();
+            for (int i = 0; i < count; i++) {
+                AttributeListAdapter.Pair<String, String> attr = mAttributeListAdapter.getItem(i);
+                mCurMetadata.put(attr.first, attr.second);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * start an AsyncTask to POST the user-updated metadata to the server
+     */
+    private void postCurMetadataToServer() {
+        JSONObjectHttpPostTask httpPostTask = new JSONObjectHttpPostTask(new PostMetadataListener());
+        URL url = getHttpURL(getString(R.string.server), Integer.parseInt(getString(R.string.port)), getString(R.string.link_path));
+
+        mBusy = true;
+        setUIEnabled(false);
+        httpPostTask.execute(url, mCurMetadata);
+    }
+
+    /**
+     * start showing instruction to user to control the device
+     */
+    private void startInstruction() {
+
+    }
+
+    /**
+     * Enable/disable all UI components
+     */
+    private void setUIEnabled(boolean enabled) {
+        mTypeText.setEnabled(enabled);
+        mTypeSpinner.setEnabled(enabled);
+        mAttributeListAdapter.setEnabled(enabled);
+        mStartButton.setEnabled(enabled);
+        mActionText.setEnabled(enabled);
+        mActionDesc.setEnabled(enabled);
     }
 
     private URL getHttpURL(String host, int port, String path) {
@@ -124,6 +263,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         // Set up UI
+        mTypeText = (TextView) findViewById(R.id.type_text);
         mTypeSpinner = (Spinner) findViewById(R.id.type_spinner);
         mTypeSpinner.setOnItemSelectedListener(new TypeSpinnerListener());
         mTypeSpinnerAdapter = new ArrayAdapter<String>
@@ -131,13 +271,18 @@ public class MainActivity extends ActionBarActivity {
         mTypeSpinnerAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         mTypeSpinner.setAdapter(mTypeSpinnerAdapter);
 
-        mActionView = (TextView) findViewById(R.id.action_text);
+        mAttributeList = (ListView) findViewById(R.id.attributes_list);
+        mAttributeListAdapter = new AttributeListAdapter(this);
+        mAttributeList.setAdapter(mAttributeListAdapter);
 
         mStartButton = (Button) findViewById(R.id.start_button);
         mStartButton.setOnClickListener(new StartOnClickListener());
 
+        mActionText = (TextView) findViewById(R.id.action_text);
+        mActionDesc = (TextView) findViewById(R.id.action_desc);
 
-        getMetadata();
+        // get metadata from server to populate the type spinner
+        getMetadataArrayFromServer();
     }
 
     @Override

@@ -12,9 +12,11 @@
         android:id="@+id/type"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
 
         <TextView
+            android:id="@+id/type_text"
             android:text="@string/type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,28 +33,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@id/type">
+        android:layout_alignParentBottom="true">
 
         <TextView
+            android:id="@+id/action_text"
             android:text="@string/action"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center" />
 
         <TextView
-            android:id="@+id/action_text"
+            android:id="@+id/action_desc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
             />
     </LinearLayout>
 
+    <ListView
+        android:id="@+id/attributes_list"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/type" />
+
     <Button
         android:id="@+id/start_button"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="@string/start"
-        android:gravity="center"
-        android:layout_below="@id/action" />
+        android:layout_above="@id/action" />
+
+
+
 
 </RelativeLayout>

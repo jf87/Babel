@@ -33,6 +33,11 @@
 
 package edu.berkeley.babel.util;
 
+import android.os.AsyncTask;
+
+import org.json.JSONObject;
+import org.json.JSONException;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
@@ -43,28 +48,23 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-
-import android.os.AsyncTask;
-
 /* 
- * HTTP Post Task posts with JSON Array and gets JSON Array returned
+ * HTTP Post Task posts with JSON Object and gets JSON Object returned
  */
-public class JSONArrayHttpPostTask extends AsyncTask<Object, Void, JSONArray> {
+public class JSONObjectHttpPostTask extends AsyncTask<Object, Void, JSONObject> {
 
-    private final onJSONArrayHttpPostRespondedListener listener;
+    private final onJSONObjectHttpPostRespondedListener listener;
 
-    public static interface onJSONArrayHttpPostRespondedListener {
-        void onJSONArrayHttpPostResponded(JSONArray response);
+    public static interface onJSONObjectHttpPostRespondedListener {
+        void onJSONObjectHttpPostResponded(JSONObject response);
     }
 
-    public JSONArrayHttpPostTask(final onJSONArrayHttpPostRespondedListener listener) {
+    public JSONObjectHttpPostTask(final onJSONObjectHttpPostRespondedListener listener) {
         this.listener = listener;
     }
 
     private InputStream httpPost(final HttpURLConnection connection,
-                                 final URL url, final JSONArray entity) throws IOException {
+                                 final URL url, final JSONObject entity) throws IOException {
         final int contentLength = entity.toString().getBytes().length;
         connection.setRequestMethod("POST");
         connection.setRequestProperty("Content-Type", "application/json");
@@ -87,9 +87,9 @@ public class JSONArrayHttpPostTask extends AsyncTask<Object, Void, JSONArray> {
     }
 
     @Override
-    protected JSONArray doInBackground(final Object... params) {
+    protected JSONObject doInBackground(final Object... params) {
         final URL url = (URL) params[0];
-        final JSONArray entity = (JSONArray) params[1];
+        final JSONObject entity = (JSONObject) params[1];
 
         if (url == null || entity == null) {
             return null;
@@ -111,7 +111,7 @@ public class JSONArrayHttpPostTask extends AsyncTask<Object, Void, JSONArray> {
             }
             reader.close();
 
-            return new JSONArray(sb.toString());
+            return new JSONObject(sb.toString());
         } catch (final IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -128,9 +128,9 @@ public class JSONArrayHttpPostTask extends AsyncTask<Object, Void, JSONArray> {
     }
 
     @Override
-    protected void onPostExecute(final JSONArray response) {
+    protected void onPostExecute(final JSONObject response) {
         if (!isCancelled() && listener != null) {
-            listener.onJSONArrayHttpPostResponded(response);
+            listener.onJSONObjectHttpPostResponded(response);
         }
     }
 }
