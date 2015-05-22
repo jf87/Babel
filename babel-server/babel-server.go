@@ -14,7 +14,7 @@ import (
 
 type appContext struct {
 	bms     string
-	library *Devices
+	library *Lib
 }
 
 type appHandler struct {
@@ -49,16 +49,16 @@ Flags:`)
 	log.Fatal(http.ListenAndServe(":"+*port, router))
 }
 
-func getLibrary(filename string) *Devices {
+func getLibrary(filename string) *Lib {
 	file, err := ioutil.ReadFile(filename)
 	if err != nil {
 		fmt.Printf("File error: %v\n", err)
 		os.Exit(1)
 	}
-	var d Devices
-	if err = json.Unmarshal(file, &d); err != nil {
+	var l Lib
+	if err = json.Unmarshal(file, &l); err != nil {
 		fmt.Printf("Unmarshal error: %v\n", err)
 		os.Exit(1)
 	}
-	return &d
+	return &l
 }

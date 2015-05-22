@@ -2,6 +2,10 @@ package main
 
 //var devices Devices
 
+type Lib struct {
+	Library []Device `json:"library"`
+}
+
 type Device struct {
 	Kind        string `json:"kind"`
 	Location    string `json:"location"`
@@ -15,4 +19,8 @@ type Seq struct {
 	Time        int     `json:"time"`
 }
 
-type Devices []Device
+//type Devices []Device
+
+type Suc struct {
+	Success bool `json:"success"`
+}

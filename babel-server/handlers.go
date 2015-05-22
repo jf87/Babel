@@ -60,7 +60,7 @@ func LinkHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, er
 	if err := r.Body.Close(); err != nil {
 		return -1, err
 	}
-fmt.Printf("%s\n\n", body)
+	fmt.Printf("Body:\n%s\n\n", body)
 	if err := json.Unmarshal(body, &device); err != nil {
 		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 		w.WriteHeader(422)                                             // not possible to process
@@ -70,12 +70,34 @@ fmt.Printf("%s\n\n", body)
 	}
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusCreated)
-	if err := json.NewEncoder(w).Encode(device); err != nil {
+	var suc Suc
+	suc.Success = true
+	if err := json.NewEncoder(w).Encode(suc); err != nil {
 		return -1, err
 	}
 
 	go checkForSequence(a, device)
-
+	go fakeActuation(a, device)
 	fmt.Println(device)
+	return 200, nil
+}
+
+func SuccessHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, error) {
+	var suc Suc
+	fmt.Println("SuccessHandler")
+
+	i := <-su
+
+	if i == 1 {
+		suc.Success = true
+
+	} else {
+		suc.Success = false
+	}
+
+	if err := json.NewEncoder(w).Encode(suc); err != nil {
+		return -1, err
+	}
+
 	return 200, nil
 }
