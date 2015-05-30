@@ -1,0 +1,57 @@
+%!TEX root=../main.tex
+
+% Notes Whiteboard:
+%
+% 3 Motivation and Goals (Design Goals)
+% 3.1 Problem with current BMS Metadata
+% - misspelling
+% - missing
+%
+% Design Goals:
+%
+% - existing buildings (policy, technical BMS, bacnet)
+% - crwoudsourcable
+% - incremental
+% - robustness of structure 100\%
+
+\section{Motivation and Design Goals} % (fold) 
+\label{sec:motivation_and_design_goals}
+
+\subsection{Analyis of Current BMS State} % (fold)
+\label{sub:analyis_of_current_bms_state}
+\fixme{I think we need a more detailed problem statement before the architecture section, maybe it is a section itself. basically it should talk about problems in current building metadata, and why a clean metada is soooo important to applications. it should be driven by real data/metadata. we can grab some from sMAP archiver.  -Kaifei}
+
+\fixme{I aggree  --Jonathan}
+
+\begin{enumerate}
+
+  \item What systems are used?
+
+  \item How do they do naming? (with example using the berkeley data set)
+
+  \item Why is this (which might not have been such a big poblem before) now a problem if we want to allow smart applications for users?
+
+\end{enumerate}
+
+
+% subsection analyis_of_current_bms_state (end)
+
+\subsection{Design Goals} % (fold)
+\label{sub:design_goals}
+\fixme{
+Maybe we should have a more sophisticated, stepwise system.
+Use matching/linking by users to learn types
+For example, if we know 5 lights, we might be able to tell which points the other lights are.
+This should be realtively simple.
+It would be cool to investigate if we can do the same for the structural relationship.
+Can we learn which things are in the same room by looking at the existing metadata in the BMS.
+We probably can, but depends if this goes against the initial assumption to not consider the metadata of the BMS.
+Still there must be some structure in it that will be useful. --Jonathan
+}
+
+\fixme{We need to think about the structural model of a building. We have two choices: (i) a structural model exists and our application uses it. E.g. All rooms, floors etc are already somewhere on the server and our application queries it and show the user a list. (ii) we let the user enter things, probbaly following some schema (e.g., a room always needs a number and a floor.)
+Problem is not all rooms might have numbers like we said.  --Jonathan}
+
+% subsection design_goals (end)
+
+% section motivation_and_design_goals (end)
