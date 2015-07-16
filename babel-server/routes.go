@@ -38,4 +38,10 @@ var routes = Routes{
 		"/api/result",
 		SuccessHandler,
 	},
+	Route{
+		"Points",
+		"GET",
+		"/api/points",
+		PointsHandler,
+	},
 }

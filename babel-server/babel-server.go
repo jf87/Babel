@@ -15,6 +15,7 @@ import (
 type appContext struct {
 	bms     string
 	library *Lib
+	points  *Points
 }
 
 type appHandler struct {
@@ -27,13 +28,14 @@ func main() {
 		port = flag.String("port", "8888", "Port to listen on (optional)")
 		lib  = flag.String("lib", "", "Library with definition of types and patterns.")
 		bms  = flag.String("bms", "", "Url to BMS Points")
+		db   = flag.String("db", "", "Bacnet DB file")
 	)
 
 	flag.Parse()
 	if *lib == "" || *bms == "" {
-		fmt.Fprintln(os.Stderr, "Missing library (-lib) and/or bms flag (-bms)")
+		fmt.Fprintln(os.Stderr, "Missing library (-lib), Bacnet DB file (-db) and/or bms flag (-bms)")
 		fmt.Fprintln(os.Stderr, `Usage:
-  go-adder [flags]
+      babel-server [flags]
 Flags:`)
 		flag.PrintDefaults()
 
@@ -42,8 +44,9 @@ Flags:`)
 
 	//var devices Devices
 	devices := getLibrary(*lib)
-
-	context := &appContext{bms: *bms, library: devices}
+	points := getPoints(*db)
+  
+	context := &appContext{bms: *bms, library: devices, points: points}
 	router := NewRouter(context)
 	fmt.Println("Babel-Server has started...")
 	log.Fatal(http.ListenAndServe(":"+*port, router))
@@ -61,4 +64,18 @@ func getLibrary(filename string) *Lib {
 		os.Exit(1)
 	}
 	return &l
+}
+
+func getPoints(filename string) *Points {
+	file, err := ioutil.ReadFile(filename)
+	if err != nil {
+		fmt.Printf("File error: %v\n", err)
+		os.Exit(1)
+	}
+	var p Points
+	if err = json.Unmarshal(file, &p); err != nil {
+		fmt.Printf("Unmarshal error: %v\n", err)
+		os.Exit(1)
+	}
+	return &p
 }
