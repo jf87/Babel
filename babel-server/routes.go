@@ -35,7 +35,7 @@ var routes = Routes{
 	Route{
 		"Success",
 		"GET",
-		"/api/success",
+		"/api/result",
 		SuccessHandler,
 	},
 }
