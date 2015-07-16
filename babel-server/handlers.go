@@ -101,3 +101,15 @@ func SuccessHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int,
 
 	return 200, nil
 }
+
+func PointsHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, error) {
+
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+	w.WriteHeader(http.StatusOK)
+	if err := json.NewEncoder(w).Encode(a.points); err != nil {
+		fmt.Println(err)
+		return -1, err
+	}
+	return 200, nil
+}
+
