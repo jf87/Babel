@@ -4,14 +4,14 @@ type Point struct {
 	Desc  string   `json:"desc"`
 	Name  string   `json:"name"`
 	Objs  []Object `json:"objs"`
-	Props []Prop2  `json:"props,"`
+	Props Prop2    `json:"props,"`
 }
 
 type Object struct {
 	Data_type int    `json:"data_type"`
 	Desc      string `json:"desc"`
 	Name      string `json:"name"`
-	Props     []Prop `json:"props"`
+	Props     Prop   `json:"props"`
 	Unit      int    `json:"unit"`
 }
 
