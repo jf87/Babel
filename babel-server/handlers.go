@@ -38,7 +38,7 @@ func IndexHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, e
 	return 200, nil
 }
 
-// get actuator types from server
+// provides the different types of devices
 func TypesHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, error) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusOK)
@@ -50,7 +50,7 @@ func TypesHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, e
 	return 200, nil
 }
 
-// request to create a link between an actuator and the type/location by the user
+// request to create a link between a device and the type/location by the user
 func LinkHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, error) {
 	var device Device
 	body, err := ioutil.ReadAll(io.LimitReader(r.Body, 1048567)) //limit size FIXME how big?
@@ -76,12 +76,14 @@ func LinkHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, er
 		return -1, err
 	}
 
+	// now monitor bms points
 	go checkForSequence(a, device)
-	go fakeActuation(a, device)
+	//go fakeActuation(a, device)
 	fmt.Println(device)
 	return 200, nil
 }
 
+// tells the client if matching was a success, long polling
 func SuccessHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, error) {
 	var suc Suc
 	fmt.Println("SuccessHandler")
@@ -102,14 +104,29 @@ func SuccessHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int,
 	return 200, nil
 }
 
+// provides BMS points to smap driver. Points can dynamically change based on what happens
+// in checkForSequence goroutine
 func PointsHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, error) {
 
-	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
-	w.WriteHeader(http.StatusOK)
-	if err := json.NewEncoder(w).Encode(a.points); err != nil {
-		fmt.Println(err)
-		return -1, err
+	if active {
+
+		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+		w.WriteHeader(http.StatusOK)
+		if err := json.NewEncoder(w).Encode(a.points); err != nil {
+			fmt.Println(err)
+			return -1, err
+		}
+	} else {
+
+		i := <-sync
+		if i == 1 {
+			w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+			w.WriteHeader(http.StatusOK)
+			if err := json.NewEncoder(w).Encode(a.points); err != nil {
+				fmt.Println(err)
+				return -1, err
+			}
+		}
 	}
 	return 200, nil
 }
-
