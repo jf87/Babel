@@ -1,14 +1,17 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"net/http"
-	"strconv"
 	"time"
 )
 
 var su = make(chan int)
+var sync = make(chan int)
+
+var active bool
 
 type Events struct {
 	t []time.Time
@@ -18,59 +21,54 @@ type Events struct {
 // subscribe to backend FIXME JF this needs to be seriously cleaned up
 func checkForSequence(a *appContext, d Device) error {
 	fmt.Println("checkForSequence")
-	found := false
-	p := make([]int, 1000)
-	e := make([]Events, 1000)
-	var matches []int
+	//provide initial point list turn back on for point reduction
+	sync <- 1
+	active = true
+
+	//keep track of time dependent on provided sequence
 	t_total := 0
-	//matches := make([]int, 1000)
 	seq := make([]float64, len(d.Sequence))
 	for i, k := range d.Sequence {
 		seq[i] = k.Setpoint
 		t_total = t_total + k.Time
 	}
-	t_total = t_total * 2
+	t_total = t_total * 2 //twice the time seems like a good timeout
 	tt := time.Duration(t_total) * time.Second
 	t0 := time.Now()
-	for !found && (time.Since(t0) < tt) {
-		// get current state
-		for i := 0; i < 1000; i++ {
-			act := strconv.Itoa(i)
-			resp, err := http.Get(a.bms + "/api/actuators/" + act)
-			if err != nil {
-				return err
-			}
-			defer resp.Body.Close()
-			body, err := ioutil.ReadAll(resp.Body)
-			r := string(body[0])
-			ri, err := strconv.Atoi(r)
-			if float64(ri) == seq[p[i]] {
-				fmt.Println("FOUND SETPOINT ", ri)
-				fmt.Println("SEQUENCE", p[i])
-				if e[i].t == nil {
-					e[i].t = make([]time.Time, 5)
-					e[i].v = make([]float64, 5)
-				}
-				e[i].t[p[i]] = time.Now()
-				e[i].v[p[i]] = float64(ri)
-				p[i] += 1
-				if p[i] == len(seq) {
-					found = true
-					matches = append(matches, i)
-					fmt.Println("len seq", len(seq))
-					fmt.Println("BMS Setpoint is: ", i)
-					fmt.Println("FUCKING A")
-				}
-			}
-		}
-		time.Sleep(1000 * time.Millisecond)
 
-	}
-	if !found {
-		fmt.Println("not found :-()")
-		if time.Since(t0) > tt {
-			fmt.Println("we ran out of time before a match was found")
+	var readings []SmapReading
+	var points map[string]int
+	points = make(map[string]int)
+
+	for time.Since(t0) < tt { //for now just loop until time is over
+		resp, err := http.Get(a.bms)
+		if err != nil {
+			return err
 		}
+		defer resp.Body.Close()
+		body, err := ioutil.ReadAll(resp.Body)
+
+		//var matches map[string]int
+
+		readings, points, err = DecodeSmapJson(body, readings, points)
+		if err != nil {
+			fmt.Printf("ERROR %v\n", err)
+		}
+		fmt.Println(readings)
+		reducePoints(a, d, readings)
+		//sync <- 1
+		time.Sleep(200 * time.Millisecond)
+	}
+	active = false
+
+	matches, err := findMatch(readings, points, d)
+	if err != nil {
+		fmt.Printf("ERROR %v\n", err)
+	}
+
+	fmt.Printf("matches %v\n", matches)
+
+	if matches == nil {
 		su <- 2
 	} else {
 		su <- 1
@@ -81,13 +79,79 @@ func checkForSequence(a *appContext, d Device) error {
 	}
 	for _, v := range matches {
 		fmt.Printf("Match for Actuator %v:\n", v)
-		for i, _ := range seq {
-			fmt.Printf("with setpoint: %v at time %v\n", e[v].v[i], e[v].t[i])
-		}
-		fmt.Printf("\n")
-
 	}
-
 	return nil
+}
 
+func DecodeSmapJson(jsonRaw []byte, readings []SmapReading, points map[string]int) ([]SmapReading, map[string]int, error) {
+	var obj map[string]json.RawMessage
+	if err := json.Unmarshal(jsonRaw, &obj); err != nil {
+		return readings, points, err
+	}
+	for key, value := range obj {
+		var smapReading SmapReading
+
+		fmt.Printf("key %v\n", key)
+		//fmt.Println("value %v\n", value)
+		if err := json.Unmarshal(value, &smapReading); err != nil {
+			return readings, points, err
+		}
+		if val, ok := points[key]; ok {
+			fmt.Println("just new value")
+			readings[val].Readings = append(readings[val].Readings, smapReading.Readings[0])
+		} else {
+			fmt.Println("new point")
+			if smapReading.UUID != "" {
+				smapReading.Resource = key
+				fmt.Printf("smapReading %v\n", smapReading)
+				readings = append(readings, smapReading)
+				points[key] = len(readings) - 1
+			}
+		}
+	}
+	return readings, points, nil
+}
+
+// reduce points that need to be queried, based on prior readings
+func reducePoints(a *appContext, d Device, readings []SmapReading) {
+	fmt.Println("NOT IMPLEMENTED")
+}
+
+func findMatch(readings []SmapReading, points map[string]int, d Device) ([]SmapReading, error) {
+	var matches []SmapReading
+	p := make([]int, len(readings))
+	seq := make([]float64, len(d.Sequence))
+	for i, k := range d.Sequence {
+		seq[i] = k.Setpoint
+	}
+	for k, v := range readings {
+		for _, va := range v.Readings {
+			//time := v.Readings[0][0]
+			set := va[1]
+			fmt.Printf("setpoint %v\n", set)
+			if !(p[k] >= len(seq)) {
+				if set == seq[p[k]] {
+					fmt.Println("found one stepoint matching")
+					p[k] += 1
+					if p[k] == len(seq) {
+						fmt.Println("MATCH")
+						fmt.Println(readings[k])
+
+						matches = append(matches, readings[k])
+					}
+
+				} else {
+					if p[k] != 0 {
+						if set != seq[p[k]-1] {
+							fmt.Println("pattern does not match, resetting counter...")
+							p[k] = 0
+						} else {
+							fmt.Println("same value read, good for now")
+						}
+					}
+				}
+			}
+		}
+	}
+	return matches, nil
 }

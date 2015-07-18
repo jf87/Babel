@@ -45,7 +45,8 @@ Flags:`)
 	//var devices Devices
 	devices := getLibrary(*lib)
 	points := getPoints(*db)
-  
+	//testSmap("data/smap.json")
+
 	context := &appContext{bms: *bms, library: devices, points: points}
 	router := NewRouter(context)
 	fmt.Println("Babel-Server has started...")
@@ -78,4 +79,23 @@ func getPoints(filename string) *Points {
 		os.Exit(1)
 	}
 	return &p
+}
+
+func testSmap(filename string) {
+	file, err := ioutil.ReadFile(filename)
+	if err != nil {
+		fmt.Printf("File error: %v\n", err)
+		os.Exit(1)
+	}
+	var readings []SmapReading
+	var points map[string]int
+	points = make(map[string]int)
+
+	//var matches map[string]int
+
+	readings, points, err = DecodeSmapJson(file, readings, points)
+	if err != nil {
+		fmt.Printf("err %v\n", err)
+	}
+	fmt.Println(readings)
 }
