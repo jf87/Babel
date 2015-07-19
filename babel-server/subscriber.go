@@ -24,6 +24,7 @@ func checkForSequence(a *appContext, d Device) error {
 	//provide initial point list turn back on for point reduction
 	sync <- 1
 	active = true
+	fmt.Print("now active")
 
 	//keep track of time dependent on provided sequence
 	t_total := 0
