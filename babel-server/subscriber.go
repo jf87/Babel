@@ -25,7 +25,7 @@ func checkForSequence(a *appContext, d Device) error {
 	sync <- 1
 	active = true
 	fmt.Print("now active")
-
+	time.Sleep(2000 * time.Millisecond)
 	//keep track of time dependent on provided sequence
 	t_total := 0
 	seq := make([]float64, len(d.Sequence))
@@ -40,7 +40,7 @@ func checkForSequence(a *appContext, d Device) error {
 	var readings []SmapReading
 	var points map[string]int
 	points = make(map[string]int)
-
+    fmt.Println("before for loop")
 	for time.Since(t0) < tt { //for now just loop until time is over
 		resp, err := http.Get(a.bms)
 		if err != nil {
@@ -48,7 +48,7 @@ func checkForSequence(a *appContext, d Device) error {
 		}
 		defer resp.Body.Close()
 		body, err := ioutil.ReadAll(resp.Body)
-
+        fmt.Println("now got BMS values")
 		//var matches map[string]int
 
 		readings, points, err = DecodeSmapJson(body, readings, points)
@@ -58,7 +58,7 @@ func checkForSequence(a *appContext, d Device) error {
 		fmt.Println(readings)
 		reducePoints(a, d, readings)
 		//sync <- 1
-		time.Sleep(200 * time.Millisecond)
+		time.Sleep(500 * time.Millisecond)
 	}
 	active = false
 
