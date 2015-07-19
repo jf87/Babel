@@ -6,9 +6,18 @@ type SmapBacnet struct {
 	Value json.RawMessage
 }
 
+type BabelReadings map[string]BabelReading
+
+type BabelReading struct {
+	PointName string      `json:",omitempty"`
+	Readings  [][]float64 `json:readings`
+	UUID      string      `json:"uuid"`
+}
+
 type SmapReading struct {
 	Resource string      `json:resource`
 	Readings [][]float64 `json:readings`
+	Metadata Metadatum   `json:",omitempty"`
 	UUID     string      `json:"uuid"`
 }
 
@@ -29,6 +38,7 @@ type Property struct {
 
 type Metadatum struct {
 	SourceName string      `json:",omitempty"`
+	PointName  string      `json:",omitempty"`
 	Instrument Instrument  `json:",omitempty"`
 	Location   Location    `json:",omitempty"`
 	Extra      interface{} `json:",omitempty"` //NOTE using interface because extra has no pre-known structure

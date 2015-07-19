@@ -1,0 +1,4218 @@
+[
+    {
+        "desc": "UNKNOWN",
+        "name": "WS86000",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "UNKNOWN",
+                "name": "WS86000",
+                "props": {
+                    "instance": 86000,
+                    "type": 8,
+                    "type_str": "Device"
+                },
+                "unit": null
+            }
+        ],
+        "props": {
+            "adr": [],
+            "device_id": 86000,
+            "mac": [
+                128,
+                32,
+                247,
+                215,
+                186,
+                192
+            ],
+            "max_apdu": 1500,
+            "net": 0
+        }
+    },
+    {
+        "desc": "RP1",
+        "name": "WS86001",
+        "objs": [
+            {
+                "data_type": 9,
+                "desc": "CORE AREAS",
+                "name": "RELAY01",
+                "props": {
+                    "instance": 1,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SITE LTG",
+                "name": "RELAY02",
+                "props": {
+                    "instance": 2,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY03",
+                "props": {
+                    "instance": 3,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY04",
+                "props": {
+                    "instance": 4,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY05",
+                "props": {
+                    "instance": 5,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY06",
+                "props": {
+                    "instance": 6,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY07",
+                "props": {
+                    "instance": 7,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY08",
+                "props": {
+                    "instance": 8,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY09",
+                "props": {
+                    "instance": 9,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY10",
+                "props": {
+                    "instance": 10,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY11",
+                "props": {
+                    "instance": 11,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY12",
+                "props": {
+                    "instance": 12,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY13",
+                "props": {
+                    "instance": 13,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY14",
+                "props": {
+                    "instance": 14,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY15",
+                "props": {
+                    "instance": 15,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY16",
+                "props": {
+                    "instance": 16,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY17",
+                "props": {
+                    "instance": 17,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY18",
+                "props": {
+                    "instance": 18,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY19",
+                "props": {
+                    "instance": 19,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY20",
+                "props": {
+                    "instance": 20,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY21",
+                "props": {
+                    "instance": 21,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY22",
+                "props": {
+                    "instance": 22,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY23",
+                "props": {
+                    "instance": 23,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY24",
+                "props": {
+                    "instance": 24,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 4,
+                "desc": "RP1",
+                "name": "WS86001",
+                "props": {
+                    "instance": 86001,
+                    "type": 8,
+                    "type_str": "Device"
+                },
+                "unit": null
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                33,
+                153
+            ],
+            "device_id": 86001,
+            "mac": [
+                128,
+                32,
+                247,
+                215,
+                186,
+                192
+            ],
+            "max_apdu": 1500,
+            "net": 86
+        }
+    },
+    {
+        "desc": "RP2 ",
+        "name": "WS86002",
+        "objs": [
+            {
+                "data_type": 9,
+                "desc": "CORE AREAS",
+                "name": "RELAY01",
+                "props": {
+                    "instance": 1,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "HALLWAY, VESTIBULES",
+                "name": "RELAY02",
+                "props": {
+                    "instance": 2,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "Computer Lab 200",
+                "name": "RELAY03",
+                "props": {
+                    "instance": 3,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "RECEIVING, STORAGE",
+                "name": "RELAY04",
+                "props": {
+                    "instance": 4,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "CLASSROOM 250, BREAK OUT 238, A/V EQUIP 242",
+                "name": "RELAY05",
+                "props": {
+                    "instance": 5,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "CLASSROOM 250, A/V EQUIP 252",
+                "name": "RELAY06",
+                "props": {
+                    "instance": 6,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "CLASSROOM 254, A/V 256",
+                "name": "RELAY07",
+                "props": {
+                    "instance": 7,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "CHILLERS 261",
+                "name": "RELAY08",
+                "props": {
+                    "instance": 8,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SUB-FAB MECHANICAL SPACE 280",
+                "name": "RELAY09",
+                "props": {
+                    "instance": 9,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "ELEVATOR LOBBY 270",
+                "name": "RELAY10",
+                "props": {
+                    "instance": 10,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY11",
+                "props": {
+                    "instance": 11,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "210-C DINING AREA (Daylighting)",
+                "name": "RELAY12",
+                "props": {
+                    "instance": 12,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "210-C DINING AREA",
+                "name": "RELAY13",
+                "props": {
+                    "instance": 13,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "210-B DINING AREA",
+                "name": "RELAY14",
+                "props": {
+                    "instance": 14,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "210-B DINING AREA",
+                "name": "RELAY15",
+                "props": {
+                    "instance": 15,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "210-A DINING AREA",
+                "name": "RELAY16",
+                "props": {
+                    "instance": 16,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "214 FOOD SERVICE AREA",
+                "name": "RELAY17",
+                "props": {
+                    "instance": 17,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "214 FOOD SERVICE AREA",
+                "name": "RELAY18",
+                "props": {
+                    "instance": 18,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "210 TRACK LIGHTS",
+                "name": "RELAY19",
+                "props": {
+                    "instance": 19,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "210 TRACK LIGHTS",
+                "name": "RELAY20",
+                "props": {
+                    "instance": 20,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "210-C TRACK LIGHTS",
+                "name": "RELAY21",
+                "props": {
+                    "instance": 21,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "210 TRACK LIGHTS",
+                "name": "RELAY22",
+                "props": {
+                    "instance": 22,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "210 TRACK LIGHTS",
+                "name": "RELAY23",
+                "props": {
+                    "instance": 23,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "210-A TRACK LIGHTS",
+                "name": "RELAY24",
+                "props": {
+                    "instance": 24,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 4,
+                "desc": "RP2 ",
+                "name": "WS86002",
+                "props": {
+                    "instance": 86002,
+                    "type": 8,
+                    "type_str": "Device"
+                },
+                "unit": null
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                33,
+                154
+            ],
+            "device_id": 86002,
+            "mac": [
+                128,
+                32,
+                247,
+                215,
+                186,
+                192
+            ],
+            "max_apdu": 1500,
+            "net": 86
+        }
+    },
+    {
+        "desc": "ERP1",
+        "name": "WS86003",
+        "objs": [
+            {
+                "data_type": 9,
+                "desc": "SITE LIGHTING",
+                "name": "RELAY01",
+                "props": {
+                    "instance": 1,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SITE LIGHTING",
+                "name": "RELAY02",
+                "props": {
+                    "instance": 2,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SITE LIGHTING",
+                "name": "RELAY03",
+                "props": {
+                    "instance": 3,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "EXTERIOR LTS LVL 3",
+                "name": "RELAY04",
+                "props": {
+                    "instance": 4,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "EXTERIOR LTS LVL 3",
+                "name": "RELAY05",
+                "props": {
+                    "instance": 5,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "EXTERIOR LTS LVL 2",
+                "name": "RELAY06",
+                "props": {
+                    "instance": 6,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "BRIDGE LIGHTS",
+                "name": "RELAY07",
+                "props": {
+                    "instance": 7,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY08",
+                "props": {
+                    "instance": 8,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY09",
+                "props": {
+                    "instance": 9,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY10",
+                "props": {
+                    "instance": 10,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY11",
+                "props": {
+                    "instance": 11,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY12",
+                "props": {
+                    "instance": 12,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY13",
+                "props": {
+                    "instance": 13,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY14",
+                "props": {
+                    "instance": 14,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY15",
+                "props": {
+                    "instance": 15,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY16",
+                "props": {
+                    "instance": 16,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY17",
+                "props": {
+                    "instance": 17,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY18",
+                "props": {
+                    "instance": 18,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY19",
+                "props": {
+                    "instance": 19,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY20",
+                "props": {
+                    "instance": 20,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY21",
+                "props": {
+                    "instance": 21,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY22",
+                "props": {
+                    "instance": 22,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY23",
+                "props": {
+                    "instance": 23,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY24",
+                "props": {
+                    "instance": 24,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 4,
+                "desc": "ERP1",
+                "name": "WS86003",
+                "props": {
+                    "instance": 86003,
+                    "type": 8,
+                    "type_str": "Device"
+                },
+                "unit": null
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                33,
+                155
+            ],
+            "device_id": 86003,
+            "mac": [
+                128,
+                32,
+                247,
+                215,
+                186,
+                192
+            ],
+            "max_apdu": 1500,
+            "net": 86
+        }
+    },
+    {
+        "desc": "ERP4",
+        "name": "WS86004",
+        "objs": [
+            {
+                "data_type": 9,
+                "desc": "EXTERIOR LIGHTS LEVEL 3",
+                "name": "RELAY01",
+                "props": {
+                    "instance": 1,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "EXTERIOR LIGHTS LEVEL 3",
+                "name": "RELAY02",
+                "props": {
+                    "instance": 2,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "TERRACE LEVEL 6",
+                "name": "RELAY03",
+                "props": {
+                    "instance": 3,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY04",
+                "props": {
+                    "instance": 4,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY05",
+                "props": {
+                    "instance": 5,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY06",
+                "props": {
+                    "instance": 6,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY07",
+                "props": {
+                    "instance": 7,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY08",
+                "props": {
+                    "instance": 8,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY09",
+                "props": {
+                    "instance": 9,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY10",
+                "props": {
+                    "instance": 10,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY11",
+                "props": {
+                    "instance": 11,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY12",
+                "props": {
+                    "instance": 12,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY13",
+                "props": {
+                    "instance": 13,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY14",
+                "props": {
+                    "instance": 14,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY15",
+                "props": {
+                    "instance": 15,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY16",
+                "props": {
+                    "instance": 16,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY17",
+                "props": {
+                    "instance": 17,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY18",
+                "props": {
+                    "instance": 18,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY19",
+                "props": {
+                    "instance": 19,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY20",
+                "props": {
+                    "instance": 20,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY21",
+                "props": {
+                    "instance": 21,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY22",
+                "props": {
+                    "instance": 22,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY23",
+                "props": {
+                    "instance": 23,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY24",
+                "props": {
+                    "instance": 24,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 4,
+                "desc": "ERP4",
+                "name": "WS86004",
+                "props": {
+                    "instance": 86004,
+                    "type": 8,
+                    "type_str": "Device"
+                },
+                "unit": null
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                33,
+                156
+            ],
+            "device_id": 86004,
+            "mac": [
+                128,
+                32,
+                247,
+                215,
+                186,
+                192
+            ],
+            "max_apdu": 1500,
+            "net": 86
+        }
+    },
+    {
+        "desc": "RP3",
+        "name": "WS86005",
+        "objs": [
+            {
+                "data_type": 9,
+                "desc": "CORE AREAS AND HALLWAY 360",
+                "name": "RELAY01",
+                "props": {
+                    "instance": 1,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "PREFUNCTION LOBBY, ELEVATOR LOBBY",
+                "name": "RELAY02",
+                "props": {
+                    "instance": 2,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SOUTH-WEST OFFICES",
+                "name": "RELAY03",
+                "props": {
+                    "instance": 3,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SOUTH-WEST OFFICES",
+                "name": "RELAY04",
+                "props": {
+                    "instance": 4,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SOUTH-EAST OFFICES",
+                "name": "RELAY05",
+                "props": {
+                    "instance": 5,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "LOBBIES (FIXTURES TYPE F13 AND TYPE F14)",
+                "name": "RELAY06",
+                "props": {
+                    "instance": 6,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "LOBBIES (FIXTURES TYPE F6 AND F24)",
+                "name": "RELAY07",
+                "props": {
+                    "instance": 7,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "LOBBIES (FIXTURES TYPE F30)",
+                "name": "RELAY08",
+                "props": {
+                    "instance": 8,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY09",
+                "props": {
+                    "instance": 9,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY10",
+                "props": {
+                    "instance": 10,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY11",
+                "props": {
+                    "instance": 11,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY12",
+                "props": {
+                    "instance": 12,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY13",
+                "props": {
+                    "instance": 13,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY14",
+                "props": {
+                    "instance": 14,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY15",
+                "props": {
+                    "instance": 15,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY16",
+                "props": {
+                    "instance": 16,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY17",
+                "props": {
+                    "instance": 17,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY18",
+                "props": {
+                    "instance": 18,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY19",
+                "props": {
+                    "instance": 19,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY20",
+                "props": {
+                    "instance": 20,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY21",
+                "props": {
+                    "instance": 21,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY22",
+                "props": {
+                    "instance": 22,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY23",
+                "props": {
+                    "instance": 23,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY24",
+                "props": {
+                    "instance": 24,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 4,
+                "desc": "RP3",
+                "name": "WS86005",
+                "props": {
+                    "instance": 86005,
+                    "type": 8,
+                    "type_str": "Device"
+                },
+                "unit": null
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                33,
+                157
+            ],
+            "device_id": 86005,
+            "mac": [
+                128,
+                32,
+                247,
+                215,
+                186,
+                192
+            ],
+            "max_apdu": 1500,
+            "net": 86
+        }
+    },
+    {
+        "desc": "LCPM4- Nano 3M",
+        "name": "WS86006",
+        "objs": [
+            {
+                "data_type": 9,
+                "desc": "METROLOGY RM 3M80",
+                "name": "RELAY01",
+                "props": {
+                    "instance": 1,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "METROLOGY RM 3M80",
+                "name": "RELAY02",
+                "props": {
+                    "instance": 2,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY03",
+                "props": {
+                    "instance": 3,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "CLEAN ROOM MAIN AISLE",
+                "name": "RELAY04",
+                "props": {
+                    "instance": 4,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "CLEAN ROOM MAIN AISLE",
+                "name": "RELAY05",
+                "props": {
+                    "instance": 5,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY06",
+                "props": {
+                    "instance": 6,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "MASK MAKING RM 3M87",
+                "name": "RELAY07",
+                "props": {
+                    "instance": 7,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "MASK MAKING RM 3M87",
+                "name": "RELAY08",
+                "props": {
+                    "instance": 8,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY09",
+                "props": {
+                    "instance": 9,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "PHOTO RM 3M82",
+                "name": "RELAY10",
+                "props": {
+                    "instance": 10,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "PHOTO RM 3M82",
+                "name": "RELAY11",
+                "props": {
+                    "instance": 11,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY12",
+                "props": {
+                    "instance": 12,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "PHOTO RM 3M84",
+                "name": "RELAY13",
+                "props": {
+                    "instance": 13,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "PHOTO RM 3M84",
+                "name": "RELAY14",
+                "props": {
+                    "instance": 14,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY15",
+                "props": {
+                    "instance": 15,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "HOT PROCESS RM 3M86",
+                "name": "RELAY16",
+                "props": {
+                    "instance": 16,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "HOT PROCESS RM 3M86",
+                "name": "RELAY17",
+                "props": {
+                    "instance": 17,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY18",
+                "props": {
+                    "instance": 18,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "CHASE 3M81",
+                "name": "RELAY19",
+                "props": {
+                    "instance": 19,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "CHASE 3M8S",
+                "name": "RELAY20",
+                "props": {
+                    "instance": 20,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SERVICE 3M91, 3M93, 3M95, 3M97",
+                "name": "RELAY21",
+                "props": {
+                    "instance": 21,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SERVICE AISLE RMS 3M91, 3M93, 3M95, 3M97",
+                "name": "RELAY22",
+                "props": {
+                    "instance": 22,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY23",
+                "props": {
+                    "instance": 23,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "LVL 4M PLATFORM AREA",
+                "name": "RELAY24",
+                "props": {
+                    "instance": 24,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "LVL 4M PLATFORM AREA",
+                "name": "RELAY25",
+                "props": {
+                    "instance": 25,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "LVL 4M PLATFORM AREA",
+                "name": "RELAY26",
+                "props": {
+                    "instance": 26,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY27",
+                "props": {
+                    "instance": 27,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY28",
+                "props": {
+                    "instance": 28,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY29",
+                "props": {
+                    "instance": 29,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY30",
+                "props": {
+                    "instance": 30,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY31",
+                "props": {
+                    "instance": 31,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY32",
+                "props": {
+                    "instance": 32,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY33",
+                "props": {
+                    "instance": 33,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY34",
+                "props": {
+                    "instance": 34,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY35",
+                "props": {
+                    "instance": 35,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY36",
+                "props": {
+                    "instance": 36,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY37",
+                "props": {
+                    "instance": 37,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY38",
+                "props": {
+                    "instance": 38,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY39",
+                "props": {
+                    "instance": 39,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY40",
+                "props": {
+                    "instance": 40,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY41",
+                "props": {
+                    "instance": 41,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY42",
+                "props": {
+                    "instance": 42,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY43",
+                "props": {
+                    "instance": 43,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY44",
+                "props": {
+                    "instance": 44,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY45",
+                "props": {
+                    "instance": 45,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY46",
+                "props": {
+                    "instance": 46,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY47",
+                "props": {
+                    "instance": 47,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY48",
+                "props": {
+                    "instance": 48,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 4,
+                "desc": "LCPM4- Nano 3M",
+                "name": "WS86006",
+                "props": {
+                    "instance": 86006,
+                    "type": 8,
+                    "type_str": "Device"
+                },
+                "unit": null
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                33,
+                158
+            ],
+            "device_id": 86006,
+            "mac": [
+                128,
+                32,
+                247,
+                215,
+                186,
+                192
+            ],
+            "max_apdu": 1500,
+            "net": 86
+        }
+    },
+    {
+        "desc": "RP4",
+        "name": "WS86007",
+        "objs": [
+            {
+                "data_type": 9,
+                "desc": "CORRIDOR (FIXTURES TYPE F8)",
+                "name": "RELAY01",
+                "props": {
+                    "instance": 1,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "CORE AREAS",
+                "name": "RELAY02",
+                "props": {
+                    "instance": 2,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICES 460",
+                "name": "RELAY03",
+                "props": {
+                    "instance": 3,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICES 460",
+                "name": "RELAY04",
+                "props": {
+                    "instance": 4,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICES 466, 468",
+                "name": "RELAY05",
+                "props": {
+                    "instance": 5,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICES 466, 468",
+                "name": "RELAY06",
+                "props": {
+                    "instance": 6,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICES 450",
+                "name": "RELAY07",
+                "props": {
+                    "instance": 7,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICES 450",
+                "name": "RELAY08",
+                "props": {
+                    "instance": 8,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICES 440",
+                "name": "RELAY09",
+                "props": {
+                    "instance": 9,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICES 440",
+                "name": "RELAY10",
+                "props": {
+                    "instance": 10,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICES 432, 434",
+                "name": "RELAY11",
+                "props": {
+                    "instance": 11,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICES 432, 434",
+                "name": "RELAY12",
+                "props": {
+                    "instance": 12,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "PANTRY 432 - TASK LIGHT",
+                "name": "RELAY13",
+                "props": {
+                    "instance": 13,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY14",
+                "props": {
+                    "instance": 14,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY15",
+                "props": {
+                    "instance": 15,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY16",
+                "props": {
+                    "instance": 16,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY17",
+                "props": {
+                    "instance": 17,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY18",
+                "props": {
+                    "instance": 18,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY19",
+                "props": {
+                    "instance": 19,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY20",
+                "props": {
+                    "instance": 20,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY21",
+                "props": {
+                    "instance": 21,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY22",
+                "props": {
+                    "instance": 22,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY23",
+                "props": {
+                    "instance": 23,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY24",
+                "props": {
+                    "instance": 24,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 4,
+                "desc": "RP4",
+                "name": "WS86007",
+                "props": {
+                    "instance": 86007,
+                    "type": 8,
+                    "type_str": "Device"
+                },
+                "unit": null
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                33,
+                159
+            ],
+            "device_id": 86007,
+            "mac": [
+                128,
+                32,
+                247,
+                215,
+                186,
+                192
+            ],
+            "max_apdu": 1500,
+            "net": 86
+        }
+    },
+    {
+        "desc": "RP5",
+        "name": "WS86008",
+        "objs": [
+            {
+                "data_type": 9,
+                "desc": "CORE AREAS",
+                "name": "RELAY01",
+                "props": {
+                    "instance": 1,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICES 566,568",
+                "name": "RELAY02",
+                "props": {
+                    "instance": 2,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICES 566,568",
+                "name": "RELAY03",
+                "props": {
+                    "instance": 3,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICE 550",
+                "name": "RELAY04",
+                "props": {
+                    "instance": 4,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICE 550",
+                "name": "RELAY05",
+                "props": {
+                    "instance": 5,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "MICROFAB OFFICE 520",
+                "name": "RELAY06",
+                "props": {
+                    "instance": 6,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "MICROFAB OFFICE 520",
+                "name": "RELAY07",
+                "props": {
+                    "instance": 7,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICE 548",
+                "name": "RELAY08",
+                "props": {
+                    "instance": 8,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICE 548",
+                "name": "RELAY09",
+                "props": {
+                    "instance": 9,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICE 532",
+                "name": "RELAY10",
+                "props": {
+                    "instance": 10,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICE 532",
+                "name": "RELAY11",
+                "props": {
+                    "instance": 11,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICE 532",
+                "name": "RELAY12",
+                "props": {
+                    "instance": 12,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICE 532",
+                "name": "RELAY13",
+                "props": {
+                    "instance": 13,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "PANTRY 536 - TASK LIGHT",
+                "name": "RELAY14",
+                "props": {
+                    "instance": 14,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY15",
+                "props": {
+                    "instance": 15,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY16",
+                "props": {
+                    "instance": 16,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY17",
+                "props": {
+                    "instance": 17,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY18",
+                "props": {
+                    "instance": 18,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY19",
+                "props": {
+                    "instance": 19,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY20",
+                "props": {
+                    "instance": 20,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY21",
+                "props": {
+                    "instance": 21,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY22",
+                "props": {
+                    "instance": 22,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY23",
+                "props": {
+                    "instance": 23,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY24",
+                "props": {
+                    "instance": 24,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 4,
+                "desc": "RP5",
+                "name": "WS86008",
+                "props": {
+                    "instance": 86008,
+                    "type": 8,
+                    "type_str": "Device"
+                },
+                "unit": null
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                33,
+                160
+            ],
+            "device_id": 86008,
+            "mac": [
+                128,
+                32,
+                247,
+                215,
+                186,
+                192
+            ],
+            "max_apdu": 1500,
+            "net": 86
+        }
+    },
+    {
+        "desc": "LCPM6- Nanolab 5M",
+        "name": "WS86009",
+        "objs": [
+            {
+                "data_type": 9,
+                "desc": "CHASE 581",
+                "name": "RELAY01",
+                "props": {
+                    "instance": 1,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "CHASE 583",
+                "name": "RELAY02",
+                "props": {
+                    "instance": 2,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "CHASE 585",
+                "name": "RELAY03",
+                "props": {
+                    "instance": 3,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "MAIN SERVICE AISLE  593, 597",
+                "name": "RELAY04",
+                "props": {
+                    "instance": 4,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "MAIN SERVICE AISLE  593, 597",
+                "name": "RELAY05",
+                "props": {
+                    "instance": 5,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY06",
+                "props": {
+                    "instance": 6,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "GOWNING 580",
+                "name": "RELAY07",
+                "props": {
+                    "instance": 7,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "GOWNING 580",
+                "name": "RELAY08",
+                "props": {
+                    "instance": 8,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY09",
+                "props": {
+                    "instance": 9,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "PAINT CLEAN/POLISHING 587",
+                "name": "RELAY10",
+                "props": {
+                    "instance": 10,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "PAINT CLEAN/POLISHING 587",
+                "name": "RELAY11",
+                "props": {
+                    "instance": 11,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY12",
+                "props": {
+                    "instance": 12,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "THIN FILMS/ETCH SPECIAL 582",
+                "name": "RELAY13",
+                "props": {
+                    "instance": 13,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "THIN FILMS/ETCH SPECIAL 582",
+                "name": "RELAY14",
+                "props": {
+                    "instance": 14,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY15",
+                "props": {
+                    "instance": 15,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "RE/DRY ETCH 584",
+                "name": "RELAY16",
+                "props": {
+                    "instance": 16,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "RE/DRY ETCH 584",
+                "name": "RELAY17",
+                "props": {
+                    "instance": 17,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY18",
+                "props": {
+                    "instance": 18,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "THIN FILMS 586",
+                "name": "RELAY19",
+                "props": {
+                    "instance": 19,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "THIN FILMS 586",
+                "name": "RELAY20",
+                "props": {
+                    "instance": 20,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY21",
+                "props": {
+                    "instance": 21,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "LVL 6 PLATFORM AREA",
+                "name": "RELAY22",
+                "props": {
+                    "instance": 22,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "LVL 6 PLATFORM AREA",
+                "name": "RELAY23",
+                "props": {
+                    "instance": 23,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY24",
+                "props": {
+                    "instance": 24,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "MAIN SERVICE AISLE WEST",
+                "name": "RELAY25",
+                "props": {
+                    "instance": 25,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "MAIN SERVICE AISLE WEST",
+                "name": "RELAY26",
+                "props": {
+                    "instance": 26,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY27",
+                "props": {
+                    "instance": 27,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY28",
+                "props": {
+                    "instance": 28,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY29",
+                "props": {
+                    "instance": 29,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY30",
+                "props": {
+                    "instance": 30,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY31",
+                "props": {
+                    "instance": 31,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY32",
+                "props": {
+                    "instance": 32,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY33",
+                "props": {
+                    "instance": 33,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY34",
+                "props": {
+                    "instance": 34,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY35",
+                "props": {
+                    "instance": 35,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY36",
+                "props": {
+                    "instance": 36,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY37",
+                "props": {
+                    "instance": 37,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY38",
+                "props": {
+                    "instance": 38,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY39",
+                "props": {
+                    "instance": 39,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY40",
+                "props": {
+                    "instance": 40,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY41",
+                "props": {
+                    "instance": 41,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY42",
+                "props": {
+                    "instance": 42,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY43",
+                "props": {
+                    "instance": 43,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY44",
+                "props": {
+                    "instance": 44,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY45",
+                "props": {
+                    "instance": 45,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY46",
+                "props": {
+                    "instance": 46,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY47",
+                "props": {
+                    "instance": 47,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "",
+                "name": "RELAY48",
+                "props": {
+                    "instance": 48,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 4,
+                "desc": "LCPM6- Nanolab 5M",
+                "name": "WS86009",
+                "props": {
+                    "instance": 86009,
+                    "type": 8,
+                    "type_str": "Device"
+                },
+                "unit": null
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                33,
+                161
+            ],
+            "device_id": 86009,
+            "mac": [
+                128,
+                32,
+                247,
+                215,
+                186,
+                192
+            ],
+            "max_apdu": 1500,
+            "net": 86
+        }
+    },
+    {
+        "desc": "RP6",
+        "name": "WS86010",
+        "objs": [
+            {
+                "data_type": 9,
+                "desc": "CORE AREAS",
+                "name": "RELAY01",
+                "props": {
+                    "instance": 1,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN RESEARCH",
+                "name": "RELAY02",
+                "props": {
+                    "instance": 2,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN RESEARC",
+                "name": "RELAY03",
+                "props": {
+                    "instance": 3,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "BALCONY",
+                "name": "RELAY04",
+                "props": {
+                    "instance": 4,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "TASK LIGHTS",
+                "name": "RELAY05",
+                "props": {
+                    "instance": 5,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY06",
+                "props": {
+                    "instance": 6,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY07",
+                "props": {
+                    "instance": 7,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY08",
+                "props": {
+                    "instance": 8,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY09",
+                "props": {
+                    "instance": 9,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY10",
+                "props": {
+                    "instance": 10,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY11",
+                "props": {
+                    "instance": 11,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY12",
+                "props": {
+                    "instance": 12,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY13",
+                "props": {
+                    "instance": 13,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY14",
+                "props": {
+                    "instance": 14,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY15",
+                "props": {
+                    "instance": 15,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY16",
+                "props": {
+                    "instance": 16,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY17",
+                "props": {
+                    "instance": 17,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY18",
+                "props": {
+                    "instance": 18,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY19",
+                "props": {
+                    "instance": 19,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY20",
+                "props": {
+                    "instance": 20,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY21",
+                "props": {
+                    "instance": 21,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY22",
+                "props": {
+                    "instance": 22,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY23",
+                "props": {
+                    "instance": 23,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY24",
+                "props": {
+                    "instance": 24,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 4,
+                "desc": "RP6",
+                "name": "WS86010",
+                "props": {
+                    "instance": 86010,
+                    "type": 8,
+                    "type_str": "Device"
+                },
+                "unit": null
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                33,
+                162
+            ],
+            "device_id": 86010,
+            "mac": [
+                128,
+                32,
+                247,
+                215,
+                186,
+                192
+            ],
+            "max_apdu": 1500,
+            "net": 86
+        }
+    },
+    {
+        "desc": "RP7",
+        "name": "WS86011",
+        "objs": [
+            {
+                "data_type": 9,
+                "desc": "CORRIDOR (FIXTURES TYPE F8)",
+                "name": "RELAY01",
+                "props": {
+                    "instance": 1,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "CORE AREAS",
+                "name": "RELAY02",
+                "props": {
+                    "instance": 2,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "BALCONY",
+                "name": "RELAY03",
+                "props": {
+                    "instance": 3,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICE 750",
+                "name": "RELAY04",
+                "props": {
+                    "instance": 4,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICE 750",
+                "name": "RELAY05",
+                "props": {
+                    "instance": 5,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICE 768",
+                "name": "RELAY06",
+                "props": {
+                    "instance": 6,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICE 768",
+                "name": "RELAY07",
+                "props": {
+                    "instance": 7,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICE 736",
+                "name": "RELAY08",
+                "props": {
+                    "instance": 8,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICE 736",
+                "name": "RELAY09",
+                "props": {
+                    "instance": 9,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICE 738",
+                "name": "RELAY10",
+                "props": {
+                    "instance": 10,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "OPEN OFFICE 738",
+                "name": "RELAY11",
+                "props": {
+                    "instance": 11,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "PANTRY 732 - TASK LIGHTS",
+                "name": "RELAY12",
+                "props": {
+                    "instance": 12,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY13",
+                "props": {
+                    "instance": 13,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY14",
+                "props": {
+                    "instance": 14,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY15",
+                "props": {
+                    "instance": 15,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY16",
+                "props": {
+                    "instance": 16,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY17",
+                "props": {
+                    "instance": 17,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY18",
+                "props": {
+                    "instance": 18,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY19",
+                "props": {
+                    "instance": 19,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY20",
+                "props": {
+                    "instance": 20,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY21",
+                "props": {
+                    "instance": 21,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY22",
+                "props": {
+                    "instance": 22,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY23",
+                "props": {
+                    "instance": 23,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "SPARE",
+                "name": "RELAY24",
+                "props": {
+                    "instance": 24,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 4,
+                "desc": "RP7",
+                "name": "WS86011",
+                "props": {
+                    "instance": 86011,
+                    "type": 8,
+                    "type_str": "Device"
+                },
+                "unit": null
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                33,
+                163
+            ],
+            "device_id": 86011,
+            "mac": [
+                128,
+                32,
+                247,
+                215,
+                186,
+                192
+            ],
+            "max_apdu": 1500,
+            "net": 86
+        }
+    },
+    {
+        "desc": "",
+        "name": "WS86999",
+        "objs": [
+            {
+                "data_type": 9,
+                "desc": "RP4:HPSA-WEST",
+                "name": "GROUP44",
+                "props": {
+                    "instance": 44,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "RP4:HPSA-EAST",
+                "name": "GROUP45",
+                "props": {
+                    "instance": 45,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "RP5:HPSA-EAST",
+                "name": "GROUP46",
+                "props": {
+                    "instance": 46,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "RP5:HPSA-WEST",
+                "name": "GROUP47",
+                "props": {
+                    "instance": 47,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "RP7:HPSA-WEST",
+                "name": "GROUP48",
+                "props": {
+                    "instance": 48,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "RP7:HPSA-EAST",
+                "name": "GROUP49",
+                "props": {
+                    "instance": 49,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "Cafe Daylighting Control",
+                "name": "GROUP101",
+                "props": {
+                    "instance": 101,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "EXTERIOR LIGHTING (PHOTO CELL)",
+                "name": "GROUP102",
+                "props": {
+                    "instance": 102,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "06-A",
+                "name": "GROUP600",
+                "props": {
+                    "instance": 600,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "06-B",
+                "name": "GROUP601",
+                "props": {
+                    "instance": 601,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "06-C",
+                "name": "GROUP602",
+                "props": {
+                    "instance": 602,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "06-D",
+                "name": "GROUP603",
+                "props": {
+                    "instance": 603,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "06-E",
+                "name": "GROUP604",
+                "props": {
+                    "instance": 604,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "06-F",
+                "name": "GROUP605",
+                "props": {
+                    "instance": 605,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "06-G",
+                "name": "GROUP606",
+                "props": {
+                    "instance": 606,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "06-H",
+                "name": "GROUP607",
+                "props": {
+                    "instance": 607,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "Master Exterior Override",
+                "name": "GROUP888",
+                "props": {
+                    "instance": 888,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "09-A",
+                "name": "GROUP900",
+                "props": {
+                    "instance": 900,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "09-B",
+                "name": "GROUP901",
+                "props": {
+                    "instance": 901,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "09-C",
+                "name": "GROUP902",
+                "props": {
+                    "instance": 902,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "09-D",
+                "name": "GROUP903",
+                "props": {
+                    "instance": 903,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "09-E",
+                "name": "GROUP904",
+                "props": {
+                    "instance": 904,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "09-F",
+                "name": "GROUP905",
+                "props": {
+                    "instance": 905,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "09-G",
+                "name": "GROUP906",
+                "props": {
+                    "instance": 906,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "09-H",
+                "name": "GROUP907",
+                "props": {
+                    "instance": 907,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "Load Shed",
+                "name": "GROUP8888",
+                "props": {
+                    "instance": 8888,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 9,
+                "desc": "ADR 460 Light Test",
+                "name": "GROUP12345",
+                "props": {
+                    "instance": 12345,
+                    "type": 4,
+                    "type_str": "Binary Output"
+                },
+                "unit": null
+            },
+            {
+                "data_type": 4,
+                "desc": "",
+                "name": "WS86999",
+                "props": {
+                    "instance": 86999,
+                    "type": 8,
+                    "type_str": "Device"
+                },
+                "unit": null
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                37,
+                127
+            ],
+            "device_id": 86999,
+            "mac": [
+                128,
+                32,
+                247,
+                215,
+                186,
+                192
+            ],
+            "max_apdu": 1500,
+            "net": 86
+        }
+    }
+]

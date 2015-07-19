@@ -13,9 +13,10 @@ import (
 )
 
 type appContext struct {
-	bms     string
-	library *Lib
-	points  *Points
+	bms            string
+	library        *Lib
+	points         *Points
+	points_reduced Points
 }
 
 type appHandler struct {
@@ -81,6 +82,7 @@ func getPoints(filename string) *Points {
 	return &p
 }
 
+/*
 func testSmap(filename string) {
 	file, err := ioutil.ReadFile(filename)
 	if err != nil {
@@ -99,3 +101,4 @@ func testSmap(filename string) {
 	}
 	fmt.Println(readings)
 }
+*/

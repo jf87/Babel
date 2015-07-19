@@ -30,3 +30,4 @@ type Prop2 struct {
 }
 
 type Points []Point
+type Objects []Object

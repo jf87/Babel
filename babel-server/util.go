@@ -1,12 +1,6 @@
 package main
 
 import (
-	"bytes"
-	"fmt"
-	"io/ioutil"
-	"math/rand"
-	"net/http"
-	"strconv"
 	"time"
 
 	"github.com/twinj/uuid"
@@ -26,6 +20,7 @@ func epochToTime(epoch float64) (time.Time, error) {
 	return time.Unix(0, epochi*int64(time.Millisecond)), nil
 }
 
+/*
 func fakeActuation(a *appContext, d Device) {
 	fmt.Println("fakeActuation")
 	r := rand.New(rand.NewSource(time.Now().UnixNano()))
@@ -56,4 +51,14 @@ func fakeActuation(a *appContext, d Device) {
 		time.Sleep(5000 * time.Millisecond)
 	}
 
+}
+*/
+
+func contains(s []int, e int) bool {
+	for _, a := range s {
+		if a == e {
+			return true
+		}
+	}
+	return false
 }

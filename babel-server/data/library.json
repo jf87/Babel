@@ -21,6 +21,7 @@
                     "time": 5
                 }
             ],
+            "bacnet_types": [4, 8],
             "uuid": "90b0292a-78d4-4f64-9efb-8c3838798236"
         },
         {
@@ -48,7 +49,8 @@
                     "time": 10
                 }
             ],
-            "temperature": "22"
+            "bacnet_types": [4, 8],
+            "value": 42
         },
         {
             "kind": "Window",
