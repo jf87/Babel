@@ -22,7 +22,7 @@ func monitorBMS(a *appContext, d Device) error {
 	fmt.Println("monitorBMS")
 	sync <- 1
 	active = true
-	fmt.Print("now active")
+	fmt.Println("now active")
 	time.Sleep(2000 * time.Millisecond)
 	tt := time.Duration(10) * time.Second
 	t0 := time.Now()
@@ -37,11 +37,13 @@ func monitorBMS(a *appContext, d Device) error {
 		body, err := ioutil.ReadAll(resp.Body)
 		br, err = decodeSmapReadings(body, br)
 	}
-	fmt.Printf("br \n %v\n", br)
+	active = false
+	fmt.Println("now !active")
+	//fmt.Printf("br \n %v\n", br)
 	matches, err := checkForValue(a, d, br)
-	fmt.Printf("Matches: \n %v \n", matches)
+	//fmt.Printf("Matches: \n %v \n", matches)
 	reducePoints(a, matches) //changes reduced points in a
-	if matches == nil {
+	if matches == nil || len(matches) == 0 {
 		su <- 3
 	} else if len(matches) > 1 {
 		su <- 2
@@ -72,6 +74,7 @@ func checkForValue(a *appContext, d Device, br BabelReadings) (BabelReadings, er
 
 // reduce points that need to be queried, based on prior readings
 func reducePoints(a *appContext, br BabelReadings) {
+	fmt.Println("reducePoints")
 	//create index
 	var prr Points
 	for _, v := range a.points_reduced {
@@ -102,7 +105,6 @@ func decodeSmapReadings(jsonRaw []byte, br BabelReadings) (BabelReadings, error)
 		if err := json.Unmarshal(v, &smapReading); err != nil {
 			return br, err
 		}
-		fmt.Println(smapReading.Metadata.PointName)
 		if smapReading.UUID != "" && smapReading.Metadata.PointName != "" {
 			if val, ok := br[smapReading.Metadata.PointName]; ok {
 				val.Readings = append(val.Readings, smapReading.Readings[0])
