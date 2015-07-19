@@ -7,10 +7,13 @@ type Lib struct {
 }
 
 type Device struct {
-	Kind        string `json:"kind"`
-	Location    string `json:"location"`
-	Temperature string `json:"temperature,omitempty"`
-	Sequence    []Seq  `json:"sequence"`
+	Kind     string `json:"kind"`
+	Location string `json:"location"`
+	Model    string `json:"model,omitempty"`
+	//Sequence     []Seq   `json:"sequence"`
+	Bacnet_types []int   `json:"bacnet_types,omitempty"`
+	Value        float64 `json:"value,omitempty"`
+	UUID         string  `json:"uuid,omitempty"`
 }
 
 type Seq struct {
@@ -21,6 +24,6 @@ type Seq struct {
 
 //type Devices []Device
 
-type Suc struct {
-	Success bool `json:"success"`
+type Result struct {
+	Result string `json:"result"`
 }

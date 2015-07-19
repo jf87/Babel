@@ -68,36 +68,72 @@ func LinkHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, er
 			return -1, err
 		}
 	}
-	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
-	w.WriteHeader(http.StatusCreated)
-	var suc Suc
-	suc.Success = true
-	if err := json.NewEncoder(w).Encode(suc); err != nil {
-		return -1, err
+	//reduce point list based on type of device that should be linked
+	if len(device.Bacnet_types) > 0 && a.points_reduced == nil {
+		fmt.Println("reducing points by type")
+		var pr Points
+		for _, v := range *a.points {
+			var o Objects
+			fmt.Println(v)
+			for _, va := range v.Objs {
+				if contains(device.Bacnet_types, va.Props.Type) {
+					o = append(o, va)
+					fmt.Println(o)
+				}
+			}
+			if len(o) > 0 {
+				v.Objs = o
+				pr = append(pr, v)
+				fmt.Println(pr)
+			}
+		}
+		a.points_reduced = pr
+	} else {
+		a.points_reduced = *a.points
 	}
+	if len(a.points_reduced) > 0 {
+		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+		w.WriteHeader(http.StatusCreated)
+		var res Result
+		res.Result = "created"
+		if err := json.NewEncoder(w).Encode(res); err != nil {
+			return -1, err
+		}
+		fmt.Println(device)
+		fmt.Println(device.Value)
+		// now monitor bms points
+		go monitorBMS(a, device)
 
-	// now monitor bms points
-	go checkForSequence(a, device)
-	//go fakeActuation(a, device)
-	fmt.Println(device)
+		//go fakeActuation(a, device)
+	} else {
+		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+		w.WriteHeader(http.StatusNotFound)
+		var res Result
+		res.Result = "error"
+		if err := json.NewEncoder(w).Encode(res); err != nil {
+			return -1, err
+		}
+	}
 	return 200, nil
 }
 
 // tells the client if matching was a success, long polling
 func SuccessHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, error) {
-	var suc Suc
+	var res Result
 	fmt.Println("SuccessHandler")
 
 	i := <-su
 
 	if i == 1 {
-		suc.Success = true
+		res.Result = "one"
 
-	} else {
-		suc.Success = false
+	} else if i == 2 {
+		res.Result = "multiple"
+	} else if i == 3 {
+		res.Result = "none"
 	}
 
-	if err := json.NewEncoder(w).Encode(suc); err != nil {
+	if err := json.NewEncoder(w).Encode(res); err != nil {
 		return -1, err
 	}
 
@@ -112,7 +148,7 @@ func PointsHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, 
 
 		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 		w.WriteHeader(http.StatusOK)
-		if err := json.NewEncoder(w).Encode(a.points); err != nil {
+		if err := json.NewEncoder(w).Encode(a.points_reduced); err != nil {
 			fmt.Println(err)
 			return -1, err
 		}
@@ -122,7 +158,7 @@ func PointsHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, 
 		if i == 1 {
 			w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 			w.WriteHeader(http.StatusOK)
-			if err := json.NewEncoder(w).Encode(a.points); err != nil {
+			if err := json.NewEncoder(w).Encode(a.points_reduced); err != nil {
 				fmt.Println(err)
 				return -1, err
 			}

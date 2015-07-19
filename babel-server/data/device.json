@@ -22,5 +22,6 @@
             "setpoint": 0,
             "time": 5
         }
-    ]
+    ],
+    "bacnet_types": [4, 8]
 }

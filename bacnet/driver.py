@@ -72,6 +72,9 @@ class BACnetDriver(SmapDriver):
                 if unit in self.unit_map:
                     unit = self.unit_map.get(unit)
             self.add_timeseries(path, unit, data_type='double')
+            self.set_metadata(path, {
+                'Metadata/PointName' : str(obj['name'])
+            })
 
             # Add actuators
             if self.actuators and obj['name'] in act_names:
@@ -108,6 +111,7 @@ class BACnetDriver(SmapDriver):
             path = str(self.pathnamer(dev['name'], obj['name']))
         else:
             path = str('/' + dev['name'] + '/' + obj['name'])
+            #path = str('/'  + obj['name'])
         return (dev, obj, path)
 
     def _iter_points(self):            
@@ -144,6 +148,7 @@ class BACnetDriver(SmapDriver):
                 print e, dev['props'], obj['props']['type'], obj['props']['instance']
             else:
                 self._add(path, float(val))
+        #finished
 
 class BACnetActuator(actuate.SmapActuator):
     def __init__(self, **opts):
