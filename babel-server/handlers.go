@@ -126,6 +126,7 @@ func SuccessHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int,
 
 	if i == 1 {
 		res.Result = "one"
+		a.points_reduced = *a.points
 
 	} else if i == 2 {
 		res.Result = "multiple"
