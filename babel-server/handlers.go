@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"strconv"
 )
 
 func (ah appHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
@@ -90,17 +91,27 @@ func LinkHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, er
 		a.points_reduced = *a.points
 	}
 	if len(a.points_reduced) > 0 {
-		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
-		w.WriteHeader(http.StatusCreated)
+		fmt.Println(device)
+		fmt.Println(device.Value)
+
+		go monitorBMS(a, device)
+
 		var res Result
-		res.Result = "created"
+		i := <-su
+
+		if i == 1 {
+			res.Result = "Matched Point. Thank you :-)"
+			a.points_reduced = *a.points
+		} else if i == 0 {
+			res.Result = "Could not find your input, please try again."
+		} else {
+			res.Result = "Reduced Points to" + strconv.Itoa(i)
+		}
+		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+		w.WriteHeader(http.StatusOK)
 		if err := json.NewEncoder(w).Encode(res); err != nil {
 			return -1, err
 		}
-		fmt.Println(device)
-		fmt.Println(device.Value)
-		// now monitor bms points
-		go monitorBMS(a, device)
 
 		//go fakeActuation(a, device)
 	} else {
