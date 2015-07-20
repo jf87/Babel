@@ -33,7 +33,7 @@ func monitorBMS(a *appContext, d Device) error {
 	)
 	fmt.Println("monitorBMS")
 	sync <- 1 //points get read by smap driver when 1 is received
-	active = true
+	//active = true
 	done := <-sync_smap //we reveice done==true here when smap then finished querying that points
 	fmt.Println(done)
 	active = false
@@ -49,8 +49,6 @@ func monitorBMS(a *appContext, d Device) error {
 		time.Since(start).Nanoseconds(),
 	)
 	resp, err := http.Get(a.bms)
-	fmt.Println(resp)
-	fmt.Println(err)
 	if err != nil {
 		return err
 	}
@@ -93,7 +91,6 @@ func monitorBMS(a *appContext, d Device) error {
 	*/
 	active = false
 	fmt.Println("now !active")
-	fmt.Printf("br %v \n", br)
 	log.Printf(
 		"%s\t%s\t%s\t%v",
 		"STOP",
