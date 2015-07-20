@@ -54,7 +54,7 @@ func monitorBMS(a *appContext, d Device) error {
 		}
 		defer resp.Body.Close()
 		body, err := ioutil.ReadAll(resp.Body)
-		br, err = decodeSmapReadings(body, br)
+		br, err = decodeSmapReadings(a, body, br)
 		i++
 		time.Sleep(500 * time.Millisecond)
 	}
@@ -204,7 +204,7 @@ func reducePoints(a *appContext, br BabelReadings) (int, error) {
 	return j, nil
 }
 
-func decodeSmapReadings(jsonRaw []byte, br BabelReadings) (BabelReadings, error) {
+func decodeSmapReadings(a *appContext, jsonRaw []byte, br BabelReadings) (BabelReadings, error) {
 	var obj map[string]json.RawMessage
 	if err := json.Unmarshal(jsonRaw, &obj); err != nil {
 		return br, err
@@ -220,12 +220,15 @@ func decodeSmapReadings(jsonRaw []byte, br BabelReadings) (BabelReadings, error)
 				val.Readings = append(val.Readings, smapReading.Readings[0])
 				br[smapReading.Metadata.PointName] = val
 			} else {
-				fmt.Printf("%v, %v, %v", smapReading.UUID, smapReading.Readings, smapReading.Metadata.PointName)
-				var b BabelReading
-				b.UUID = smapReading.UUID
-				b.Readings = smapReading.Readings
-				b.PointName = smapReading.Metadata.PointName
-				br[b.PointName] = b
+				//FIXME very bad
+				if containsPoint(a.points_reduced, smapReading.Metadata.PointName) {
+					fmt.Printf("%v, %v, %v", smapReading.UUID, smapReading.Readings, smapReading.Metadata.PointName)
+					var b BabelReading
+					b.UUID = smapReading.UUID
+					b.Readings = smapReading.Readings
+					b.PointName = smapReading.Metadata.PointName
+					br[b.PointName] = b
+				}
 			}
 		}
 	}
