@@ -45,6 +45,12 @@ var routes = Routes{
 		PointsHandler,
 	},
 	Route{
+		"PointsInit",
+		"GET",
+		"/api/pointsinit",
+		PointsInitHandler,
+	},
+	Route{
 		"Sync",
 		"GET",
 		"/api/sync",
