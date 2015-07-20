@@ -73,7 +73,7 @@ class BACnetDriver(SmapDriver):
                     unit = self.unit_map.get(unit)
             self.add_timeseries(path, unit, data_type='double')
             self.set_metadata(path, {
-                'Metadata/PointName' : str(obj['name'])
+                'Metadata/PointName' : dev['name']+'/'+str(obj['name'])
             })
 
             # Add actuators

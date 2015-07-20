@@ -66,7 +66,7 @@ func contains(s []int, e int) bool {
 func containsPoint(p []Point, name string) bool {
 	for _, a := range p {
 		for _, o := range a.Objs {
-			if o.Name == name {
+			if a.Name+"/"+o.Name == name {
 				return true
 			}
 		}
