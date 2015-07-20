@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"strconv"
 	"time"
 )
 
@@ -120,7 +121,12 @@ func checkForValue(a *appContext, d Device, br BabelReadings) (BabelReadings, er
 	br_new = make(map[string]BabelReading)
 	for _, v := range br {
 		for _, va := range v.Readings {
-			if va[1] == d.Value {
+			fl, err := strconv.ParseFloat(d.Value, 64)
+			if err != nil {
+				fmt.Println("ERRORRRR")
+				return br_new, err
+			}
+			if va[1] == fl {
 				match = true
 			}
 		}
