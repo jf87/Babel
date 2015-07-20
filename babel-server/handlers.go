@@ -8,6 +8,7 @@ import (
 	"log"
 	"net/http"
 	"strconv"
+	"time"
 )
 
 func (ah appHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
@@ -53,6 +54,15 @@ func TypesHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, e
 
 // request to create a link between a device and the type/location by the user
 func LinkHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, error) {
+
+	j := len(*a.points)
+	log.Printf(
+		"%s\t%s\t%v\t%v",
+		"STATE",
+		"Points to begin:",
+		j,
+		time.Since(start).Nanoseconds(),
+	)
 	var device Device
 	body, err := ioutil.ReadAll(io.LimitReader(r.Body, 1048567)) //limit size FIXME how big?
 	if err != nil {
@@ -85,7 +95,15 @@ func LinkHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, er
 				pr = append(pr, v)
 			}
 		}
+		j := len(pr)
 		a.points_reduced = pr
+		log.Printf(
+			"%s\t%s\t%v\t%v",
+			"STATE",
+			"Points reduced by type to",
+			j,
+			time.Since(start).Nanoseconds(),
+		)
 		fmt.Printf("points reduced: %v\n", pr)
 	} else if a.points_reduced == nil {
 		a.points_reduced = *a.points
