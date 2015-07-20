@@ -160,7 +160,6 @@ func reducePoints(a *appContext, br BabelReadings) (int, error) {
 	)
 
 	fmt.Println("reducePoints")
-	//create index
 	var prr Points
 	i := 0
 	j := 0
@@ -168,7 +167,7 @@ func reducePoints(a *appContext, br BabelReadings) (int, error) {
 		var o Objects
 		for _, va := range v.Objs {
 			i++
-			_, ok := br[va.Name]
+			_, ok := br[v.Name+"/"+va.Name]
 			if ok {
 				j++
 				o = append(o, va)
