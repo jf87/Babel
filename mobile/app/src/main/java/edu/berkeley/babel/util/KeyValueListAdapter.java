@@ -128,7 +128,6 @@ public class KeyValueListAdapter extends BaseAdapter {
         newHolder.mValueView = (EditText) itemView.findViewById(R.id.value);
         itemView.setTag(newHolder);
 
-
         ViewHolder holder = (ViewHolder) itemView.getTag();
         Pair<String, String> keyValue = mKeyValues.get(position);
         holder.mKeyView.setText(keyValue.first);

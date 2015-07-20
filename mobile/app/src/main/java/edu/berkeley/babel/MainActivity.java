@@ -31,16 +31,14 @@ import edu.berkeley.babel.util.JSONObjectHttpPostTask.onJSONObjectHttpPostRespon
 import edu.berkeley.babel.util.KeyValueListAdapter;
 
 public class MainActivity extends ActionBarActivity {
-    private Handler mHandler;
-
     private TextView mTypeText;
     private Spinner mTypeSpinner;
     private ArrayAdapter<String> mTypeSpinnerAdapter;
     private ListView mAttributeList;
     private KeyValueListAdapter mKeyValueListAdapter;
-    private Button mStartButton;
-    private TextView mActionText;
-    private TextView mActionDesc;
+    private Button mSendButton;
+    private TextView mInfoText;
+    private TextView mInfoDesc;
 
     private boolean mBusy = false;
     private JSONArray mMetadataArray = null;
@@ -84,47 +82,19 @@ public class MainActivity extends ActionBarActivity {
                 return;
             }
 
+            String resultStr = "";
             try {
-                boolean success = response.getBoolean("success");
-                if (success == false) {
-                    setUIEnabled(true);
-                    mBusy = false;
+                resultStr = response.getString("result");
+                if (resultStr == null || resultStr.isEmpty()) {
                     Toast.makeText(getApplicationContext(), getString(R.string.server_error), Toast.LENGTH_LONG).show();
-                    return;
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
             }
 
-            startInstruction();
-        }
-    }
-
-    /**
-     * response to the AsyncTask that GETs result from server
-     */
-    private class GetResultListener implements onJSONObjectHttpGetRespondedListener {
-        @Override
-        public void onJSONObjectHttpGetResponded(JSONObject response) {
+            mInfoDesc.setText(resultStr);
             setUIEnabled(true);
             mBusy = false;
-
-            if (response == null) {
-                Toast.makeText(getApplicationContext(), getString(R.string.no_conn), Toast.LENGTH_LONG).show();
-                return;
-            }
-
-            try {
-                boolean success = response.getBoolean("success");
-                if (success == false) {
-                    Toast.makeText(getApplicationContext(), getString(R.string.server_error), Toast.LENGTH_LONG).show();
-                    return;
-                }
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-
-            Toast.makeText(getApplicationContext(), getString(R.string.success), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -151,9 +121,9 @@ public class MainActivity extends ActionBarActivity {
     }
 
     /**
-     * response to user pressing the start button
+     * response to user pressing the send button
      */
-    private class StartOnClickListener implements View.OnClickListener {
+    private class SendOnClickListener implements View.OnClickListener {
         @Override
         public void onClick(View v) {
             // Perform action on click
@@ -181,52 +151,6 @@ public class MainActivity extends ActionBarActivity {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-        }
-    }
-
-    private class ShowInstructionRunnale implements Runnable {
-        private int mIndex;
-
-        public ShowInstructionRunnale(int index) {
-            mIndex = index;
-        }
-
-        @Override
-        public void run() {
-            JSONArray seqArray = null;
-            try {
-                seqArray = mCurMetadata.getJSONArray("sequence");
-            } catch (JSONException e) { // fatal
-                e.printStackTrace();
-            }
-
-            if (seqArray.length() <= mIndex) {
-                mActionDesc.setText("");
-
-                JSONObjectHttpGetTask httpGetTask = new JSONObjectHttpGetTask(new GetResultListener());
-                URL url = getHttpURL(getString(R.string.server), Integer.parseInt(getString(R.string.port)), getString(R.string.result_path));
-                mBusy = true;
-                setUIEnabled(false);
-                httpGetTask.execute(url);
-
-                return;
-            }
-
-            JSONObject instObject;
-            String desc = "";
-            int duration = 0;
-            try {
-                instObject = seqArray.getJSONObject(mIndex);
-                desc = instObject.getString("instruction");
-                duration = instObject.getInt("time");
-            } catch (JSONException e) { // fatal
-                e.printStackTrace();
-            }
-
-            String fullDesc = desc + " during the next " + Integer.toString(duration) + " second(s).";
-            mActionDesc.setText(fullDesc);
-
-            mHandler.postDelayed(new ShowInstructionRunnale(mIndex + 1), duration * 1000);
         }
     }
 
@@ -262,7 +186,7 @@ public class MainActivity extends ActionBarActivity {
 
         while (iter.hasNext()) {
             String name = iter.next();
-            if (name.equals("kind") || name.equals("sequence")) {
+            if (name.equals("kind")) {
                 continue;
             }
             try {
@@ -274,6 +198,8 @@ public class MainActivity extends ActionBarActivity {
         }
 
         mKeyValueListAdapter.notifyDataSetChanged();
+
+        mInfoDesc.setText("");
     }
 
     /**
@@ -323,22 +249,15 @@ public class MainActivity extends ActionBarActivity {
     }
 
     /**
-     * start showing instruction to user to control the device
-     */
-    private void startInstruction() {
-        mHandler.postDelayed(new ShowInstructionRunnale(0), 0);
-    }
-
-    /**
      * Enable/disable all UI components
      */
     private void setUIEnabled(boolean enabled) {
         mTypeText.setEnabled(enabled);
         mTypeSpinner.setEnabled(enabled);
         mKeyValueListAdapter.setEnabled(enabled);
-        mStartButton.setEnabled(enabled);
-        mActionText.setEnabled(enabled);
-        mActionDesc.setEnabled(enabled);
+        mSendButton.setEnabled(enabled);
+        mInfoText.setEnabled(enabled);
+        mInfoDesc.setEnabled(enabled);
     }
 
     private URL getHttpURL(String host, int port, String path) {
@@ -360,8 +279,6 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mHandler = new Handler();
-
         // Set up UI
         mTypeText = (TextView) findViewById(R.id.type_text);
         mTypeSpinner = (Spinner) findViewById(R.id.type_spinner);
@@ -376,11 +293,11 @@ public class MainActivity extends ActionBarActivity {
         mKeyValueListAdapter.setOnKeyValueChangedListener(new OnAttributeChangedListener());
         mAttributeList.setAdapter(mKeyValueListAdapter);
 
-        mStartButton = (Button) findViewById(R.id.start_button);
-        mStartButton.setOnClickListener(new StartOnClickListener());
+        mSendButton = (Button) findViewById(R.id.send_button);
+        mSendButton.setOnClickListener(new SendOnClickListener());
 
-        mActionText = (TextView) findViewById(R.id.action_text);
-        mActionDesc = (TextView) findViewById(R.id.action_desc);
+        mInfoText = (TextView) findViewById(R.id.info_text);
+        mInfoDesc = (TextView) findViewById(R.id.info_desc);
 
         // get metadata from server to populate the type spinner
         getMetadataArrayFromServer();

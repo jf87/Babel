@@ -24,45 +24,51 @@
 
         <Spinner
             android:id="@+id/type_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/action"
+        android:id="@+id/info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/type"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/action_text"
+            android:id="@+id/info_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/action" />
+            android:text="@string/info" />
 
         <TextView
-            android:id="@+id/action_desc"
+            android:id="@+id/info_desc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textColor="#F00"
-            />
+            android:gravity="center" />
     </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/info"
+        android:background="#000000" />
 
     <ListView
         android:id="@+id/attributes_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/type" />
-
-    <Button
-        android:id="@+id/start_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/action"
-        android:text="@string/start" />
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/divider" />
 
 
 </RelativeLayout>
