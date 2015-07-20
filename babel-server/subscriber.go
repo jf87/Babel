@@ -126,6 +126,7 @@ func checkForValue(a *appContext, d Device, br BabelReadings) (BabelReadings, er
 		}
 		if match {
 			br_new[v.PointName] = v
+			match = false
 		}
 	}
 	log.Printf(
