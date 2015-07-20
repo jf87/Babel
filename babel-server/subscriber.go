@@ -32,8 +32,8 @@ func monitorBMS(a *appContext, d Device) error {
 	sync <- 1
 	active = true
 	fmt.Println("now active")
-	time.Sleep(2000 * time.Millisecond)
-	tt := time.Duration(10) * time.Second
+	time.Sleep(15000 * time.Millisecond)
+	tt := time.Duration(15) * time.Second
 	t0 := time.Now()
 	var br BabelReadings
 	br = make(map[string]BabelReading)
@@ -47,6 +47,8 @@ func monitorBMS(a *appContext, d Device) error {
 	i := 0
 	for time.Since(t0) < tt { //for now just loop until time is over
 		resp, err := http.Get(a.bms)
+        fmt.Println(resp)
+        fmt.Println(err)
 		if err != nil {
 			return err
 		}
@@ -54,7 +56,7 @@ func monitorBMS(a *appContext, d Device) error {
 		body, err := ioutil.ReadAll(resp.Body)
 		br, err = decodeSmapReadings(body, br)
 		i++
-		time.Sleep(100 * time.Millisecond)
+		time.Sleep(500 * time.Millisecond)
 	}
 	active = false
 	fmt.Println("now !active")
@@ -217,6 +219,7 @@ func decodeSmapReadings(jsonRaw []byte, br BabelReadings) (BabelReadings, error)
 				val.Readings = append(val.Readings, smapReading.Readings[0])
 				br[smapReading.Metadata.PointName] = val
 			} else {
+                fmt.Printf("%v, %v, %v", smapReading.UUID, smapReading.Readings, smapReading.Metadata.PointName)
 				var b BabelReading
 				b.UUID = smapReading.UUID
 				b.Readings = smapReading.Readings
