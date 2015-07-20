@@ -33,12 +33,12 @@ func monitorBMS(a *appContext, d Device) error {
 	)
 	fmt.Println("monitorBMS")
 	sync <- 1 //points get read by smap driver when 1 is received
-	active = true
+	//active = true
 	done := <-sync_smap //we reveice done==true here when smap then finished querying that points
 	fmt.Println(done)
 	active = false
 	fmt.Println("now active")
-	time.Sleep(100 * time.Millisecond)
+	time.Sleep(200 * time.Millisecond)
 	var br BabelReadings
 	br = make(map[string]BabelReading)
 	log.Printf(
