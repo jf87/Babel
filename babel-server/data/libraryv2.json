@@ -11,7 +11,8 @@
             "kind": "HVACTemperature",
             "location": " ",
             "model": "Generic Thermostat",
-            "value": "42"
+            "value": "42",
+            "bacnet_types": [0]
         }
       ]
 }
