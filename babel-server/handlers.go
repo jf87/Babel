@@ -87,7 +87,7 @@ func LinkHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, er
 		}
 		a.points_reduced = pr
 		fmt.Printf("points reduced: %v\n", pr)
-	} else {
+	} else if a.points_reduced == nil {
 		a.points_reduced = *a.points
 	}
 	if len(a.points_reduced) > 0 {

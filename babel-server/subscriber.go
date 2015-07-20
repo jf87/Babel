@@ -47,8 +47,8 @@ func monitorBMS(a *appContext, d Device) error {
 	i := 0
 	for time.Since(t0) < tt { //for now just loop until time is over
 		resp, err := http.Get(a.bms)
-        fmt.Println(resp)
-        fmt.Println(err)
+		fmt.Println(resp)
+		fmt.Println(err)
 		if err != nil {
 			return err
 		}
@@ -75,6 +75,7 @@ func monitorBMS(a *appContext, d Device) error {
 		time.Since(start).Nanoseconds(),
 	)
 	matches, err := checkForValue(a, d, br)
+	fmt.Printf("matches %v", matches)
 	j, _ := reducePoints(a, matches) //changes reduced points in a
 
 	if matches == nil || len(matches) == 0 {
@@ -219,7 +220,7 @@ func decodeSmapReadings(jsonRaw []byte, br BabelReadings) (BabelReadings, error)
 				val.Readings = append(val.Readings, smapReading.Readings[0])
 				br[smapReading.Metadata.PointName] = val
 			} else {
-                fmt.Printf("%v, %v, %v", smapReading.UUID, smapReading.Readings, smapReading.Metadata.PointName)
+				fmt.Printf("%v, %v, %v", smapReading.UUID, smapReading.Readings, smapReading.Metadata.PointName)
 				var b BabelReading
 				b.UUID = smapReading.UUID
 				b.Readings = smapReading.Readings
