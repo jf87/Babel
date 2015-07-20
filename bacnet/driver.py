@@ -57,7 +57,8 @@ class BACnetDriver(SmapDriver):
         self.db = json.loads(response.read())
         #with open(opts.get('db'), 'r') as fp:
         #    self.db = json.load(fp)
-        self.rate = int(opts.get('rate', 60))
+        self.rate = int(opts.get('rate', 10))
+        self.syncurl = opts.get('syncurl')
         self.devices = map(re.compile, opts.get('devices', ['.*']))
         self.points = map(re.compile, opts.get('points', ['.*']))
         self.ffilter = _get_class(opts.get('filter')) if opts.get('filter') else None
@@ -149,6 +150,9 @@ class BACnetDriver(SmapDriver):
             else:
                 self._add(path, float(val))
         #finished
+        print "finished reading bacnet points"
+        response = urllib.urlopen(self.syncurl);
+
 
 class BACnetActuator(actuate.SmapActuator):
     def __init__(self, **opts):
