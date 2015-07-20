@@ -74,20 +74,18 @@ func LinkHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, er
 		var pr Points
 		for _, v := range *a.points {
 			var o Objects
-			fmt.Println(v)
 			for _, va := range v.Objs {
 				if contains(device.Bacnet_types, va.Props.Type) {
 					o = append(o, va)
-					fmt.Println(o)
 				}
 			}
 			if len(o) > 0 {
 				v.Objs = o
 				pr = append(pr, v)
-				fmt.Println(pr)
 			}
 		}
 		a.points_reduced = pr
+		fmt.Printf("points reduced: %v\n", pr)
 	} else {
 		a.points_reduced = *a.points
 	}

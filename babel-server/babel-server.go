@@ -8,6 +8,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"time"
 
 	_ "github.com/lib/pq"
 )
@@ -23,6 +24,8 @@ type appHandler struct {
 	*appContext
 	h func(*appContext, http.ResponseWriter, *http.Request) (int, error)
 }
+
+var start time.Time
 
 func main() {
 	var (
@@ -42,7 +45,22 @@ Flags:`)
 
 		os.Exit(1)
 	}
+	f, err := os.OpenFile("logfile.log", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+	if err != nil {
+		fmt.Printf("File error: %v\n", err)
+		os.Exit(1)
+	}
+	defer f.Close()
 
+	log.SetOutput(f)
+	start = time.Now()
+	log.Printf(
+		"%s\t%s\t%s\t%v",
+		"START",
+		"BABEL",
+		"started babel",
+		time.Since(start).Nanoseconds(),
+	)
 	//var devices Devices
 	devices := getLibrary(*lib)
 	points := getPoints(*db)
