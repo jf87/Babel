@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"math"
 	"net/http"
 	"strconv"
 	"time"
@@ -12,6 +13,8 @@ import (
 
 var su = make(chan int)
 var sync = make(chan int)
+
+var sync_smap = make(chan bool)
 
 var active bool
 
@@ -29,14 +32,14 @@ func monitorBMS(a *appContext, d Device) error {
 		time.Since(start).Nanoseconds(),
 	)
 	fmt.Println("monitorBMS")
-	sync <- 1
+	sync <- 1 //points get read by smap driver when 1 is received
 	active = true
+	done := <-sync_smap //we reveice done==true here when smap then finished querying that points
+	fmt.Println(done)
+	active = false
 	fmt.Println("now active")
-	time.Sleep(15000 * time.Millisecond)
-	tt := time.Duration(15) * time.Second
-	t0 := time.Now()
+	time.Sleep(100 * time.Millisecond)
 	var br BabelReadings
-	br = make(map[string]BabelReading)
 	log.Printf(
 		"%s\t%s\t%s\t%v",
 		"START",
@@ -44,20 +47,49 @@ func monitorBMS(a *appContext, d Device) error {
 		"started to query BMS",
 		time.Since(start).Nanoseconds(),
 	)
-	i := 0
-	for time.Since(t0) < tt { //for now just loop until time is over
-		resp, err := http.Get(a.bms)
-		fmt.Println(resp)
-		fmt.Println(err)
-		if err != nil {
-			return err
-		}
-		defer resp.Body.Close()
-		body, err := ioutil.ReadAll(resp.Body)
-		br, err = decodeSmapReadings(a, body, br)
-		i++
-		time.Sleep(500 * time.Millisecond)
+	resp, err := http.Get(a.bms)
+	fmt.Println(resp)
+	fmt.Println(err)
+	if err != nil {
+		return err
 	}
+	defer resp.Body.Close()
+	body, err := ioutil.ReadAll(resp.Body)
+	log.Printf(
+		"%s\t%s\t%v\t%v",
+		"STATE",
+		"monitorBMS",
+		"GETRequest to smap finished",
+		time.Since(start).Nanoseconds(),
+	)
+	br, err = decodeSmapReadings(a, body, br)
+	/*
+		tt := time.Duration(15) * time.Second
+		t0 := time.Now()
+		var br BabelReadings
+		br = make(map[string]BabelReading)
+		log.Printf(
+			"%s\t%s\t%s\t%v",
+			"START",
+			"monitorBMS",
+			"started to query BMS",
+			time.Since(start).Nanoseconds(),
+		)
+		i := 0
+		for time.Since(t0) < tt { //for now just loop until time is over
+			resp, err := http.Get(a.bms)
+			fmt.Println(resp)
+			fmt.Println(err)
+			if err != nil {
+				return err
+			}
+			defer resp.Body.Close()
+			body, err := ioutil.ReadAll(resp.Body)
+			br, err = decodeSmapReadings(a, body, br)
+			i++
+			time.Sleep(500 * time.Millisecond)
+		}
+	*/
 	active = false
 	fmt.Println("now !active")
 	fmt.Printf("br %v \n", br)
@@ -66,13 +98,6 @@ func monitorBMS(a *appContext, d Device) error {
 		"STOP",
 		"monitorBMS",
 		"stopped to query BMS",
-		time.Since(start).Nanoseconds(),
-	)
-	log.Printf(
-		"%s\t%s\t%v\t%v",
-		"STATE",
-		"GETRequests send to smap",
-		i,
 		time.Since(start).Nanoseconds(),
 	)
 	matches, err := checkForValue(a, d, br)
@@ -129,6 +154,12 @@ func checkForValue(a *appContext, d Device, br BabelReadings) (BabelReadings, er
 			if err != nil {
 				fmt.Println("ERRORRRR")
 				return br_new, err
+			}
+			//fixes case that display of thermostat is int while bms point is float
+			if math.Mod(fl, 1) == 0 && fl != 1 && fl != 0 {
+				if int(va[1]) == int(fl) {
+					match = true
+				}
 			}
 			if va[1] == fl {
 				match = true

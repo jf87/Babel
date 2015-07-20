@@ -1,0 +1,45 @@
+experiments thermostat:
+
+matches map[SDH.PXCM-08/SDH.S6-18:ROOM TEMP:{SDH.PXCM-08/SDH.S6-18:ROOM TEMP
+[[1.437376925e+12 67]] 811b0c17-e8dd-5b4c-a28c-dc2b4ec77eca}
+SDH.PXCM-11/SDH.S4-19.ROOM TEMP:{SDH.PXCM-11/SDH.S4-19.ROOM TEMP
+[[1.437376931e+12 67]] 80fa7ae1-fb67-5d55-a205-ce633a729b71}
+SDH.PXCM-04/SDH.S1-05:ROOM TEMP:{SDH.PXCM-04/SDH.S1-05:ROOM TEMP
+[[1.437376928e+12 67]] ffae827b-211b-5512-b49f-b62f01be5d3c}
+SDH.PXCM-11/SDH.S3-11:AI 3:{SDH.PXCM-11/SDH.S3-11:AI 3 [[1.437376934e+12 67]]
+3e84524c-6e19-57db-9e6f-64c13d27cbd0} SDH.PXCM-08/SDH.S5-01:ROOM
+TEMP:{SDH.PXCM-08/SDH.S5-01:ROOM TEMP [[1.437376923e+12 67]]
+8383b26e-4095-5483-8100-9d5b93e527b8} SDH.PXCM-11/SDH.S4-14.ROOM
+TEMP:{SDH.PXCM-11/SDH.S4-14.ROOM TEMP [[1.437376931e+12 67]]
+bca8dd27-b1ff-5d85-94df-5eb25e9887eb}]reducePoints reduced to [{ SDH.PXCM-08
+[{4 510 OFFICE SDH.S5-01:ROOM TEMP {23 0 Analog Input} 64} {4 677 WOMENS BATH
+SDH.S6-18:ROOM TEMP {165 0 Analog Input} 64}] {[0 0 0 0 74 2] 7402 [192 168 1
+100 186 192] 1476 77}} { SDH.PXCM-04 [{4 171 RISER CLOSET SDH.S1-05:ROOM TEMP
+{29 0 Analog Input} 64}] {[0 0 0 0 74 5] 7405 [192 168 1 100 186 192] 1476 77}}
+{ SDH.PXCM-11 [{4 471 RISER CLOSET SDH.S4-14.ROOM TEMP {36 0 Analog Input} 64}
+{4 477 WOMENS BATH SDH.S4-19.ROOM TEMP {48 0 Analog Input} 64} {4 300 PRE LOBBY
+SDH.S3-11:AI 3 {182 0 Analog Input} 64}] {[0 0 0 0 74 8] 7408 [192 168 1 100
+186 192] 1476 77}}]
+
+
+[{"desc":"","name":"SDH.PXCM-08","objs":[{"data_type":4,"desc":"510
+OFFICE","name":"SDH.S5-01:ROOM
+TEMP","props":{"instance":23,"type":0,"type_str":"Analog
+Input"},"unit":64},{"data_type":4,"desc":"677 WOMENS
+BATH","name":"SDH.S6-18:ROOM
+TEMP","props":{"instance":165,"type":0,"type_str":"Analog
+Input"},"unit":64}],"props":{"adr":[0,0,0,0,74,2],"device_id":7402,"mac":[192,16
+8,1,100,186,192],"max_apdu":1476,"net":77}},{"desc":"","name":"SDH.PXCM-04","obj
+s":[{"data_type":4,"desc":"171 RISER CLOSET","name":"SDH.S1-05:ROOM
+TEMP","props":{"instance":29,"type":0,"type_str":"Analog
+Input"},"unit":64}],"props":{"adr":[0,0,0,0,74,5],"device_id":7405,"mac":[192,16
+8,1,100,186,192],"max_apdu":1476,"net":77}},{"desc":"","name":"SDH.PXCM-11","obj
+s":[{"data_type":4,"desc":"471 RISER CLOSET","name":"SDH.S4-14.ROOM
+TEMP","props":{"instance":36,"type":0,"type_str":"Analog
+Input"},"unit":64},{"data_type":4,"desc":"477 WOMENS
+BATH","name":"SDH.S4-19.ROOM
+TEMP","props":{"instance":48,"type":0,"type_str":"Analog
+Input"},"unit":64},{"data_type":4,"desc":"300 PRE LOBBY","name":"SDH.S3-11:AI
+3","props":{"instance":182,"type":0,"type_str":"Analog
+Input"},"unit":64}],"props":{"adr":[0,0,0,0,74,8],"device_id":7408,"mac":[192,16
+8,1,100,186,192],"max_apdu":1476,"net":77}}]

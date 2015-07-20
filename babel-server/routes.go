@@ -44,4 +44,10 @@ var routes = Routes{
 		"/api/points",
 		PointsHandler,
 	},
+	Route{
+		"Sync",
+		"GET",
+		"/api/sync",
+		SyncHandler,
+	},
 }

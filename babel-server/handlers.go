@@ -176,3 +176,9 @@ func PointsHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, 
 	}
 	return 200, nil
 }
+
+func SyncHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, error) {
+
+	sync_smap <- true
+	return 200, nil
+}

@@ -3,5 +3,5 @@
             "location": " ",
             "model": "Philips Hue",
             "bacnet_types": [4],
-            "value": "0"
+            "value": "1"
         }
