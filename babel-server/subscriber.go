@@ -73,7 +73,7 @@ func monitorBMS(a *appContext, d Device) error {
 		time.Since(start).Nanoseconds(),
 	)
 	matches, err := checkForValue(a, d, br)
-	reducePoints(a, matches) //changes reduced points in a
+	j, _ := reducePoints(a, matches) //changes reduced points in a
 
 	if matches == nil || len(matches) == 0 {
 		log.Printf(
@@ -83,16 +83,16 @@ func monitorBMS(a *appContext, d Device) error {
 			"stopped monitorBMS - 0 matches",
 			time.Since(start).Nanoseconds(),
 		)
-		su <- 3
+		su <- 0
 	} else if len(matches) > 1 {
 		log.Printf(
 			"%s\t%s\t%s\t%v",
 			"STOP",
 			"monitorBMS",
-			"stopped monitorBMS - n matches",
+			"stopped monitorBMS, matches: "+strconv.Itoa(j),
 			time.Since(start).Nanoseconds(),
 		)
-		su <- 2
+		su <- j
 	} else {
 		log.Printf(
 			"%s\t%s\t%s\t%v",
@@ -146,7 +146,7 @@ func checkForValue(a *appContext, d Device, br BabelReadings) (BabelReadings, er
 }
 
 // reduce points that need to be queried, based on prior readings
-func reducePoints(a *appContext, br BabelReadings) {
+func reducePoints(a *appContext, br BabelReadings) (int, error) {
 	log.Printf(
 		"%s\t%s\t%s\t%v",
 		"START",
@@ -198,6 +198,7 @@ func reducePoints(a *appContext, br BabelReadings) {
 		"stopped function",
 		time.Since(start).Nanoseconds(),
 	)
+	return j, nil
 }
 
 func decodeSmapReadings(jsonRaw []byte, br BabelReadings) (BabelReadings, error) {
