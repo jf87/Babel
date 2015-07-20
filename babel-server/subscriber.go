@@ -49,8 +49,6 @@ func monitorBMS(a *appContext, d Device) error {
 		time.Since(start).Nanoseconds(),
 	)
 	resp, err := http.Get(a.bms)
-	fmt.Println(resp)
-	fmt.Println(err)
 	if err != nil {
 		return err
 	}
@@ -93,7 +91,6 @@ func monitorBMS(a *appContext, d Device) error {
 	*/
 	active = false
 	fmt.Println("now !active")
-	fmt.Printf("br %v \n", br)
 	log.Printf(
 		"%s\t%s\t%s\t%v",
 		"STOP",

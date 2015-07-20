@@ -58,7 +58,7 @@ class BACnetDriver(SmapDriver):
         self.db = json.loads(response.read())
         #with open(opts.get('db'), 'r') as fp:
         #    self.db = json.load(fp)
-        self.rate = int(opts.get('rate', 10))
+        self.rate = int(opts.get('rate', 1))
         self.syncurl = opts.get('syncurl')
         self.devices = map(re.compile, opts.get('devices', ['.*']))
         self.points = map(re.compile, opts.get('points', ['.*']))
@@ -129,21 +129,15 @@ class BACnetDriver(SmapDriver):
                     yield self.get_path(dev, obj)
 
     def start(self):
-        while i == 0:
-            print "updating point list..."
-            response = urllib.urlopen(self.dburl)
-            self.db = json.loads(response.read())
-            print "updated points list :-)"
-            self.update()
-        #self.caller = periodicSequentialCall(self.update)
-        #self.caller.start(self.rate)
+        self.caller = periodicSequentialCall(self.update)
+        self.caller.start(self.rate)
         
     @defer.inlineCallbacks
     def update(self):
-        #print "updating point list..."
-        #response = urllib.urlopen(self.dburl);
-        #self.db = json.loads(response.read())
-        #print "updated points list :-)"
+        print "updating point list..."
+        response = urllib.urlopen(self.dburl);
+        self.db = json.loads(response.read())
+        print "updated points list :-)"
         for (dev, obj, path) in self._iter_points():
             try:
                 val = yield threads.deferToThread(bacnet.read_prop,
@@ -159,6 +153,7 @@ class BACnetDriver(SmapDriver):
         #finished
         print "finished reading bacnet points"
         response = urllib.urlopen(self.syncurl);
+        time.sleep(1)
 
 
 class BACnetActuator(actuate.SmapActuator):
