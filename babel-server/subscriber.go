@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"time"
 )
@@ -19,6 +20,13 @@ type Events struct {
 }
 
 func monitorBMS(a *appContext, d Device) error {
+	log.Printf(
+		"%s\t%s\t%s\t%v",
+		"START",
+		"monitorBMS",
+		"started function",
+		time.Since(start).Nanoseconds(),
+	)
 	fmt.Println("monitorBMS")
 	sync <- 1
 	active = true
@@ -28,6 +36,14 @@ func monitorBMS(a *appContext, d Device) error {
 	t0 := time.Now()
 	var br BabelReadings
 	br = make(map[string]BabelReading)
+	log.Printf(
+		"%s\t%s\t%s\t%v",
+		"START",
+		"monitorBMS",
+		"started to query BMS",
+		time.Since(start).Nanoseconds(),
+	)
+	i := 0
 	for time.Since(t0) < tt { //for now just loop until time is over
 		resp, err := http.Get(a.bms)
 		if err != nil {
@@ -36,18 +52,54 @@ func monitorBMS(a *appContext, d Device) error {
 		defer resp.Body.Close()
 		body, err := ioutil.ReadAll(resp.Body)
 		br, err = decodeSmapReadings(body, br)
+		i++
+		time.Sleep(100 * time.Millisecond)
 	}
 	active = false
 	fmt.Println("now !active")
-	//fmt.Printf("br \n %v\n", br)
+	log.Printf(
+		"%s\t%s\t%s\t%v",
+		"STOP",
+		"monitorBMS",
+		"stopped to query BMS",
+		time.Since(start).Nanoseconds(),
+	)
+	log.Printf(
+		"%s\t%s\t%v\t%v",
+		"STATE",
+		"GETRequests send to smap",
+		i,
+		time.Since(start).Nanoseconds(),
+	)
 	matches, err := checkForValue(a, d, br)
-	//fmt.Printf("Matches: \n %v \n", matches)
 	reducePoints(a, matches) //changes reduced points in a
+
 	if matches == nil || len(matches) == 0 {
+		log.Printf(
+			"%s\t%s\t%s\t%v",
+			"STOP",
+			"monitorBMS",
+			"stopped monitorBMS - 0 matches",
+			time.Since(start).Nanoseconds(),
+		)
 		su <- 3
 	} else if len(matches) > 1 {
+		log.Printf(
+			"%s\t%s\t%s\t%v",
+			"STOP",
+			"monitorBMS",
+			"stopped monitorBMS - n matches",
+			time.Since(start).Nanoseconds(),
+		)
 		su <- 2
 	} else {
+		log.Printf(
+			"%s\t%s\t%s\t%v",
+			"STOP",
+			"monitorBMS",
+			"stopped monitorBMS - 1 matches",
+			time.Since(start).Nanoseconds(),
+		)
 		su <- 1
 	}
 	return err
@@ -55,6 +107,13 @@ func monitorBMS(a *appContext, d Device) error {
 
 //check for a value that the user reads
 func checkForValue(a *appContext, d Device, br BabelReadings) (BabelReadings, error) {
+	log.Printf(
+		"%s\t%s\t%s\t%v",
+		"START",
+		"checkForValue",
+		"started checkForValue",
+		time.Since(start).Nanoseconds(),
+	)
 	fmt.Println("checkForValue")
 	match := false
 	var br_new BabelReadings
@@ -69,19 +128,38 @@ func checkForValue(a *appContext, d Device, br BabelReadings) (BabelReadings, er
 			br_new[v.PointName] = v
 		}
 	}
+	log.Printf(
+		"%s\t%s\t%s\t%v",
+		"STOP",
+		"checkForValue",
+		"stopped function",
+		time.Since(start).Nanoseconds(),
+	)
 	return br_new, nil
 }
 
 // reduce points that need to be queried, based on prior readings
 func reducePoints(a *appContext, br BabelReadings) {
+	log.Printf(
+		"%s\t%s\t%s\t%v",
+		"START",
+		"reducePoints",
+		"started function",
+		time.Since(start).Nanoseconds(),
+	)
+
 	fmt.Println("reducePoints")
 	//create index
 	var prr Points
+	i := 0
+	j := 0
 	for _, v := range a.points_reduced {
 		var o Objects
 		for _, va := range v.Objs {
+			i++
 			_, ok := br[va.Name]
 			if ok {
+				j++
 				o = append(o, va)
 			}
 		}
@@ -91,7 +169,28 @@ func reducePoints(a *appContext, br BabelReadings) {
 		}
 	}
 	a.points_reduced = prr
+	log.Printf(
+		"%s\t%s\t%v\t%v",
+		"STATE",
+		"bms_points",
+		i,
+		time.Since(start).Nanoseconds(),
+	)
 	fmt.Printf("reduced to %v\n", prr)
+	log.Printf(
+		"%s\t%s\t%v\t%v",
+		"STATE",
+		"bms_points",
+		j,
+		time.Since(start).Nanoseconds(),
+	)
+	log.Printf(
+		"%s\t%s\t%s\t%v",
+		"STOP",
+		"reducePoints",
+		"stopped function",
+		time.Since(start).Nanoseconds(),
+	)
 }
 
 func decodeSmapReadings(jsonRaw []byte, br BabelReadings) (BabelReadings, error) {
