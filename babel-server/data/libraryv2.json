@@ -5,13 +5,13 @@
             "location": " ",
             "model": "Philips Hue",
             "bacnet_types": [4, 8],
-            "value": 1
+            "value": "1"
         },
         {
             "kind": "HVACTemperature",
             "location": " ",
             "model": "Generic Thermostat",
-            "value": 42
+            "value": "42"
         }
       ]
 }

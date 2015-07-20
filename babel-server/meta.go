@@ -11,9 +11,9 @@ type Device struct {
 	Location string `json:"location"`
 	Model    string `json:"model,omitempty"`
 	//Sequence     []Seq   `json:"sequence"`
-	Bacnet_types []int   `json:"bacnet_types,omitempty"`
-	Value        float64 `json:"value,omitempty"`
-	UUID         string  `json:"uuid,omitempty"`
+	Bacnet_types []int  `json:"bacnet_types,omitempty"`
+	Value        string `json:"value,omitempty"`
+	UUID         string `json:"uuid,omitempty"`
 }
 
 type Seq struct {
