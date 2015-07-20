@@ -2,5 +2,6 @@
     "kind": "HVACTemperature",
     "location": " ",
     "model": "Generic Thermostat",
-    "value": "66"
+    "value": "66",
+    "bacnet_types": [0],
 }
