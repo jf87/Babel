@@ -63,10 +63,12 @@ func contains(s []int, e int) bool {
 	return false
 }
 
-func containsPoint(s []Point, name string) bool {
-	for _, a := range s {
-		if a.Name == name {
-			return true
+func containsPoint(p []Point, name string) bool {
+	for _, a := range p {
+		for _, o := range a.Objs {
+			if o.Name == name {
+				return true
+			}
 		}
 	}
 	return false

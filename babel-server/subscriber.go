@@ -60,6 +60,7 @@ func monitorBMS(a *appContext, d Device) error {
 	}
 	active = false
 	fmt.Println("now !active")
+	fmt.Printf("br %v \n", br)
 	log.Printf(
 		"%s\t%s\t%s\t%v",
 		"STOP",
