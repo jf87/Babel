@@ -1,8 +1,8 @@
 package edu.berkeley.babel;
 
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -44,6 +44,8 @@ public class MainActivity extends ActionBarActivity {
     private JSONArray mMetadataArray = null;
     private JSONObject mCurMetadata = null;
 
+    private static final String mTAG = "Babel";
+
     /**
      * response to the AsyncTask that GETs metadata from server
      */
@@ -74,6 +76,14 @@ public class MainActivity extends ActionBarActivity {
     private class PostMetadataListener implements onJSONObjectHttpPostRespondedListener {
         @Override
         public void onJSONObjectHttpPostResponded(JSONObject response) {
+            String logStr;
+            if (response != null) {
+                logStr = "[" + Long.toString(System.currentTimeMillis()) + "] POST succeeded: " + response.toString();
+            } else {
+                logStr = "[" + Long.toString(System.currentTimeMillis()) + "] POST failed.";
+            }
+            Log.i(mTAG, logStr);
+
             if (response == null) {
                 // only enable UI when connection fails
                 setUIEnabled(true);
@@ -245,6 +255,10 @@ public class MainActivity extends ActionBarActivity {
 
         mBusy = true;
         setUIEnabled(false);
+
+        String logStr = "[" + Long.toString(System.currentTimeMillis()) + "] POST: " + mCurMetadata.toString();
+        Log.i(mTAG, logStr);
+
         httpPostTask.execute(url, mCurMetadata);
     }
 
