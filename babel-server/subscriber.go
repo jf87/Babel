@@ -40,6 +40,7 @@ func monitorBMS(a *appContext, d Device) error {
 	fmt.Println("now active")
 	time.Sleep(100 * time.Millisecond)
 	var br BabelReadings
+	br = make(map[string]BabelReading)
 	log.Printf(
 		"%s\t%s\t%s\t%v",
 		"START",
