@@ -223,7 +223,9 @@ func reducePoints(a *appContext, br BabelReadings) (int, error) {
 			prr = append(prr, v)
 		}
 	}
-	a.points_reduced = prr
+	if len(prr) > 0 {
+		a.points_reduced = prr
+	}
 	log.Printf(
 		"%s\t%s\t%v\t%v",
 		"STATE",

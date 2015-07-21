@@ -1,3 +1,6 @@
+monday, 10.20
+
+
 [
     {
         "desc": "RP1",
@@ -7921,3 +7924,11 @@
         }
     }
 ]
+
+{"result":"Reduced Points to2"}
+
+
+checkForValue
+matches map[SDH.PXCM-08/SDH.S6-13:HEAT.COOL:{SDH.PXCM-08/SDH.S6-13:HEAT.COOL [[1.437456009e+12 1]] f3277518-de87-5acf-886a-fbd9e278ab9c} WS86007/RELAY12:{WS86007/RELAY12 [[1.437456008e+12 1]] ff296556-36fe-5492-a0fe-a1d5cc8f44c5}]reducePoints
+reduced to:
+[{"desc":"RP4","name":"WS86007","objs":[{"data_type":9,"desc":"OPEN OFFICES 432, 434","name":"RELAY12","props":{"instance":12,"type":4,"type_str":"Binary Output"},"unit":0}],"props":{"adr":[0,0,0,0,33,159],"device_id":86007,"mac":[128,32,247,215,186,192],"max_apdu":1500,"net":86}},{"desc":"","name":"SDH.PXCM-08","objs":[{"data_type":4,"desc":"652A OFFICE","name":"SDH.S6-13:HEAT.COOL","props":{"instance":100,"type":4,"type_str":"Binary Output"},"unit":56112616}],"props":{"adr":[0,0,0,0,74,2],"device_id":7402,"mac":[192,168,1,100,186,192],"max_apdu":1476,"net":77}}]
