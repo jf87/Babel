@@ -231,7 +231,11 @@ func reducePoints(a *appContext, br BabelReadings) (int, error) {
 		i,
 		time.Since(start).Nanoseconds(),
 	)
-	fmt.Printf("reduced to %v\n", prr)
+	fmt.Println("reduced to:")
+	//fmt.Printf("reduced to %v\n", prr)
+	bolB, _ := json.Marshal(prr)
+	fmt.Println(string(bolB))
+
 	log.Printf(
 		"%s\t%s\t%v\t%v",
 		"STATE",
