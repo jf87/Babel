@@ -146,8 +146,11 @@ func checkForValue(a *appContext, d Device, br BabelReadings) (BabelReadings, er
 	match := false
 	var br_new BabelReadings
 	br_new = make(map[string]BabelReading)
+	m := make(map[float64]int)
 	for _, v := range br {
 		for _, va := range v.Readings {
+			c, _ := m[va[1]]
+			m[va[1]] = c + 1
 			fl, err := strconv.ParseFloat(d.Value, 64)
 			if err != nil {
 				fmt.Println("ERRORRRR")
@@ -168,6 +171,19 @@ func checkForValue(a *appContext, d Device, br BabelReadings) (BabelReadings, er
 			match = false
 		}
 	}
+	// write whole the body
+	var b []byte
+	var line string
+	for k, v := range m {
+		line = strconv.FormatFloat(k, 'f', 2, 64) + ", " + strconv.Itoa(v) + "/n"
+		b = append(b, line...)
+	}
+	o := fmt.Sprintf("value_distribution-%v.csv", time.Now())
+	err := ioutil.WriteFile(o, b, 0666)
+	if err != nil {
+		fmt.Println("can't write to output file")
+	}
+
 	log.Printf(
 		"%s\t%s\t%s\t%v",
 		"STOP",
