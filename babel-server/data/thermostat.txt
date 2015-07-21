@@ -100,29 +100,415 @@ SDH.PXCM-11/SDH.S4-09.ROOM TEMP:{SDH.PXCM-11/SDH.S4-09.ROOM TEMP
 [[1.437454107e+12 68.75]] c210addd-7a5f-55fd-bcbf-e0da7da1107a}]reducePoints
 
 
-[{ SDH.PXCM-08 [{4 511 OFFICE SDH.S5-02:ROOM TEMP {27 0 Analog Input} 64} {4
-515 OFFICE SDH.S5-06:ROOM TEMP {43 0 Analog Input} 64} {4 520 MICROFAB OFF
-SDH.S5-08:ROOM TEMP {51 0 Analog Input} 64} {4 558 OFFICE SDH.S5-16:ROOM TEMP
-{81 0 Analog Input} 64} {4 577 WOMENS BATH SDH.S5-19:ROOM TEMP {91 0 Analog
-Input} 64} {4 675 ELECTRICAL SDH.S6-16:ROOM TEMP {159 0 Analog Input} 64} {4
-677 WOMENS BATH SDH.S6-18:ROOM TEMP {165 0 Analog Input} 64}] {[0 0 0 0 74 2]
-7402 [192 168 1 100 186 192] 1476 77}} { SDH.PXCM-09 [{4 777 WOMENS BATH
-SDH.S7-15:ROOM TEMP {68 0 Analog Input} 64}] {[0 0 0 0 74 3] 7403 [192 168 1
-100 186 192] 1476 77}} { SDH.PXCM-03 [{4 ENTERING CHWT SDH.CH2.ECHWT {11 0
-Analog Input} 64}] {[0 0 0 0 74 4] 7404 [192 168 1 100 186 192] 1476 77}} {
-SDH.PXCM-04 [{4 175 ELECTRICAL SDH.S1-06:ROOM TEMP {31 0 Analog Input} 64}] {[0
-0 0 0 74 5] 7405 [192 168 1 100 186 192] 1476 77}} { SDH.PXCM-10 [{4 RM 584
-TEMP SDH.RAH26_584.TEMP {9 0 Analog Input} 64} {4 RM 586 TEMP
-SDH.RAH23_586.TEMP {11 0 Analog Input} 64} {4 RM 584 TEMP SDH.RAH20_582.TEMP
-{12 0 Analog Input} 64} {4 RM 587 TEMP SDH.RAH22_587.TEMP {13 0 Analog Input}
-64} {4 SUPPLY AIR TEMP SDH.RAH12_SAT {23 0 Analog Input} 64} {4 EF3 VFD
-SDH.EF3_VFD:PCT OUTPUT {46 0 Analog Input} 98} {4 EF4 VFD SDH.EF4_VFD:PCT
-OUTPUT {50 0 Analog Input} 98}] {[0 0 0 0 74 7] 7407 [192 168 1 100 186 192]
-1476 77}} { SDH.PXCM-11 [{4 448 OFFICE SDH.S4-09.ROOM TEMP {25 0 Analog Input}
-64} {4 458 CONFERENCE SDH.S4-15.ROOM TEMP {39 0 Analog Input} 64} {4 466 OPEN
-OFFICE SDH.S4-20.ROOM TEMP {50 0 Analog Input} 64} {4 250 CLASSROOM
-SDH.S2-06:ROOM TEMP {80 0 Analog Input} 64} {4 COMP LAB 200AA SDH.S2-21:ROOM
-TEMP {136 0 Analog Input} 64} {4 356F OFFICE SDH.S3-19:ROOM TEMP {208 0 Analog
-Input} 64} {4 429 EMER ELECT SDH.S4-10:ROOM TEMP {256 0 Analog Input} 64} {4
-477 WOMENS BATH SDH.S4-19:ROOM TEMP {286 0 Analog Input} 64}] {[0 0 0 0 74 8]
-7408 [192 168 1 100 186 192] 1476 77}}]
+[
+    {
+        "desc": "",
+        "name": "SDH.PXCM-08",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "510 OFFICE",
+                "name": "SDH.S5-01:ROOM TEMP",
+                "props": {
+                    "instance": 23,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "511 OFFICE",
+                "name": "SDH.S5-02:ROOM TEMP",
+                "props": {
+                    "instance": 27,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "515 OFFICE",
+                "name": "SDH.S5-06:ROOM TEMP",
+                "props": {
+                    "instance": 43,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "520 MICROFAB OFF",
+                "name": "SDH.S5-08:ROOM TEMP",
+                "props": {
+                    "instance": 51,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "558 OFFICE",
+                "name": "SDH.S5-16:ROOM TEMP",
+                "props": {
+                    "instance": 81,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "577 WOMENS BATH",
+                "name": "SDH.S5-19:ROOM TEMP",
+                "props": {
+                    "instance": 91,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "675 ELECTRICAL",
+                "name": "SDH.S6-16:ROOM TEMP",
+                "props": {
+                    "instance": 159,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "677 WOMENS BATH",
+                "name": "SDH.S6-18:ROOM TEMP",
+                "props": {
+                    "instance": 165,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                74,
+                2
+            ],
+            "device_id": 7402,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    },
+    {
+        "desc": "",
+        "name": "SDH.PXCM-09",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "777 WOMENS BATH",
+                "name": "SDH.S7-15:ROOM TEMP",
+                "props": {
+                    "instance": 68,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                74,
+                3
+            ],
+            "device_id": 7403,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    },
+    {
+        "desc": "",
+        "name": "SDH.PXCM-03",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "ENTERING CHWT",
+                "name": "SDH.CH2.ECHWT",
+                "props": {
+                    "instance": 11,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                74,
+                4
+            ],
+            "device_id": 7404,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    },
+    {
+        "desc": "",
+        "name": "SDH.PXCM-10",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "RM 584 TEMP",
+                "name": "SDH.RAH26_584.TEMP",
+                "props": {
+                    "instance": 9,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "RM 586 TEMP",
+                "name": "SDH.RAH24_586.TEMP",
+                "props": {
+                    "instance": 10,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "RM 586 TEMP",
+                "name": "SDH.RAH23_586.TEMP",
+                "props": {
+                    "instance": 11,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "RM 587 TEMP",
+                "name": "SDH.RAH22_587.TEMP",
+                "props": {
+                    "instance": 13,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "SUPPLY AIR TEMP",
+                "name": "SDH.RAH12_SAT",
+                "props": {
+                    "instance": 23,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "SUPPLY AIR TEMP",
+                "name": "SDH.RAH11_SAT",
+                "props": {
+                    "instance": 30,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "SUPPLY AIR TEMP",
+                "name": "SDH.RAH15_SAT",
+                "props": {
+                    "instance": 33,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "EF3 VFD",
+                "name": "SDH.EF3_VFD:PCT OUTPUT",
+                "props": {
+                    "instance": 46,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 98
+            },
+            {
+                "data_type": 4,
+                "desc": "EF4 VFD",
+                "name": "SDH.EF4_VFD:PCT OUTPUT",
+                "props": {
+                    "instance": 50,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 98
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                74,
+                7
+            ],
+            "device_id": 7407,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    },
+    {
+        "desc": "",
+        "name": "SDH.PXCM-11",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "448 OFFICE",
+                "name": "SDH.S4-09.ROOM TEMP",
+                "props": {
+                    "instance": 25,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "458 CONFERENCE",
+                "name": "SDH.S4-15.ROOM TEMP",
+                "props": {
+                    "instance": 39,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "466 OPEN OFFICE",
+                "name": "SDH.S4-20.ROOM TEMP",
+                "props": {
+                    "instance": 50,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "250 CLASSROOM",
+                "name": "SDH.S2-06:ROOM TEMP",
+                "props": {
+                    "instance": 80,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "429 EMER ELECT",
+                "name": "SDH.S4-10:ROOM TEMP",
+                "props": {
+                    "instance": 256,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "477 WOMENS BATH",
+                "name": "SDH.S4-19:ROOM TEMP",
+                "props": {
+                    "instance": 286,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                74,
+                8
+            ],
+            "device_id": 7408,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    }
+]
