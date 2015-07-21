@@ -1,0 +1,111 @@
+[
+    {
+        "desc": "",
+        "name": "SDH.PXCM-08",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "520 MICROFAB OFF",
+                "name": "SDH.S5-08:ROOM TEMP",
+                "props": {
+                    "instance": 51,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "577 WOMENS BATH",
+                "name": "SDH.S5-19:ROOM TEMP",
+                "props": {
+                    "instance": 91,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "677 WOMENS BATH",
+                "name": "SDH.S6-18:ROOM TEMP",
+                "props": {
+                    "instance": 165,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                74,
+                2
+            ],
+            "device_id": 7402,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    },
+    {
+        "desc": "",
+        "name": "SDH.PXCM-11",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "458 CONFERENCE",
+                "name": "SDH.S4-15.ROOM TEMP",
+                "props": {
+                    "instance": 39,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "477 WOMENS BATH",
+                "name": "SDH.S4-19:ROOM TEMP",
+                "props": {
+                    "instance": 286,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                74,
+                8
+            ],
+            "device_id": 7408,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    }
+]

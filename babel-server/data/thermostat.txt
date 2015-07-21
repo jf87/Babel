@@ -512,3 +512,125 @@ SDH.PXCM-11/SDH.S4-09.ROOM TEMP:{SDH.PXCM-11/SDH.S4-09.ROOM TEMP
         }
     }
 ]
+
+2nd iteration 9am, tuesday
+
+jofu@jofu-mbp ~GOPATH/src/github.com/jf87/Babel/babel-server/data (develop-yuelao)$ curl -XPOST -d @thermostat.json -H "Content-Type: application/json" http://castle.cs.berkeley.edu:50005/api/link
+{"result":"Reduced Points to5"}
+
+matches map[SDH.PXCM-08/SDH.S5-19:ROOM TEMP:{SDH.PXCM-08/SDH.S5-19:ROOM TEMP [[1.437493206e+12 70]] c63986d2-88a8-58d6-8067-23e6e2c9f065} SDH.PXCM-08/SDH.S5-08:ROOM TEMP:{SDH.PXCM-08/SDH.S5-08:ROOM TEMP [[1.437493206e+12 70.25]] a1e02b4f-39c4-52c8-8801-28f2df998138} SDH.PXCM-08/SDH.S6-18:ROOM TEMP:{SDH.PXCM-08/SDH.S6-18:ROOM TEMP [[1.437493206e+12 70]] 811b0c17-e8dd-5b4c-a28c-dc2b4ec77eca} SDH.PXCM-11/SDH.S4-19:ROOM TEMP:{SDH.PXCM-11/SDH.S4-19:ROOM TEMP [[1.437493206e+12 70]] 0bdff822-eee5-5db9-b0f5-289f38efe535} SDH.PXCM-11/SDH.S4-15.ROOM TEMP:{SDH.PXCM-11/SDH.S4-15.ROOM TEMP [[1.437493206e+12 70.5]] 2a729a68-77f3-536d-8270-c2b99faad02f}]reducePoints
+reduced to:
+[
+    {
+        "desc": "",
+        "name": "SDH.PXCM-08",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "520 MICROFAB OFF",
+                "name": "SDH.S5-08:ROOM TEMP",
+                "props": {
+                    "instance": 51,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "577 WOMENS BATH",
+                "name": "SDH.S5-19:ROOM TEMP",
+                "props": {
+                    "instance": 91,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "677 WOMENS BATH",
+                "name": "SDH.S6-18:ROOM TEMP",
+                "props": {
+                    "instance": 165,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                74,
+                2
+            ],
+            "device_id": 7402,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    },
+    {
+        "desc": "",
+        "name": "SDH.PXCM-11",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "458 CONFERENCE",
+                "name": "SDH.S4-15.ROOM TEMP",
+                "props": {
+                    "instance": 39,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "477 WOMENS BATH",
+                "name": "SDH.S4-19:ROOM TEMP",
+                "props": {
+                    "instance": 286,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                74,
+                8
+            ],
+            "device_id": 7408,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    }
+]
+
+
+
