@@ -175,7 +175,7 @@ func checkForValue(a *appContext, d Device, br BabelReadings) (BabelReadings, er
 	var b []byte
 	var line string
 	for k, v := range m {
-		line = strconv.FormatFloat(k, 'f', 2, 64) + ", " + strconv.Itoa(v) + "/n"
+		line = strconv.FormatFloat(k, 'f', 2, 64) + ", " + strconv.Itoa(v) + "\n"
 		b = append(b, line...)
 	}
 	o := fmt.Sprintf("value_distribution-%v.csv", time.Now())
