@@ -765,3 +765,253 @@ reduced to:
         }
     }
 ]
+
+tuesday 9am, it2
+
+jofu@jofu-mbp ~GOPATH/src/github.com/jf87/Babel/babel-server/data (develop-yuelao)$ curl -XPOST -d @thermostat.json -H "Content-Type: application/json" http://castle.cs.berkeley.edu:50005/api/link
+{"result":"Reduced Points to12"}
+
+matches map[SDH.PXCM-11/SDH.S4-04.ROOM TEMP:{SDH.PXCM-11/SDH.S4-04.ROOM TEMP [[1.437493478e+12 69.5]] d4c91828-25b6-5870-a0f2-1be86094b742} SDH.PXCM-04/SDH.S1-13:ROOM TEMP:{SDH.PXCM-04/SDH.S1-13:ROOM TEMP [[1.437493478e+12 69.75]] 6260d0cf-ded4-5f2f-88f0-a52d098803e4} SDH.PXCM-01/SDH.AH1_RHC-4:ROOM TEMP:{SDH.PXCM-01/SDH.AH1_RHC-4:ROOM TEMP [[1.437493478e+12 69.25]] cf5fb07b-9663-5761-8b1f-73f46c1008da} SDH.PXCM-11/SDH.S4-08:ROOM TEMP:{SDH.PXCM-11/SDH.S4-08:ROOM TEMP [[1.437493478e+12 69]] a996d379-718b-5b41-ac7a-c3a864c239c0} SDH.PXCM-01/SDH.AH1_RHC-3:ROOM TEMP:{SDH.PXCM-01/SDH.AH1_RHC-3:ROOM TEMP [[1.437493478e+12 69.75]] 4bf4c381-1646-5b3a-9c8a-d2ab194b05f1} SDH.PXCM-08/SDH.S5-04:ROOM TEMP:{SDH.PXCM-08/SDH.S5-04:ROOM TEMP [[1.437493478e+12 69.75]] 75d254ea-6442-5305-9d26-780cc25947e1} SDH.PXCM-11/SDH.S4-02:ROOM TEMP:{SDH.PXCM-11/SDH.S4-02:ROOM TEMP [[1.437493478e+12 69.25]] 88c1b53e-d49c-5390-ac68-7f620b2a84e4} SDH.PXCM-08/SDH.S5-05:ROOM TEMP:{SDH.PXCM-08/SDH.S5-05:ROOM TEMP [[1.437493478e+12 69.25]] a6f3038a-0aab-59c2-a4ff-0cc35fc84298} SDH.PXCM-11/SDH.S4-12.ROOM TEMP:{SDH.PXCM-11/SDH.S4-12.ROOM TEMP [[1.437493478e+12 69.75]] 65523123-8b17-552b-9b58-eba0f1e80389} SDH.PXCM-11/SDH.S4-18:ROOM TEMP:{SDH.PXCM-11/SDH.S4-18:ROOM TEMP [[1.437493478e+12 69.5]] 86f8f7aa-8492-5be7-8cc9-d96d015bf595} SDH.PXCM-11/SDH.S4-18.ROOM TEMP:{SDH.PXCM-11/SDH.S4-18.ROOM TEMP [[1.437493478e+12 69.5]] 154c7cb0-f47f-5b3d-aeb3-dd08b4a3ce3c} SDH.PXCM-11/SDH.S4-08.ROOM TEMP:{SDH.PXCM-11/SDH.S4-08.ROOM TEMP [[1.437493478e+12 69]] f313e69a-5f4a-508d-b927-698648c350c9}]reducePoints
+reduced to:
+[
+    {
+        "desc": "",
+        "name": "SDH.PXCM-08",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "532 OPEN OFFICE",
+                "name": "SDH.S5-04:ROOM TEMP",
+                "props": {
+                    "instance": 35,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "538 OPEN OFFICE",
+                "name": "SDH.S5-05:ROOM TEMP",
+                "props": {
+                    "instance": 39,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                74,
+                2
+            ],
+            "device_id": 7402,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    },
+    {
+        "desc": "",
+        "name": "SDH.PXCM-04",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "133B",
+                "name": "SDH.S1-13:ROOM TEMP",
+                "props": {
+                    "instance": 49,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                74,
+                5
+            ],
+            "device_id": 7405,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    },
+    {
+        "desc": "",
+        "name": "SDH.PXCM-01",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "",
+                "name": "SDH.AH1_RHC-3:ROOM TEMP",
+                "props": {
+                    "instance": 26,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "",
+                "name": "SDH.AH1_RHC-4:ROOM TEMP",
+                "props": {
+                    "instance": 27,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                74,
+                6
+            ],
+            "device_id": 7406,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    },
+    {
+        "desc": "",
+        "name": "SDH.PXCM-11",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "440 OPEN OFFICE",
+                "name": "SDH.S4-04.ROOM TEMP",
+                "props": {
+                    "instance": 15,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "423 OFFICE",
+                "name": "SDH.S4-08.ROOM TEMP",
+                "props": {
+                    "instance": 23,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "450 OPEN OFFICE",
+                "name": "SDH.S4-12.ROOM TEMP",
+                "props": {
+                    "instance": 31,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "460 OPEN OFFICE",
+                "name": "SDH.S4-18.ROOM TEMP",
+                "props": {
+                    "instance": 46,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "432 OPEN OFFICE",
+                "name": "SDH.S4-02:ROOM TEMP",
+                "props": {
+                    "instance": 224,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "423 OFFICE",
+                "name": "SDH.S4-08:ROOM TEMP",
+                "props": {
+                    "instance": 248,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "460 OPEN OFFICE",
+                "name": "SDH.S4-18:ROOM TEMP",
+                "props": {
+                    "instance": 282,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                74,
+                8
+            ],
+            "device_id": 7408,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    }
+]
