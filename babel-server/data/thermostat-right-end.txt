@@ -1097,3 +1097,69 @@ reduced to:
     }
 ]
 
+Babel-Server has started...
+Body:
+{    "kind": "HVACTemperature",    "location": " ",    "model": "Generic Thermostat",    "value": "70",    "bacnet_types": [0]}
+
+reducing points by type
+points reduced: [{ SDH.PXCM-11 [{4 450 OPEN OFFICE SDH.S4-12.ROOM TEMP {31 0 Analog Input} 64} {4 460 OPEN OFFICE SDH.S4-18.ROOM TEMP {46 0 Analog Input} 64} {4 432 OPEN OFFICE SDH.S4-02:ROOM TEMP {224 0 Analog Input} 64} {4 460 OPEN OFFICE SDH.S4-18:ROOM TEMP {282 0 Analog Input} 64}] {[0 0 0 0 74 8] 7408 [192 168 1 100 186 192] 1476 77}}]
+{HVACTemperature   Generic Thermostat [0] 70 }
+70
+monitorBMS
+true
+now active
+86f8f7aa-8492-5be7-8cc9-d96d015bf595, [[1.437541395e+12 70.25]], SDH.PXCM-11/SDH.S4-18:ROOM TEMP88c1b53e-d49c-5390-ac68-7f620b2a84e4, [[1.437541395e+12 69.5]], SDH.PXCM-11/SDH.S4-02:ROOM TEMP154c7cb0-f47f-5b3d-aeb3-dd08b4a3ce3c, [[1.437541395e+12 70.25]], SDH.PXCM-11/SDH.S4-18.ROOM TEMPnow !active
+checkForValue
+matches map[SDH.PXCM-11/SDH.S4-18:ROOM TEMP:{SDH.PXCM-11/SDH.S4-18:ROOM TEMP [[1.437541395e+12 70.25]] 86f8f7aa-8492-5be7-8cc9-d96d015bf595} SDH.PXCM-11/SDH.S4-18.ROOM TEMP:{SDH.PXCM-11/SDH.S4-18.ROOM TEMP [[1.437541395e+12 70.25]] 154c7cb0-f47f-5b3d-aeb3-dd08b4a3ce3c}]reducePoints
+reduced to:
+[
+    {
+        "desc": "",
+        "name": "SDH.PXCM-11",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "460 OPEN OFFICE",
+                "name": "SDH.S4-18.ROOM TEMP",
+                "props": {
+                    "instance": 46,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "460 OPEN OFFICE",
+                "name": "SDH.S4-18:ROOM TEMP",
+                "props": {
+                    "instance": 282,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                74,
+                8
+            ],
+            "device_id": 7408,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    }
+]
