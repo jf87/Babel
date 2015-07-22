@@ -744,6 +744,73 @@ matches map[]reducePoints
 reduced to:
 null
 
+root@73b36256dea3:~/go/src/github.com/jf87/Babel/babel-server# go install && babel-server -lib=data/libraryv2.json -db=data/thermostat-458-it2-tuesday-9.json -bms=http://fitpc.banatao.berkeley.edu:8889/data/+ -port=50005
+Babel-Server has started...
+Body:
+{    "kind": "HVACTemperature",    "location": " ",    "model": "Generic Thermostat",    "value": "68",    "bacnet_types": [0]}
+
+reducing points by type
+points reduced: [{ SDH.PXCM-08 [{4 520 MICROFAB OFF SDH.S5-08:ROOM TEMP {51 0 Analog Input} 64} {4 577 WOMENS BATH SDH.S5-19:ROOM TEMP {91 0 Analog Input} 64} {4 677 WOMENS BATH SDH.S6-18:ROOM TEMP {165 0 Analog Input} 64}] {[0 0 0 0 74 2] 7402 [192 168 1 100 186 192] 1476 77}} { SDH.PXCM-11 [{4 458 CONFERENCE SDH.S4-15.ROOM TEMP {39 0 Analog Input} 64} {4 477 WOMENS BATH SDH.S4-19:ROOM TEMP {286 0 Analog Input} 64}] {[0 0 0 0 74 8] 7408 [192 168 1 100 186 192] 1476 77}}]
+{HVACTemperature   Generic Thermostat [0] 68 }
+68
+monitorBMS
+true
+now active
+0bdff822-eee5-5db9-b0f5-289f38efe535, [[1.43754209e+12 69.25]], SDH.PXCM-11/SDH.S4-19:ROOM TEMP811b0c17-e8dd-5b4c-a28c-dc2b4ec77eca, [[1.43754209e+12 68.75]], SDH.PXCM-08/SDH.S6-18:ROOM TEMPc63986d2-88a8-58d6-8067-23e6e2c9f065, [[1.43754209e+12 68.75]], SDH.PXCM-08/SDH.S5-19:ROOM TEMPnow !active
+checkForValue
+matches map[SDH.PXCM-08/SDH.S6-18:ROOM TEMP:{SDH.PXCM-08/SDH.S6-18:ROOM TEMP [[1.43754209e+12 68.75]] 811b0c17-e8dd-5b4c-a28c-dc2b4ec77eca} SDH.PXCM-08/SDH.S5-19:ROOM TEMP:{SDH.PXCM-08/SDH.S5-19:ROOM TEMP [[1.43754209e+12 68.75]] c63986d2-88a8-58d6-8067-23e6e2c9f065}]reducePoints
+reduced to:
+[
+    {
+        "desc": "",
+        "name": "SDH.PXCM-08",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "577 WOMENS BATH",
+                "name": "SDH.S5-19:ROOM TEMP",
+                "props": {
+                    "instance": 91,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "677 WOMENS BATH",
+                "name": "SDH.S6-18:ROOM TEMP",
+                "props": {
+                    "instance": 165,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                74,
+                2
+            ],
+            "device_id": 7402,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    }
+]
 
 
 
