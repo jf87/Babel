@@ -209,16 +209,32 @@ func reducePoints(a *appContext, br BabelReadings) (int, error) {
 
 	fmt.Println("reducePoints")
 	var prr Points
-	//i := 0
+	i := 0
 	j := 0
-	length := len(a.points_reduced)
-	for k, v := range a.points_reduced {
+	for _, v := range a.points_reduced {
+		for range v.Objs {
+			i++
+		}
+	}
+
+	fmt.Println("POINTS queried by BMS before")
+	fmt.Println(i)
+	l := 0
+	for _, v := range a.points_reduced {
+		var o Objects
+		for _, va := range v.Objs {
+			l++
+			o = append(o, va)
+			if l > (j / 2) {
+				break
+			}
+		}
+		v.Objs = o
 		prr = append(prr, v)
-		if len(prr) >= length {
-			fmt.Println("POINTS queried by BMS before")
-			fmt.Println(k * 2)
+		if l > (j / 2) {
 			break
 		}
+
 	}
 	/*
 			var o Objects
