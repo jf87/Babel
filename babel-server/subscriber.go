@@ -31,10 +31,13 @@ func monitorBMS(a *appContext, d Device) error {
 		"started function",
 		time.Since(start).Nanoseconds(),
 	)
-	fmt.Println("monitorBMS")
+	fmt.Println("monitorBMS bms starts querying")
+	fmt.Println(time.Since(start).Nanoseconds())
 	sync <- 1 //points get read by smap driver when 1 is received
 	//active = true
 	done := <-sync_smap //we reveice done==true here when smap then finished querying that points
+	fmt.Println("monitorBMS bms stoppped querying")
+	fmt.Println(time.Since(start).Nanoseconds())
 	fmt.Println(done)
 	active = false
 	fmt.Println("now active")
@@ -206,52 +209,62 @@ func reducePoints(a *appContext, br BabelReadings) (int, error) {
 
 	fmt.Println("reducePoints")
 	var prr Points
-	i := 0
+	//i := 0
 	j := 0
-	for _, v := range a.points_reduced {
-		var o Objects
-		for _, va := range v.Objs {
-			i++
-			_, ok := br[v.Name+"/"+va.Name]
-			if ok {
-				j++
-				o = append(o, va)
+	length := len(a.points_reduced)
+	for k, v := range a.points_reduced {
+		prr = append(prr, v)
+		if len(prr) >= length {
+			fmt.Println("POINTS queried by BMS before")
+			fmt.Println(k * 2)
+			break
+		}
+	}
+	/*
+			var o Objects
+			for _, va := range v.Objs {
+				i++
+				_, ok := br[v.Name+"/"+va.Name]
+				if ok {
+					j++
+					o = append(o, va)
+				}
+			}
+			if len(o) > 0 {
+				v.Objs = o
+				prr = append(prr, v)
 			}
 		}
-		if len(o) > 0 {
-			v.Objs = o
-			prr = append(prr, v)
+		if len(prr) > 0 {
+			a.points_reduced = prr
 		}
-	}
-	if len(prr) > 0 {
-		a.points_reduced = prr
-	}
-	log.Printf(
-		"%s\t%s\t%v\t%v",
-		"STATE",
-		"bms_points",
-		i,
-		time.Since(start).Nanoseconds(),
-	)
-	fmt.Println("reduced to:")
-	//fmt.Printf("reduced to %v\n", prr)
-	bolB, _ := json.Marshal(prr)
-	fmt.Println(string(bolB))
+		log.Printf(
+			"%s\t%s\t%v\t%v",
+			"STATE",
+			"bms_points",
+			i,
+			time.Since(start).Nanoseconds(),
+		)
+		fmt.Println("reduced to:")
+		//fmt.Printf("reduced to %v\n", prr)
+		bolB, _ := json.Marshal(prr)
+		fmt.Println(string(bolB))
 
-	log.Printf(
-		"%s\t%s\t%v\t%v",
-		"STATE",
-		"bms_points",
-		j,
-		time.Since(start).Nanoseconds(),
-	)
-	log.Printf(
-		"%s\t%s\t%s\t%v",
-		"STOP",
-		"reducePoints",
-		"stopped function",
-		time.Since(start).Nanoseconds(),
-	)
+		log.Printf(
+			"%s\t%s\t%v\t%v",
+			"STATE",
+			"bms_points",
+			j,
+			time.Since(start).Nanoseconds(),
+		)
+		log.Printf(
+			"%s\t%s\t%s\t%v",
+			"STOP",
+			"reducePoints",
+			"stopped function",
+			time.Since(start).Nanoseconds(),
+		)
+	*/
 	return j, nil
 }
 

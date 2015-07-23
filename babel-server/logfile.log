@@ -1574,6 +1574,7 @@
 2015/07/22 05:02:29 STOP	reducePoints	stopped function	41790021433
 2015/07/22 05:02:29 STOP	monitorBMS	stopped monitorBMS, matches: 2	41790033706
 2015/07/22 05:02:29 POST	/api/link	Link	41790088086
+<<<<<<< HEAD
 2015/07/22 05:13:39 START	BABEL	started babel	260
 2015/07/22 05:13:57 GET	/api/pointsinit	PointsInit	17597559368
 2015/07/22 05:13:57 GET	/api/pointsinit	PointsInit	17597750818
