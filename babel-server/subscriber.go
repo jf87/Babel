@@ -212,8 +212,9 @@ func reducePoints(a *appContext, br BabelReadings) (int, error) {
 	i := 0
 	j := 0
 	for _, v := range a.points_reduced {
-		for range v.Objs {
+		for ke, _ := range v.Objs {
 			i++
+			ke++
 		}
 	}
 
