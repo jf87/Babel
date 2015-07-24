@@ -1,0 +1,41 @@
+[
+    {
+        "desc": "1F OFFICE HW SYS",
+        "name": "SDH.PXCM-06",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:CONSUMPTN HI",
+                "props": {
+                    "instance": 1274,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            }
+          ],
+          "props": {
+              "adr": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  72,
+                  0
+              ],
+              "device_id": 7200,
+              "mac": [
+                  192,
+                  168,
+                  1,
+                  100,
+                  186,
+                  192
+              ],
+              "max_apdu": 1476,
+              "net": 77
+          }
+      }
+  ]
+            
