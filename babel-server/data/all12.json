@@ -1,0 +1,3518 @@
+[
+    {
+        "desc": "1F OFFICE HW SYS",
+        "name": "SDH.PXCM-06",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CL44A:VOLTAGE A.B",
+                "props": {
+                    "instance": 706,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CL44A:VOLTAGE B.C",
+                "props": {
+                    "instance": 707,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CL44A:VOLTAGE A.C",
+                "props": {
+                    "instance": 708,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CL44A:VOLTAGE A.N",
+                "props": {
+                    "instance": 709,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CL44A:VOLTAGE B.N",
+                "props": {
+                    "instance": 710,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CL44A:VOLTAGE C.N",
+                "props": {
+                    "instance": 711,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CL44A:CURRENT A",
+                "props": {
+                    "instance": 712,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CL44A:CURRENT B",
+                "props": {
+                    "instance": 713,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CL44A:CURRENT C",
+                "props": {
+                    "instance": 714,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:CONSUMPTN LO",
+                "props": {
+                    "instance": 715,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:CONSUMPTN HI",
+                "props": {
+                    "instance": 716,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:DEMAND",
+                "props": {
+                    "instance": 717,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 48
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:POWER FACTOR",
+                "props": {
+                    "instance": 718,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:CURRENT",
+                "props": {
+                    "instance": 719,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:VOLTAGE L.L",
+                "props": {
+                    "instance": 720,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:VOLTAGE L.N",
+                "props": {
+                    "instance": 721,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:APPARENT PWR",
+                "props": {
+                    "instance": 722,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 9
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:REACTIVE PWR",
+                "props": {
+                    "instance": 723,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 12
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:VOLTAGE A.B",
+                "props": {
+                    "instance": 724,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:VOLTAGE B.C",
+                "props": {
+                    "instance": 725,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:VOLTAGE A.C",
+                "props": {
+                    "instance": 726,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:VOLTAGE A.N",
+                "props": {
+                    "instance": 727,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:VOLTAGE B.N",
+                "props": {
+                    "instance": 728,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:VOLTAGE C.N",
+                "props": {
+                    "instance": 729,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:CURRENT A",
+                "props": {
+                    "instance": 730,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:CURRENT B",
+                "props": {
+                    "instance": 731,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 04  RM 475",
+                "name": "SDH.DEM.CR24A:CURRENT C",
+                "props": {
+                    "instance": 732,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:CONSUMPTN LO",
+                "props": {
+                    "instance": 733,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:CONSUMPTN HI",
+                "props": {
+                    "instance": 734,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:DEMAND",
+                "props": {
+                    "instance": 735,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 48
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:POWER FACTOR",
+                "props": {
+                    "instance": 736,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:CURRENT",
+                "props": {
+                    "instance": 737,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:VOLTAGE L.L",
+                "props": {
+                    "instance": 738,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:VOLTAGE L.N",
+                "props": {
+                    "instance": 739,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:APPARENT PWR",
+                "props": {
+                    "instance": 740,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 9
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:REACTIVE PWR",
+                "props": {
+                    "instance": 741,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 12
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:VOLTAGE A.B",
+                "props": {
+                    "instance": 742,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:VOLTAGE B.C",
+                "props": {
+                    "instance": 743,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:VOLTAGE A.C",
+                "props": {
+                    "instance": 744,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:VOLTAGE A.N",
+                "props": {
+                    "instance": 745,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:VOLTAGE B.N",
+                "props": {
+                    "instance": 746,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:VOLTAGE C.N",
+                "props": {
+                    "instance": 747,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:CURRENT A",
+                "props": {
+                    "instance": 748,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:CURRENT B",
+                "props": {
+                    "instance": 749,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CR25A:CURRENT C",
+                "props": {
+                    "instance": 750,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:CONSUMPTN LO",
+                "props": {
+                    "instance": 751,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:CONSUMPTN HI",
+                "props": {
+                    "instance": 752,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:DEMAND",
+                "props": {
+                    "instance": 753,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 48
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:POWER FACTOR",
+                "props": {
+                    "instance": 754,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:CURRENT",
+                "props": {
+                    "instance": 755,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:VOLTAGE L.L",
+                "props": {
+                    "instance": 756,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:VOLTAGE L.N",
+                "props": {
+                    "instance": 757,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:APPARENT PWR",
+                "props": {
+                    "instance": 758,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 9
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:REACTIVE PWR",
+                "props": {
+                    "instance": 759,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 12
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:VOLTAGE A.B",
+                "props": {
+                    "instance": 760,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:VOLTAGE B.C",
+                "props": {
+                    "instance": 761,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:VOLTAGE A.C",
+                "props": {
+                    "instance": 762,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:VOLTAGE A.N",
+                "props": {
+                    "instance": 763,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:VOLTAGE B.N",
+                "props": {
+                    "instance": 764,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:VOLTAGE C.N",
+                "props": {
+                    "instance": 765,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:CURRENT A",
+                "props": {
+                    "instance": 766,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:CURRENT B",
+                "props": {
+                    "instance": 767,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:CURRENT C",
+                "props": {
+                    "instance": 768,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:CONSUMPTN LO",
+                "props": {
+                    "instance": 769,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:CONSUMPTN HI",
+                "props": {
+                    "instance": 770,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:DEMAND",
+                "props": {
+                    "instance": 771,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 48
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:POWER FACTOR",
+                "props": {
+                    "instance": 772,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:CURRENT",
+                "props": {
+                    "instance": 773,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:VOLTAGE L.L",
+                "props": {
+                    "instance": 774,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:VOLTAGE L.N",
+                "props": {
+                    "instance": 775,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:APPARENT PWR",
+                "props": {
+                    "instance": 776,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 9
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:REACTIVE PWR",
+                "props": {
+                    "instance": 777,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 12
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:VOLTAGE A.B",
+                "props": {
+                    "instance": 778,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:VOLTAGE B.C",
+                "props": {
+                    "instance": 779,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:VOLTAGE A.C",
+                "props": {
+                    "instance": 780,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:VOLTAGE A.N",
+                "props": {
+                    "instance": 781,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:VOLTAGE B.N",
+                "props": {
+                    "instance": 782,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:VOLTAGE C.N",
+                "props": {
+                    "instance": 783,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:CURRENT A",
+                "props": {
+                    "instance": 784,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:CURRENT B",
+                "props": {
+                    "instance": 785,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:CURRENT C",
+                "props": {
+                    "instance": 786,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:CONSUMPTN LO",
+                "props": {
+                    "instance": 787,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:CONSUMPTN HI",
+                "props": {
+                    "instance": 788,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:DEMAND",
+                "props": {
+                    "instance": 789,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 48
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:POWER FACTOR",
+                "props": {
+                    "instance": 790,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:CURRENT",
+                "props": {
+                    "instance": 791,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:VOLTAGE L.L",
+                "props": {
+                    "instance": 792,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:VOLTAGE L.N",
+                "props": {
+                    "instance": 793,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:APPARENT PWR",
+                "props": {
+                    "instance": 794,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 9
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:REACTIVE PWR",
+                "props": {
+                    "instance": 795,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 12
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:VOLTAGE A.B",
+                "props": {
+                    "instance": 796,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:VOLTAGE B.C",
+                "props": {
+                    "instance": 797,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:VOLTAGE A.C",
+                "props": {
+                    "instance": 798,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:VOLTAGE A.N",
+                "props": {
+                    "instance": 799,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:VOLTAGE B.N",
+                "props": {
+                    "instance": 800,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:VOLTAGE C.N",
+                "props": {
+                    "instance": 801,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:CURRENT A",
+                "props": {
+                    "instance": 802,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:CURRENT B",
+                "props": {
+                    "instance": 803,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:CURRENT C",
+                "props": {
+                    "instance": 804,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CL47A:CONSUMPTN HI",
+                "props": {
+                    "instance": 805,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CL47A:DEMAND",
+                "props": {
+                    "instance": 806,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 48
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CL47A:POWER FACTOR",
+                "props": {
+                    "instance": 807,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CL47A:CURRENT",
+                "props": {
+                    "instance": 808,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CL47A:VOLTAGE L.L",
+                "props": {
+                    "instance": 809,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CL47A:VOLTAGE L.N",
+                "props": {
+                    "instance": 810,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CL47A:APPARENT PWR",
+                "props": {
+                    "instance": 811,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 9
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CL47A:REACTIVE PWR",
+                "props": {
+                    "instance": 812,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 12
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CL47A:VOLTAGE A.B",
+                "props": {
+                    "instance": 813,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CL47A:VOLTAGE B.C",
+                "props": {
+                    "instance": 814,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CL47A:VOLTAGE A.C",
+                "props": {
+                    "instance": 815,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CL47A:VOLTAGE A.N",
+                "props": {
+                    "instance": 816,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CL47A:VOLTAGE B.N",
+                "props": {
+                    "instance": 817,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CL47A:VOLTAGE C.N",
+                "props": {
+                    "instance": 818,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CL47A:CURRENT A",
+                "props": {
+                    "instance": 819,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CL47A:CURRENT B",
+                "props": {
+                    "instance": 820,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CL47A:CURRENT C",
+                "props": {
+                    "instance": 821,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:CONSUMPTN LO",
+                "props": {
+                    "instance": 822,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:CONSUMPTN HI",
+                "props": {
+                    "instance": 823,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:DEMAND",
+                "props": {
+                    "instance": 824,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 48
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:POWER FACTOR",
+                "props": {
+                    "instance": 825,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:CURRENT",
+                "props": {
+                    "instance": 826,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:VOLTAGE L.L",
+                "props": {
+                    "instance": 827,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:VOLTAGE L.N",
+                "props": {
+                    "instance": 828,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:APPARENT PWR",
+                "props": {
+                    "instance": 829,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 9
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:REACTIVE PWR",
+                "props": {
+                    "instance": 830,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 12
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:VOLTAGE A.B",
+                "props": {
+                    "instance": 831,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:VOLTAGE B.C",
+                "props": {
+                    "instance": 832,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:VOLTAGE A.C",
+                "props": {
+                    "instance": 833,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:VOLTAGE A.N",
+                "props": {
+                    "instance": 834,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:VOLTAGE B.N",
+                "props": {
+                    "instance": 835,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:VOLTAGE C.N",
+                "props": {
+                    "instance": 836,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:CURRENT A",
+                "props": {
+                    "instance": 837,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:CURRENT B",
+                "props": {
+                    "instance": 838,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 07  RM 775",
+                "name": "SDH.DEM.CR27A:CURRENT C",
+                "props": {
+                    "instance": 839,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "",
+                "name": "SDH.DEM.EOMD42A:CONSUMPTN LO",
+                "props": {
+                    "instance": 840,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "",
+                "name": "SDH.DEM.EOMD42A:CONSUMPTN HI",
+                "props": {
+                    "instance": 841,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "",
+                "name": "SDH.DEM.EOMD42A:DEMAND",
+                "props": {
+                    "instance": 842,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 48
+            },
+            {
+                "data_type": 4,
+                "desc": "",
+                "name": "SDH.DEM.EOMD42A:POWER FACTOR",
+                "props": {
+                    "instance": 843,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "",
+                "name": "SDH.DEM.EOMD42A:CURRENT",
+                "props": {
+                    "instance": 844,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT A",
+                "name": "SDH.SW.MSA.MAIN.CURRENT A",
+                "props": {
+                    "instance": 845,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT A",
+                "name": "SDH.SW.MSA.MS41A.CURRENT A",
+                "props": {
+                    "instance": 846,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT A",
+                "name": "SDH.SW.MSA.MS41B.CURRENT A",
+                "props": {
+                    "instance": 847,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT A",
+                "name": "SDH.SW.MSA.CD4RA.CURRENT A",
+                "props": {
+                    "instance": 848,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT A",
+                "name": "SDH.SW.MSA.CD41A.CURRENT A",
+                "props": {
+                    "instance": 849,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT A",
+                "name": "SDH.SW.MSA.CH-2.CURRENT A",
+                "props": {
+                    "instance": 850,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT A",
+                "name": "SDH.SW.MSA.ATS-E01.CURRENT A",
+                "props": {
+                    "instance": 851,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT A",
+                "name": "SDH.SW.MSA.ATS-ES.CURRENT A",
+                "props": {
+                    "instance": 852,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT A",
+                "name": "SDH.SW.MSA.MDC.CURRENT A",
+                "props": {
+                    "instance": 853,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT A",
+                "name": "SDH.SW.MSA.MSB.TIE.CURRENT A",
+                "props": {
+                    "instance": 854,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT A",
+                "name": "SDH.SW.MSB.ATS-E02.CURRENT A",
+                "props": {
+                    "instance": 855,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT A",
+                "name": "SDH.SW.MSB.CB4A.CURRENT A",
+                "props": {
+                    "instance": 856,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT A",
+                "name": "SDH.SW.MSB.ATS-EL.CURRENT A",
+                "props": {
+                    "instance": 857,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT A",
+                "name": "SDH.SW.MSB.MAIN.CURRENT A",
+                "props": {
+                    "instance": 858,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT A",
+                "name": "SDH.SW.MSB.MS41B.CURRENT A",
+                "props": {
+                    "instance": 859,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT A",
+                "name": "SDH.SW.MSB.MS41A.CURRENT A",
+                "props": {
+                    "instance": 860,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT B",
+                "name": "SDH.SW.MSA.MAIN.CURRENT B",
+                "props": {
+                    "instance": 861,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT B",
+                "name": "SDH.SW.MSA.MS41A.CURRENT B",
+                "props": {
+                    "instance": 862,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT B",
+                "name": "SDH.SW.MSA.MS41B.CURRENT B",
+                "props": {
+                    "instance": 863,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT B",
+                "name": "SDH.SW.MSA.CD4RA.CURRENT B",
+                "props": {
+                    "instance": 864,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT B",
+                "name": "SDH.SW.MSA.CD41A.CURRENT B",
+                "props": {
+                    "instance": 865,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT B",
+                "name": "SDH.SW.MSA.CH-2.CURRENT B",
+                "props": {
+                    "instance": 866,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT B",
+                "name": "SDH.SW.MSA.ATS-E01.CURRENT B",
+                "props": {
+                    "instance": 867,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT B",
+                "name": "SDH.SW.MSA.ATS-ES.CURRENT B",
+                "props": {
+                    "instance": 868,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT B",
+                "name": "SDH.SW.MSA.MDC.CURRENT B",
+                "props": {
+                    "instance": 869,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT B",
+                "name": "SDH.SW.MSA.MSB.TIE.CURRENT B",
+                "props": {
+                    "instance": 870,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE BC",
+                "name": "SDH.SW.MSA.MS41B.VOLTAGE BC",
+                "props": {
+                    "instance": 871,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE AB",
+                "name": "SDH.SW.MSA.CH-2.VOLTAGE AB",
+                "props": {
+                    "instance": 872,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT B",
+                "name": "SDH.SW.MSB.ATS-E02.CURRENT B",
+                "props": {
+                    "instance": 873,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT B",
+                "name": "SDH.SW.MSB.CB4A.CURRENT B",
+                "props": {
+                    "instance": 874,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "MSA/MSB REAL 3 P",
+                "name": "SDH.SW.MSA.MSB.REAL 3 PH",
+                "props": {
+                    "instance": 875,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT B",
+                "name": "SDH.SW.MSB.ATS-EL.CURRENT B",
+                "props": {
+                    "instance": 876,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT B",
+                "name": "SDH.SW.MSB.MAIN.CURRENT B",
+                "props": {
+                    "instance": 877,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT B",
+                "name": "SDH.SW.MSB.MS41B.CURRENT B",
+                "props": {
+                    "instance": 878,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT B",
+                "name": "SDH.SW.MSB.MS41A.CURRENT B",
+                "props": {
+                    "instance": 879,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "MSB ATS-E02",
+                "name": "SDH.SW.MSB.ATS-E02.PEAK DEMAND",
+                "props": {
+                    "instance": 880,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT C",
+                "name": "SDH.SW.MSA.MAIN.CURRENT C",
+                "props": {
+                    "instance": 881,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT C",
+                "name": "SDH.SW.MSA.MS41A.CURRENT C",
+                "props": {
+                    "instance": 882,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "MSA/MSB TIE",
+                "name": "SDH.SW.MSA.MSB.TIE.PEAK DEMAND",
+                "props": {
+                    "instance": 883,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "MSB ATS-E02",
+                "name": "SDH.SW.MSB.ATS-E02.PWR REAL 3P",
+                "props": {
+                    "instance": 884,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT C",
+                "name": "SDH.SW.MSA.MS41B.CURRENT C",
+                "props": {
+                    "instance": 885,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT C",
+                "name": "SDH.SW.MSA.CD4RA.CURRENT C",
+                "props": {
+                    "instance": 886,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "MSB ATS-EL",
+                "name": "SDH.SW.MSB.ATS-EL.APPARENT 3 P",
+                "props": {
+                    "instance": 887,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 8
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT C",
+                "name": "SDH.SW.MSA.CD41A.CURRENT C",
+                "props": {
+                    "instance": 888,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT C",
+                "name": "SDH.SW.MSA.CH-2.CURRENT C",
+                "props": {
+                    "instance": 889,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT C",
+                "name": "SDH.SW.MSA.ATS-E01.CURRENT C",
+                "props": {
+                    "instance": 890,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT C",
+                "name": "SDH.SW.MSA.ATS-ES.CURRENT C",
+                "props": {
+                    "instance": 891,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "MSA/MSB TIE",
+                "name": "SDH.SW.MSA.MSB.TIE.PWR REAL 3P",
+                "props": {
+                    "instance": 892,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT C",
+                "name": "SDH.SW.MSA.MDC.CURRENT C",
+                "props": {
+                    "instance": 893,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT C",
+                "name": "SDH.SW.MSA.MSB.TIE.CURRENT C",
+                "props": {
+                    "instance": 894,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "MSB ATS-E02",
+                "name": "SDH.SW.MSB.ATS-E02.APPARENT 3P",
+                "props": {
+                    "instance": 895,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 8
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT C",
+                "name": "SDH.SW.MSB.ATS-E02.CURRENT C",
+                "props": {
+                    "instance": 896,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT C",
+                "name": "SDH.SW.MSB.CB4A.CURRENT C",
+                "props": {
+                    "instance": 897,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT C",
+                "name": "SDH.SW.MSB.ATS-EL.CURRENT C",
+                "props": {
+                    "instance": 898,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT C",
+                "name": "SDH.SW.MSB.MAIN.CURRENT C",
+                "props": {
+                    "instance": 899,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT C",
+                "name": "SDH.SW.MSB.MS41B.CURRENT C",
+                "props": {
+                    "instance": 900,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT C",
+                "name": "SDH.SW.MSB.MS41A.CURRENT C",
+                "props": {
+                    "instance": 901,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT G",
+                "name": "SDH.SW.MSA.MAIN.CURRENT G",
+                "props": {
+                    "instance": 902,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT G",
+                "name": "SDH.SW.MSA.MS41A.CURRENT G",
+                "props": {
+                    "instance": 903,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT G",
+                "name": "SDH.SW.MSA.MS41B.CURRENT G",
+                "props": {
+                    "instance": 904,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT G",
+                "name": "SDH.SW.MSA.CD4RA.CURRENT G",
+                "props": {
+                    "instance": 905,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT G",
+                "name": "SDH.SW.MSA.CD41A.CURRENT G",
+                "props": {
+                    "instance": 906,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT G",
+                "name": "SDH.SW.MSA.CH-2.CURRENT G",
+                "props": {
+                    "instance": 907,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT G",
+                "name": "SDH.SW.MSA.ATS-E01.CURRENT G",
+                "props": {
+                    "instance": 908,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT G",
+                "name": "SDH.SW.MSA.ATS-ES.CURRENT G",
+                "props": {
+                    "instance": 909,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT G",
+                "name": "SDH.SW.MSA.MDC.CURRENT G",
+                "props": {
+                    "instance": 910,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT G",
+                "name": "SDH.SW.MSA.MSB.TIE.CURRENT G",
+                "props": {
+                    "instance": 911,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT G",
+                "name": "SDH.SW.MSB.ATS-E02.CURRENT G",
+                "props": {
+                    "instance": 912,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT G",
+                "name": "SDH.SW.MSB.CB4A.CURRENT G",
+                "props": {
+                    "instance": 913,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT G",
+                "name": "SDH.SW.MSB.ATS-EL.CURRENT G",
+                "props": {
+                    "instance": 914,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT G",
+                "name": "SDH.SW.MSB.MAIN.CURRENT G",
+                "props": {
+                    "instance": 915,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT G",
+                "name": "SDH.SW.MSB.MS41B.CURRENT G",
+                "props": {
+                    "instance": 916,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT G",
+                "name": "SDH.SW.MSB.MS41A.CURRENT G",
+                "props": {
+                    "instance": 917,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT N",
+                "name": "SDH.SW.MSA.MAIN.CURRENT N",
+                "props": {
+                    "instance": 918,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT N",
+                "name": "SDH.SW.MSA.MS41A.CURRENT N",
+                "props": {
+                    "instance": 919,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT N",
+                "name": "SDH.SW.MSA.MS41B.CURRENT N",
+                "props": {
+                    "instance": 920,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT N",
+                "name": "SDH.SW.MSA.CD4RA.CURRENT N",
+                "props": {
+                    "instance": 921,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT N",
+                "name": "SDH.SW.MSA.CD41A.CURRENT N",
+                "props": {
+                    "instance": 922,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT N",
+                "name": "SDH.SW.MSA.CH-2.CURRENT N",
+                "props": {
+                    "instance": 923,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT N",
+                "name": "SDH.SW.MSA.ATS-E01.CURRENT N",
+                "props": {
+                    "instance": 924,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT N",
+                "name": "SDH.SW.MSA.ATS-ES.CURRENT N",
+                "props": {
+                    "instance": 925,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT N",
+                "name": "SDH.SW.MSA.MDC.CURRENT N",
+                "props": {
+                    "instance": 926,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT N",
+                "name": "SDH.SW.MSA.MSB.TIE.CURRENT N",
+                "props": {
+                    "instance": 927,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT N",
+                "name": "SDH.SW.MSB.ATS-E02.CURRENT N",
+                "props": {
+                    "instance": 928,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT N",
+                "name": "SDH.SW.MSB.CB4A.CURRENT N",
+                "props": {
+                    "instance": 929,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT N",
+                "name": "SDH.SW.MSB.ATS-EL.CURRENT N",
+                "props": {
+                    "instance": 930,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT N",
+                "name": "SDH.SW.MSB.MAIN.CURRENT N",
+                "props": {
+                    "instance": 931,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT N",
+                "name": "SDH.SW.MSB.MS41B.CURRENT N",
+                "props": {
+                    "instance": 932,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "CURRENT N",
+                "name": "SDH.SW.MSB.MS41A.CURRENT N",
+                "props": {
+                    "instance": 933,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE AB",
+                "name": "SDH.SW.MSA.MAIN.VOLTAGE AB",
+                "props": {
+                    "instance": 934,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE AB",
+                "name": "SDH.SW.MSA.MS41A.VOLTAGE AB",
+                "props": {
+                    "instance": 935,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE AB",
+                "name": "SDH.SW.MSA.MS41B.VOLTAGE AB",
+                "props": {
+                    "instance": 936,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE AB",
+                "name": "SDH.SW.MSA.CD41A.VOLTAGE AB",
+                "props": {
+                    "instance": 937,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE CA",
+                "name": "SDH.SW.MSA.ATS-ES.VOLTAGE CA",
+                "props": {
+                    "instance": 938,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE AB",
+                "name": "SDH.SW.MSA.CD4RA.VOLTAGE AB",
+                "props": {
+                    "instance": 939,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE AB",
+                "name": "SDH.SW.MSA.ATS-E01.VOLTAGE AB",
+                "props": {
+                    "instance": 940,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE AB",
+                "name": "SDH.SW.MSA.ATS-ES.VOLTAGE AB",
+                "props": {
+                    "instance": 941,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE AB",
+                "name": "SDH.SW.MSA.MDC.VOLTAGE AB",
+                "props": {
+                    "instance": 942,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE AB",
+                "name": "SDH.SW.MSA.MSB.TIE.VOLTAGE AB",
+                "props": {
+                    "instance": 943,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE AB",
+                "name": "SDH.SW.MSB.ATS-E02.VOLTAGE AB",
+                "props": {
+                    "instance": 944,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE AB",
+                "name": "SDH.SW.MSB.CB4A.VOLTAGE AB",
+                "props": {
+                    "instance": 945,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE AB",
+                "name": "SDH.SW.MSB.ATS-EL.VOLTAGE AB",
+                "props": {
+                    "instance": 946,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE AB",
+                "name": "SDH.SW.MSB.MAIN.VOLTAGE AB",
+                "props": {
+                    "instance": 947,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE AB",
+                "name": "SDH.SW.MSB.MS41B.VOLTAGE AB",
+                "props": {
+                    "instance": 948,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE AB",
+                "name": "SDH.SW.MSB.MS41A.VOLTAGE AB",
+                "props": {
+                    "instance": 949,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE BC",
+                "name": "SDH.SW.MSA.MAIN.VOLTAGE BC",
+                "props": {
+                    "instance": 950,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE BC",
+                "name": "SDH.SW.MSA.MS41A.VOLTAGE BC",
+                "props": {
+                    "instance": 951,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE BC",
+                "name": "SDH.SW.MSA.CD4RA.VOLTAGE BC",
+                "props": {
+                    "instance": 952,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE BC",
+                "name": "SDH.SW.MSA.CD41A.VOLTAGE BC",
+                "props": {
+                    "instance": 953,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE BC",
+                "name": "SDH.SW.MSA.CH-2.VOLTAGE BC",
+                "props": {
+                    "instance": 954,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE BC",
+                "name": "SDH.SW.MSA.ATS-E01.VOLTAGE BC",
+                "props": {
+                    "instance": 955,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE BC",
+                "name": "SDH.SW.MSA.ATS-ES.VOLTAGE BC",
+                "props": {
+                    "instance": 956,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE BC",
+                "name": "SDH.SW.MSA.MDC.VOLTAGE BC",
+                "props": {
+                    "instance": 957,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE BC",
+                "name": "SDH.SW.MSA.MSB.TIE.VOLTAGE BC",
+                "props": {
+                    "instance": 958,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE BC",
+                "name": "SDH.SW.MSB.ATS-E02.VOLTAGE BC",
+                "props": {
+                    "instance": 959,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE BC",
+                "name": "SDH.SW.MSB.CB4A.VOLTAGE BC",
+                "props": {
+                    "instance": 960,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE BC",
+                "name": "SDH.SW.MSB.ATS-EL.VOLTAGE BC",
+                "props": {
+                    "instance": 961,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE BC",
+                "name": "SDH.SW.MSB.MAIN.VOLTAGE BC",
+                "props": {
+                    "instance": 962,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE BC",
+                "name": "SDH.SW.MSB.MS41B.VOLTAGE BC",
+                "props": {
+                    "instance": 963,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE BC",
+                "name": "SDH.SW.MSB.MS41A.VOLTAGE BC",
+                "props": {
+                    "instance": 964,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE CA",
+                "name": "SDH.SW.MSA.MAIN.VOLTAGE CA",
+                "props": {
+                    "instance": 965,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE CA",
+                "name": "SDH.SW.MSA.MS41A.VOLTAGE CA",
+                "props": {
+                    "instance": 966,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE CA",
+                "name": "SDH.SW.MSA.MS41B.VOLTAGE CA",
+                "props": {
+                    "instance": 967,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE CA",
+                "name": "SDH.SW.MSA.CD4RA.VOLTAGE CA",
+                "props": {
+                    "instance": 968,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE CA",
+                "name": "SDH.SW.MSA.CD41A.VOLTAGE CA",
+                "props": {
+                    "instance": 969,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE CA",
+                "name": "SDH.SW.MSA.CH-2.VOLTAGE CA",
+                "props": {
+                    "instance": 970,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE CA",
+                "name": "SDH.SW.MSA.ATS-E01.VOLTAGE CA",
+                "props": {
+                    "instance": 971,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE CA",
+                "name": "SDH.SW.MSA.MDC.VOLTAGE CA",
+                "props": {
+                    "instance": 972,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE CA",
+                "name": "SDH.SW.MSA.MSB.TIE.VOLTAGE CA",
+                "props": {
+                    "instance": 973,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE CA",
+                "name": "SDH.SW.MSB.ATS-E02.VOLTAGE CA",
+                "props": {
+                    "instance": 974,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE CA",
+                "name": "SDH.SW.MSB.CB4A.VOLTAGE CA",
+                "props": {
+                    "instance": 975,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE CA",
+                "name": "SDH.SW.MSB.ATS-EL.VOLTAGE CA",
+                "props": {
+                    "instance": 976,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE CA",
+                "name": "SDH.SW.MSB.MAIN.VOLTAGE CA",
+                "props": {
+                    "instance": 977,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE CA",
+                "name": "SDH.SW.MSB.MS41B.VOLTAGE CA",
+                "props": {
+                    "instance": 978,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "VOLTAGE CA",
+                "name": "SDH.SW.MSB.MS41A.VOLTAGE CA",
+                "props": {
+                    "instance": 979,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 5
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT A",
+                "name": "SDH.SW.MSA.MAIN.PEAK CURR A",
+                "props": {
+                    "instance": 980,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT A",
+                "name": "SDH.SW.MSA.MS41A.PEAK CURR A",
+                "props": {
+                    "instance": 981,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT A",
+                "name": "SDH.SW.MSA.MS41B.PEAK CURR A",
+                "props": {
+                    "instance": 982,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT A",
+                "name": "SDH.SW.MSA.CD4RA.PEAK CURR A",
+                "props": {
+                    "instance": 983,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT A",
+                "name": "SDH.SW.MSA.CD41A.PEAK CURR A",
+                "props": {
+                    "instance": 984,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT A",
+                "name": "SDH.SW.MSA.CH-2.PEAK CURR A",
+                "props": {
+                    "instance": 985,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT A",
+                "name": "SDH.SW.MSA.ATS-E01.PEAK CURR A",
+                "props": {
+                    "instance": 986,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT A",
+                "name": "SDH.SW.MSA.ATS-ES.PEAK CURR A",
+                "props": {
+                    "instance": 987,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT A",
+                "name": "SDH.SW.MSA.MDC.PEAK CURR A",
+                "props": {
+                    "instance": 988,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT A",
+                "name": "SDH.SW.MSA.MSB.TIE.PEAK CURR A",
+                "props": {
+                    "instance": 989,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT A",
+                "name": "SDH.SW.MSB.ATS-EL.PEAK CURR A",
+                "props": {
+                    "instance": 990,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT A",
+                "name": "SDH.SW.MSB.MAIN.PEAK CURR A",
+                "props": {
+                    "instance": 991,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT A",
+                "name": "SDH.SW.MSB.CB4A.PEAK CURR A",
+                "props": {
+                    "instance": 992,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT A",
+                "name": "SDH.SW.MSB.ATS-E02.PEAK CURR A",
+                "props": {
+                    "instance": 993,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT A",
+                "name": "SDH.SW.MSB.MS41B.PEAK CURR A",
+                "props": {
+                    "instance": 994,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT A",
+                "name": "SDH.SW.MSB.MS41A.PEAK CURR A",
+                "props": {
+                    "instance": 995,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT B",
+                "name": "SDH.SW.MSA.MAIN.PEAK CURR B",
+                "props": {
+                    "instance": 996,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT B",
+                "name": "SDH.SW.MSA.MS41A.PEAK CURR B",
+                "props": {
+                    "instance": 997,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT B",
+                "name": "SDH.SW.MSA.MS41B.PEAK CURR B",
+                "props": {
+                    "instance": 998,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT B",
+                "name": "SDH.SW.MSA.CD4RA.PEAK CURR B",
+                "props": {
+                    "instance": 999,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT B",
+                "name": "SDH.SW.MSA.CD41A.PEAK CURR B",
+                "props": {
+                    "instance": 1000,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT B",
+                "name": "SDH.SW.MSA.CH-2.PEAK CURR B",
+                "props": {
+                    "instance": 1001,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT B",
+                "name": "SDH.SW.MSA.ATS-E01.PEAK CURR B",
+                "props": {
+                    "instance": 1002,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT B",
+                "name": "SDH.SW.MSA.ATS-ES.PEAK CURR B",
+                "props": {
+                    "instance": 1003,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT B",
+                "name": "SDH.SW.MSA.MDC.PEAK CURR B",
+                "props": {
+                    "instance": 1004,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT B",
+                "name": "SDH.SW.MSA.MSB.TIE.PEAK CURR B",
+                "props": {
+                    "instance": 1005,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT B",
+                "name": "SDH.SW.MSB.ATS-E02.PEAK CURR B",
+                "props": {
+                    "instance": 1006,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT B",
+                "name": "SDH.SW.MSB.CB4A.PEAK CURR B",
+                "props": {
+                    "instance": 1007,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT B",
+                "name": "SDH.SW.MSB.ATS-EL.PEAK CURR B",
+                "props": {
+                    "instance": 1008,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT B",
+                "name": "SDH.SW.MSB.MAIN.PEAK CURR B",
+                "props": {
+                    "instance": 1009,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT B",
+                "name": "SDH.SW.MSB.MS41B.PEAK CURR B",
+                "props": {
+                    "instance": 1010,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT B",
+                "name": "SDH.SW.MSB.MS41A.PEAK CURR B",
+                "props": {
+                    "instance": 1011,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT C",
+                "name": "SDH.SW.MSA.MAIN.PEAK CURR C",
+                "props": {
+                    "instance": 1012,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT C",
+                "name": "SDH.SW.MSA.MS41A.PEAK CURR C",
+                "props": {
+                    "instance": 1013,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT C",
+                "name": "SDH.SW.MSA.MS41B.PEAK CURR C",
+                "props": {
+                    "instance": 1014,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT C",
+                "name": "SDH.SW.MSA.CD4RA.PEAK CURR C",
+                "props": {
+                    "instance": 1015,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT C",
+                "name": "SDH.SW.MSA.CD41A.PEAK CURR C",
+                "props": {
+                    "instance": 1016,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT C",
+                "name": "SDH.SW.MSA.CH-2.PEAK CURR C",
+                "props": {
+                    "instance": 1017,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT C",
+                "name": "SDH.SW.MSA.ATS-E01.PEAK CURR C",
+                "props": {
+                    "instance": 1018,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT C",
+                "name": "SDH.SW.MSA.ATS-ES.PEAK CURR C",
+                "props": {
+                    "instance": 1019,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT C",
+                "name": "SDH.SW.MSA.MDC.PEAK CURR C",
+                "props": {
+                    "instance": 1020,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT C",
+                "name": "SDH.SW.MSA.MSB.TIE.PEAK CURR C",
+                "props": {
+                    "instance": 1021,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT C",
+                "name": "SDH.SW.MSB.ATS-E02.PEAK CURR C",
+                "props": {
+                    "instance": 1022,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            }
+                    ],
+                    "props": {
+                        "adr": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            72,
+                            0
+                        ],
+                        "device_id": 7200,
+                        "mac": [
+                            192,
+                            168,
+                            1,
+                            100,
+                            186,
+                            192
+                        ],
+                        "max_apdu": 1476,
+                        "net": 77
+                    }
+                }
+            ]
+            
+            

@@ -1,0 +1,1745 @@
+[
+    {
+        "desc": "1F OFFICE HW SYS",
+        "name": "SDH.PXCM-06",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT C",
+                "name": "SDH.SW.MSB.CB4A.PEAK CURR C",
+                "props": {
+                    "instance": 1023,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT C",
+                "name": "SDH.SW.MSB.ATS-EL.PEAK CURR C",
+                "props": {
+                    "instance": 1024,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT C",
+                "name": "SDH.SW.MSB.MAIN.PEAK CURR C",
+                "props": {
+                    "instance": 1025,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT C",
+                "name": "SDH.SW.MSB.MS41B.PEAK CURR C",
+                "props": {
+                    "instance": 1026,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK CURRENT C",
+                "name": "SDH.SW.MSB.MS41A.PEAK CURR C",
+                "props": {
+                    "instance": 1027,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "REAL 3 PHASE PWR",
+                "name": "SDH.SW.MSB.MS41B.REAL 3 PH",
+                "props": {
+                    "instance": 1028,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "REACTIVE 3 PHASE",
+                "name": "SDH.SW.MSA.MAIN.REACTIVE 3 P",
+                "props": {
+                    "instance": 1029,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 11
+            },
+            {
+                "data_type": 4,
+                "desc": "REACTIVE 3 PHASE",
+                "name": "SDH.SW.MSA.MS41A.REACTIVE 3 P",
+                "props": {
+                    "instance": 1030,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 11
+            },
+            {
+                "data_type": 4,
+                "desc": "REACTIVE 3 PHASE",
+                "name": "SDH.SW.MSA.MS41B.REACTIVE 3 P",
+                "props": {
+                    "instance": 1031,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 11
+            },
+            {
+                "data_type": 4,
+                "desc": "REACTIVE 3 PHASE",
+                "name": "SDH.SW.MSA.CDR4A.REACTIVE 3 P",
+                "props": {
+                    "instance": 1032,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 11
+            },
+            {
+                "data_type": 4,
+                "desc": "REACTIVE 3 PHASE",
+                "name": "SDH.SW.MSA.CD41A.REACTIVE 3 P",
+                "props": {
+                    "instance": 1033,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 11
+            },
+            {
+                "data_type": 4,
+                "desc": "REACTIVE 3 PHASE",
+                "name": "SDH.SW.MSA.CH-2.REACTIVE 3 P",
+                "props": {
+                    "instance": 1034,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 11
+            },
+            {
+                "data_type": 4,
+                "desc": "REACTIVE 3 PHASE",
+                "name": "SDH.SW.MSA.ATS-E1.REACTIVE 3 P",
+                "props": {
+                    "instance": 1035,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 11
+            },
+            {
+                "data_type": 4,
+                "desc": "REACTIVE 3 PHASE",
+                "name": "SDH.SW.MSA.ATS-ES.REACTIVE 3 P",
+                "props": {
+                    "instance": 1036,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 11
+            },
+            {
+                "data_type": 4,
+                "desc": "REACTIVE 3 PHASE",
+                "name": "SDH.SW.MSA.MDC.REACTIVE 3 P",
+                "props": {
+                    "instance": 1037,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 11
+            },
+            {
+                "data_type": 4,
+                "desc": "REACTIVE 3 PHASE",
+                "name": "SDH.SW.MSA.MSB.REACTIVE 3 P",
+                "props": {
+                    "instance": 1038,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 11
+            },
+            {
+                "data_type": 4,
+                "desc": "REACTIVE 3 PHASE",
+                "name": "SDH.SW.MSA.ATS-E2.REACTIVE 3 P",
+                "props": {
+                    "instance": 1039,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 11
+            },
+            {
+                "data_type": 4,
+                "desc": "REACTIVE 3 PHASE",
+                "name": "SDH.SW.MSB.CB4A.REACTIVE 3 P",
+                "props": {
+                    "instance": 1040,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 11
+            },
+            {
+                "data_type": 4,
+                "desc": "REACTIVE 3 PHASE",
+                "name": "SDH.SW.MSB.ATS-EL.REACTIVE 3 P",
+                "props": {
+                    "instance": 1041,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 11
+            },
+            {
+                "data_type": 4,
+                "desc": "REACTIVE 3 PHASE",
+                "name": "SDH.SW.MSB.MAIN.REACTIVE 3 P",
+                "props": {
+                    "instance": 1042,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 11
+            },
+            {
+                "data_type": 4,
+                "desc": "REACTIVE 3 PHASE",
+                "name": "SDH.SW.MSB.MS41B.REACTIVE 3 P",
+                "props": {
+                    "instance": 1043,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 11
+            },
+            {
+                "data_type": 4,
+                "desc": "REACTIVE 3 PHASE",
+                "name": "SDH.SW.MSB.MS41A.REACTIVE 3 P",
+                "props": {
+                    "instance": 1044,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 11
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT 3PH PWR",
+                "name": "SDH.SW.MSA.MAIN.APPARENT 3 P",
+                "props": {
+                    "instance": 1045,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 8
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT 3PH PWR",
+                "name": "SDH.SW.MSA.MS41A.APPARENT 3 P",
+                "props": {
+                    "instance": 1046,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 8
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT 3PH PWR",
+                "name": "SDH.SW.MSA.MS41B.APPARENT 3 P",
+                "props": {
+                    "instance": 1047,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 8
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT 3PH PWR",
+                "name": "SDH.SW.MSA.CD4RA.APPARENT 3 P",
+                "props": {
+                    "instance": 1048,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 8
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT 3PH PWR",
+                "name": "SDH.SW.MSA.CD41A.APPARENT 3 P",
+                "props": {
+                    "instance": 1049,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 8
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT 3PH PWR",
+                "name": "SDH.SW.MSA.CH-2.APPARENT 3 P",
+                "props": {
+                    "instance": 1050,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 8
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT 3PH PWR",
+                "name": "SDH.SW.MSA.ATS-E1.APPARENT 3 P",
+                "props": {
+                    "instance": 1051,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 8
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT 3PH PWR",
+                "name": "SDH.SW.MSA.ATS-ES.APPARENT 3 P",
+                "props": {
+                    "instance": 1052,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 8
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT 3PH PWR",
+                "name": "SDH.SW.MSA.MDC.APPARENT 3 P",
+                "props": {
+                    "instance": 1053,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 8
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT 3PH PWR",
+                "name": "SDH.SW.MSA.MSB.APPARENT 3 P",
+                "props": {
+                    "instance": 1054,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 8
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT 3PH PWR",
+                "name": "SDH.SW.MSB.CB4A.APPARENT 3 P",
+                "props": {
+                    "instance": 1055,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 8
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT 3PH PWR",
+                "name": "SDH.SW.MSB.MAIN.APPARENT 3 P",
+                "props": {
+                    "instance": 1056,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 8
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT 3PH PWR",
+                "name": "SDH.SW.MSB.MS41B.APPARENT 3 P",
+                "props": {
+                    "instance": 1057,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 8
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT 3PH PWR",
+                "name": "SDH.SW.MSB.MS41A.APPARENT 3 P",
+                "props": {
+                    "instance": 1058,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 8
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT PF",
+                "name": "SDH.SW.MSA.MAIN.APPARENT PF",
+                "props": {
+                    "instance": 1059,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT PF",
+                "name": "SDH.SW.MSA.MS41A.APPARENT PF",
+                "props": {
+                    "instance": 1060,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT PF",
+                "name": "SDH.SW.MSA.MS41B.APPARENT PF",
+                "props": {
+                    "instance": 1061,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT PF",
+                "name": "SDH.SW.MSA.CD4RA.APPARENT PF",
+                "props": {
+                    "instance": 1062,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT PF",
+                "name": "SDH.SW.MSA.CD41A.APPARENT PF",
+                "props": {
+                    "instance": 1063,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT PF",
+                "name": "SDH.SW.MSA.CH-2.APPARENT PF",
+                "props": {
+                    "instance": 1064,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT PF",
+                "name": "SDH.SW.MSA.ATS-E1.APPARENT PF",
+                "props": {
+                    "instance": 1065,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT PF",
+                "name": "SDH.SW.MSA.ATS-ES.APPARENT PF",
+                "props": {
+                    "instance": 1066,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT PF",
+                "name": "SDH.SW.MSA.MDC.APPARENT PF",
+                "props": {
+                    "instance": 1067,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT PF",
+                "name": "SDH.SW.MSA.MSB.APPARENT PF",
+                "props": {
+                    "instance": 1068,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT PF",
+                "name": "SDH.SW.MSB.ATS-E2.APPARENT PF",
+                "props": {
+                    "instance": 1069,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT PF",
+                "name": "SDH.SW.MSB.CB4A.APPARENT PF",
+                "props": {
+                    "instance": 1070,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT PF",
+                "name": "SDH.SW.MSB.ATS-EL.APPARENT PF",
+                "props": {
+                    "instance": 1071,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT PF",
+                "name": "SDH.SW.MSB.MAIN.APPARENT PF",
+                "props": {
+                    "instance": 1072,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT PF",
+                "name": "SDH.SW.MSB.MS41B.APPARENT PF",
+                "props": {
+                    "instance": 1073,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "APPARENT PF",
+                "name": "SDH.SW.MSB.MS41A.APPARENT PF",
+                "props": {
+                    "instance": 1074,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQUENCY",
+                "name": "SDH.SW.MSA.MAIN.FREQUENCY",
+                "props": {
+                    "instance": 1075,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQUENCY",
+                "name": "SDH.SW.MSA.MS41A.FREQUENCY",
+                "props": {
+                    "instance": 1076,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQUENCY",
+                "name": "SDH.SW.MSA.MS41B.FREQUENCY",
+                "props": {
+                    "instance": 1077,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQUENCY",
+                "name": "SDH.SW.MSA.CD4RA.FREQUENCY",
+                "props": {
+                    "instance": 1078,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQUENCY",
+                "name": "SDH.SW.MSA.CD41A.FREQUENCY",
+                "props": {
+                    "instance": 1079,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQUENCY",
+                "name": "SDH.SW.MSA.CH-2.FREQUENCY",
+                "props": {
+                    "instance": 1080,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQUENCY",
+                "name": "SDH.SW.MSA.ATS-E1.FREQUENCY",
+                "props": {
+                    "instance": 1081,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQUENCY",
+                "name": "SDH.SW.MSA.ATS-ES.FREQUENCY",
+                "props": {
+                    "instance": 1082,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQUENCY",
+                "name": "SDH.SW.MSA.MDC.FREQUENCY",
+                "props": {
+                    "instance": 1083,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQUENCY",
+                "name": "SDH.SW.MSA.MSB.FREQUENCY",
+                "props": {
+                    "instance": 1084,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQUENCY",
+                "name": "SDH.SW.MSA.ATS-E2.FREQUENCY",
+                "props": {
+                    "instance": 1085,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQUENCY",
+                "name": "SDH.SW.MSB.CB4A.FREQUENCY",
+                "props": {
+                    "instance": 1086,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQUENCY",
+                "name": "SDH.SW.MSB.ATS-EL.FREQUENCY",
+                "props": {
+                    "instance": 1087,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQUENCY",
+                "name": "SDH.SW.MSB.MAIN.FREQUENCY",
+                "props": {
+                    "instance": 1088,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQUENCY",
+                "name": "SDH.SW.MSB.MS41B.FREQUENCY",
+                "props": {
+                    "instance": 1089,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQUENCY",
+                "name": "SDH.SW.MSB.MS41A.FREQUENCY",
+                "props": {
+                    "instance": 1090,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK DEMAND",
+                "name": "SDH.SW.MSA.MAIN.PEAK DEMAND",
+                "props": {
+                    "instance": 1091,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK DEMAND",
+                "name": "SDH.SW.MSA.MS41A.PEAK DEMAND",
+                "props": {
+                    "instance": 1092,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK DEMAND",
+                "name": "SDH.SW.MSA.MS41B.PEAK DEMAND",
+                "props": {
+                    "instance": 1093,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK DEMAND",
+                "name": "SDH.SW.MSA.CD4RA.PEAK DEMAND",
+                "props": {
+                    "instance": 1094,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK DEMAND",
+                "name": "SDH.SW.MSA.CD41A.PEAK DEMAND",
+                "props": {
+                    "instance": 1095,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK DEMAND",
+                "name": "SDH.SW.MSA.CH-2.PEAK DEMAND",
+                "props": {
+                    "instance": 1096,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK DEMAND",
+                "name": "SDH.SW.MSA.ATS-E1.PEAK DEMAND",
+                "props": {
+                    "instance": 1097,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK DEMAND",
+                "name": "SDH.SW.MSA.ATS-ES.PEAK DEMAND",
+                "props": {
+                    "instance": 1098,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK DEMAND",
+                "name": "SDH.SW.MSA.MDC.PEAK DEMAND",
+                "props": {
+                    "instance": 1099,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK DEMAND",
+                "name": "SDH.SW.MSA.MSB.PEAK DEMAND",
+                "props": {
+                    "instance": 1100,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK DEMAND",
+                "name": "SDH.SW.MSB.ATS-E2.PEAK DEMAND",
+                "props": {
+                    "instance": 1101,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK DEMAND",
+                "name": "SDH.SW.MSB.CB4A.PEAK DEMAND",
+                "props": {
+                    "instance": 1102,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK DEMAND",
+                "name": "SDH.SW.MSB.ATS-EL.PEAK DEMAND",
+                "props": {
+                    "instance": 1103,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK DEMAND",
+                "name": "SDH.SW.MSB.MAIN.PEAK DEMAND",
+                "props": {
+                    "instance": 1104,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK DEMAND",
+                "name": "SDH.SW.MSB.MS41B.PEAK DEMAND",
+                "props": {
+                    "instance": 1105,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PEAK DEMAND",
+                "name": "SDH.SW.MSB.MS41A.PEAK DEMAND",
+                "props": {
+                    "instance": 1106,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PWR REAL 3 PHASE",
+                "name": "SDH.SW.MSA.MAIN.PWR REAL 3 P",
+                "props": {
+                    "instance": 1107,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PWR REAL 3 PHASE",
+                "name": "SDH.SW.MSA.MS41A.PWR REAL 3 P",
+                "props": {
+                    "instance": 1108,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PWR REAL 3 PHASE",
+                "name": "SDH.SW.MSA.MS41B.PWR REAL 3 P",
+                "props": {
+                    "instance": 1109,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PWR REAL 3 PHASE",
+                "name": "SDH.SW.MSA.CD4RA.PWR REAL 3 P",
+                "props": {
+                    "instance": 1110,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PWR REAL 3 PHASE",
+                "name": "SDH.SW.MSA.CD41A.PWR REAL 3 P",
+                "props": {
+                    "instance": 1111,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PWR REAL 3 PHASE",
+                "name": "SDH.SW.MSA.CH-2.PWR REAL 3 P",
+                "props": {
+                    "instance": 1112,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PWR REAL 3 PHASE",
+                "name": "SDH.SW.MSA.ATS-E1.PWR REAL 3 P",
+                "props": {
+                    "instance": 1113,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PWR REAL 3 PHASE",
+                "name": "SDH.SW.MSA.ATS-ES.PWR REAL 3 P",
+                "props": {
+                    "instance": 1114,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PWR REAL 3 PHASE",
+                "name": "SDH.SW.MSA.MDC.PWR REAL 3 P",
+                "props": {
+                    "instance": 1115,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PWR REAL 3 PHASE",
+                "name": "SDH.SW.MSA.MSB.PWR REAL 3 P",
+                "props": {
+                    "instance": 1116,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PWR REAL 3 PHASE",
+                "name": "SDH.SW.MSA.ATS-E2.PWR REAL 3 P",
+                "props": {
+                    "instance": 1117,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PWR REAL 3 PHASE",
+                "name": "SDH.SW.MSB.CB4A.PWR REAL 3 P",
+                "props": {
+                    "instance": 1118,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PWR REAL 3 PHASE",
+                "name": "SDH.SW.MSB.ATS-EL.PWR REAL 3 P",
+                "props": {
+                    "instance": 1119,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PWR REAL 3 PHASE",
+                "name": "SDH.SW.MSB.MAIN.PWR REAL 3 P",
+                "props": {
+                    "instance": 1120,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "PWR REAL 3 PHASE",
+                "name": "SDH.SW.MSB.MS41A.PWR REAL 3 P",
+                "props": {
+                    "instance": 1121,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 47
+            },
+            {
+                "data_type": 4,
+                "desc": "POWER FACTOR",
+                "name": "SDH.SW.MSA.MAIN.PWR FACTOR",
+                "props": {
+                    "instance": 1122,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "POWER FACTOR",
+                "name": "SDH.SW.MSA.MS41A.PWR FACTOR",
+                "props": {
+                    "instance": 1123,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "POWER FACTOR",
+                "name": "SDH.SW.MSA.MS41B.PWR FACTOR",
+                "props": {
+                    "instance": 1124,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "POWER FACTOR",
+                "name": "SDH.SW.MSA.CD4RA.PWR FACTOR",
+                "props": {
+                    "instance": 1125,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "POWER FACTOR",
+                "name": "SDH.SW.MSA.CD41A.PWR FACTOR",
+                "props": {
+                    "instance": 1126,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "POWER FACTOR",
+                "name": "SDH.SW.MSA.CH-2.PWR FACTOR",
+                "props": {
+                    "instance": 1127,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "POWER FACTOR",
+                "name": "SDH.SW.MSA.ATS-E1.PWR FACTOR",
+                "props": {
+                    "instance": 1128,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "POWER FACTOR",
+                "name": "SDH.SW.MSA.ATS-ES.PWR FACTOR",
+                "props": {
+                    "instance": 1129,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "POWER FACTOR",
+                "name": "SDH.SW.MSA.MDC.PWR FACTOR",
+                "props": {
+                    "instance": 1130,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "POWER FACTOR",
+                "name": "SDH.SW.MSA.MSB.PWR FACTOR",
+                "props": {
+                    "instance": 1131,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "POWER FACTOR",
+                "name": "SDH.SW.MSB.ATS-E2.PWR FACTOR",
+                "props": {
+                    "instance": 1132,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "POWER FACTOR",
+                "name": "SDH.SW.MSB.CB4A.PWR FACTOR",
+                "props": {
+                    "instance": 1133,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "POWER FACTOR",
+                "name": "SDH.SW.MSB.ATS-EL.PWR FACTOR",
+                "props": {
+                    "instance": 1134,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "POWER FACTOR",
+                "name": "SDH.SW.MSB.MAIN.PWR FACTOR",
+                "props": {
+                    "instance": 1135,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "POWER FACTOR",
+                "name": "SDH.SW.MSB.MS41B.PWR FACTOR",
+                "props": {
+                    "instance": 1136,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "POWER FACTOR",
+                "name": "SDH.SW.MSB.MS41A.PWR FACTOR",
+                "props": {
+                    "instance": 1137,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQ  HZ",
+                "name": "SDH.SW.MSA.MAIN.FREQ",
+                "props": {
+                    "instance": 1138,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQ  HZ",
+                "name": "SDH.SW.MSA.MS41A.FREQ",
+                "props": {
+                    "instance": 1139,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQ  HZ",
+                "name": "SDH.SW.MSA.MS41B.FREQ",
+                "props": {
+                    "instance": 1140,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQ  HZ",
+                "name": "SDH.SW.MSA.CD4RA.FREQ",
+                "props": {
+                    "instance": 1141,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQ  HZ",
+                "name": "SDH.SW.MSA.CD41A.FREQ",
+                "props": {
+                    "instance": 1142,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQ  HZ",
+                "name": "SDH.SW.MSA.CH-2.FREQ",
+                "props": {
+                    "instance": 1143,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQ  HZ",
+                "name": "SDH.SW.MSA.ATS-E1.FREQ",
+                "props": {
+                    "instance": 1144,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQ  HZ",
+                "name": "SDH.SW.MSA.ATS-ES.FREQ",
+                "props": {
+                    "instance": 1145,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQ  HZ",
+                "name": "SDH.SW.MSA.MDC.FREQ",
+                "props": {
+                    "instance": 1146,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQ  HZ",
+                "name": "SDH.SW.MSA.MSB.FREQ",
+                "props": {
+                    "instance": 1147,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQ  HZ",
+                "name": "SDH.SW.MSB.ATS-E2.FREQ",
+                "props": {
+                    "instance": 1148,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQ  HZ",
+                "name": "SDH.SW.MSB.CB4A.FREQ",
+                "props": {
+                    "instance": 1149,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQ  HZ",
+                "name": "SDH.SW.MSB.ATS-EL.FREQ",
+                "props": {
+                    "instance": 1150,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQ  HZ",
+                "name": "SDH.SW.MSB.MAIN.FREQ",
+                "props": {
+                    "instance": 1151,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQ  HZ",
+                "name": "SDH.SW.MSB.MS41B.FREQ",
+                "props": {
+                    "instance": 1152,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "FREQ  HZ",
+                "name": "SDH.SW.MSB.MS41A.FREQ",
+                "props": {
+                    "instance": 1153,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 27
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY FORWARD",
+                "name": "SDH.SW.MSA.MAIN.ENERGY FORWD",
+                "props": {
+                    "instance": 1154,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY FORWARD",
+                "name": "SDH.SW.MSA.MS41A.ENERGY FORWD",
+                "props": {
+                    "instance": 1155,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY FORWARD",
+                "name": "SDH.SW.MSA.MS41B.ENERGY FORWD",
+                "props": {
+                    "instance": 1156,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY FORWARD",
+                "name": "SDH.SW.MSA.CD4RA.ENERGY FORWD",
+                "props": {
+                    "instance": 1157,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY FORWARD",
+                "name": "SDH.SW.MSA.CD41A.ENERGY FORWD",
+                "props": {
+                    "instance": 1158,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY FORWARD",
+                "name": "SDH.SW.MSA.CH-2.ENERGY FORWD",
+                "props": {
+                    "instance": 1159,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY FORWARD",
+                "name": "SDH.SW.MSA.ATS-E1.ENERGY FORWD",
+                "props": {
+                    "instance": 1160,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY FORWARD",
+                "name": "SDH.SW.MSA.ATS-ES.ENERGY FORWD",
+                "props": {
+                    "instance": 1161,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY FORWARD",
+                "name": "SDH.SW.MSA.MDC.ENERGY FORWD",
+                "props": {
+                    "instance": 1162,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY FORWARD",
+                "name": "SDH.SW.MSA.MSB.ENERGY FORWD",
+                "props": {
+                    "instance": 1163,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY FORWARD",
+                "name": "SDH.SW.MSA.ATS-E2.ENERGY FORWD",
+                "props": {
+                    "instance": 1164,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY FORWARD",
+                "name": "SDH.SW.MSB.CB4A.ENERGY FORWD",
+                "props": {
+                    "instance": 1165,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY FORWARD",
+                "name": "SDH.SW.MSB.ATS-EL.ENERGY FORWD",
+                "props": {
+                    "instance": 1166,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY FORWARD",
+                "name": "SDH.SW.MSB.MAIN.ENERGY FORWD",
+                "props": {
+                    "instance": 1167,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY FORWARD",
+                "name": "SDH.SW.MSB.MS41B.ENERGY FORWD",
+                "props": {
+                    "instance": 1168,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY FORWARD",
+                "name": "SDH.SW.MSB.MS41A.ENERGY FORWD",
+                "props": {
+                    "instance": 1169,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY REVERSE",
+                "name": "SDH.SW.MSA.MAIN.ENERGY REVRS",
+                "props": {
+                    "instance": 1170,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY REVERSE",
+                "name": "SDH.SW.MSA.MS41A.ENERGY REVRS",
+                "props": {
+                    "instance": 1171,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY REVERSE",
+                "name": "SDH.SW.MSA.MS41B.ENERGY REVRS",
+                "props": {
+                    "instance": 1172,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY REVERSE",
+                "name": "SDH.SW.MSA.CD4RA.ENERGY REVRS",
+                "props": {
+                    "instance": 1173,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY REVERSE",
+                "name": "SDH.SW.MSA.CD41A.ENERGY REVRS",
+                "props": {
+                    "instance": 1174,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY REVERSE",
+                "name": "SDH.SW.MSA.CH-2.ENERGY REVRS",
+                "props": {
+                    "instance": 1175,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY REVERSE",
+                "name": "SDH.SW.MSA.ATS-E1.ENERGY REVRS",
+                "props": {
+                    "instance": 1176,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY REVERSE",
+                "name": "SDH.SW.MSA.ATS-ES.ENERGY REVRS",
+                "props": {
+                    "instance": 1177,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "ENERGY REVERSE",
+                "name": "SDH.SW.MSA.MDC.ENERGY REVRS",
+                "props": {
+                    "instance": 1178,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                72,
+                0
+            ],
+            "device_id": 7200,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    }
+]

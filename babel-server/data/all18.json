@@ -1,0 +1,513 @@
+[
+    {
+        "desc": "1F OFFICE HW SYS",
+        "name": "SDH.PXCM-06",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "Rm 175",
+                "name": "SDH.DEM.CR21A:VOLTAGE L.N",
+                "props": {
+                    "instance": 1264,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 164",
+                "name": "SDH.DEM.ESCD4RA:VOLTAGE C.N",
+                "props": {
+                    "instance": 1265,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 175",
+                "name": "SDH.DEM.CR21A:APPARENT PWR",
+                "props": {
+                    "instance": 1266,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 9
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 164",
+                "name": "SDH.DEM.ESCD4RA:CURRENT A",
+                "props": {
+                    "instance": 1267,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 175",
+                "name": "SDH.DEM.CR21A:VOLTAGE A.N",
+                "props": {
+                    "instance": 1268,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 175",
+                "name": "SDH.DEM.CR21A:VOLTAGE B.N",
+                "props": {
+                    "instance": 1269,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 175",
+                "name": "SDH.DEM.CR21A:CURRENT C",
+                "props": {
+                    "instance": 1270,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 164",
+                "name": "SDH.DEM.ESCD4RA:CURRENT B",
+                "props": {
+                    "instance": 1271,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 164",
+                "name": "SDH.DEM.ESCD4RA:CURRENT C",
+                "props": {
+                    "instance": 1272,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:CONSUMPTN LO",
+                "props": {
+                    "instance": 1273,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:CONSUMPTN HI",
+                "props": {
+                    "instance": 1274,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:DEMAND",
+                "props": {
+                    "instance": 1275,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 48
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:POWER FACTOR",
+                "props": {
+                    "instance": 1276,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:CURRENT",
+                "props": {
+                    "instance": 1277,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:VOLTAGE L.L",
+                "props": {
+                    "instance": 1278,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:VOLTAGE L.N",
+                "props": {
+                    "instance": 1279,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:APPARENT PWR",
+                "props": {
+                    "instance": 1280,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 9
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:REACTIVE PWR",
+                "props": {
+                    "instance": 1281,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 12
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:VOLTAGE A.B",
+                "props": {
+                    "instance": 1282,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:VOLTAGE B.C",
+                "props": {
+                    "instance": 1283,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:VOLTAGE A.C",
+                "props": {
+                    "instance": 1284,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:VOLTAGE A.N",
+                "props": {
+                    "instance": 1285,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:VOLTAGE B.N",
+                "props": {
+                    "instance": 1286,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:VOLTAGE C.N",
+                "props": {
+                    "instance": 1287,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:CURRENT A",
+                "props": {
+                    "instance": 1288,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:CURRENT B",
+                "props": {
+                    "instance": 1289,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:CURRENT C",
+                "props": {
+                    "instance": 1290,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "HWP2 CURRENT",
+                "name": "SDH.HWP2_VFD:CURRENT",
+                "props": {
+                    "instance": 1291,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 3
+            },
+            {
+                "data_type": 4,
+                "desc": "HWP1 PCT OUTPUT",
+                "name": "SDH.HWP1_VFD:PCT OUTPUT",
+                "props": {
+                    "instance": 1292,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "HWP2 PCT OUTPUT",
+                "name": "SDH.HWP2_VFD:PCT OUTPUT",
+                "props": {
+                    "instance": 1293,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "HWP1 VFD",
+                "name": "SDH.HWP1_VFD:POWER",
+                "props": {
+                    "instance": 1294,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 51
+            },
+            {
+                "data_type": 4,
+                "desc": "HWP2 VFD",
+                "name": "SDH.HWP2_VFD:POWER",
+                "props": {
+                    "instance": 1295,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 51
+            },
+            {
+                "data_type": 4,
+                "desc": "HW SUPPLY TEMP",
+                "name": "SDH.HW_HWST",
+                "props": {
+                    "instance": 1296,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "HW RETURN TEMP",
+                "name": "SDH.HW_HWRT",
+                "props": {
+                    "instance": 1297,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "HW DIFF PRESS",
+                "name": "SDH.HW_DP",
+                "props": {
+                    "instance": 1298,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "HWP1 SPEED",
+                "name": "SDH.HWP1_VFD:INPUT REF 1",
+                "props": {
+                    "instance": 1,
+                    "type": 1,
+                    "type_str": "Analog Output"
+                },
+                "unit": 98
+            },
+            {
+                "data_type": 4,
+                "desc": "HWP2 SPEED",
+                "name": "SDH.HWP2_VFD:INPUT REF 1",
+                "props": {
+                    "instance": 2,
+                    "type": 1,
+                    "type_str": "Analog Output"
+                },
+                "unit": 98
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CL46A:OVRD TIME",
+                "props": {
+                    "instance": 5,
+                    "type": 1,
+                    "type_str": "Analog Output"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 05  RM 575",
+                "name": "SDH.DEM.CL45A:OVRD TIME",
+                "props": {
+                    "instance": 6,
+                    "type": 1,
+                    "type_str": "Analog Output"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 175",
+                "name": "SDH.DEM.CR21A:OVRD TIME",
+                "props": {
+                    "instance": 7,
+                    "type": 1,
+                    "type_str": "Analog Output"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "",
+                "name": "SDH.BOILER.DIAG.FLN2P1",
+                "props": {
+                    "instance": 8,
+                    "type": 1,
+                    "type_str": "Analog Output"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "",
+                "name": "SDH.BOILER.DIAG.FLN1P1",
+                "props": {
+                    "instance": 9,
+                    "type": 1,
+                    "type_str": "Analog Output"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "FLOOR 06  RM 675",
+                "name": "SDH.DEM.CR26A:OVRD TIME",
+                "props": {
+                    "instance": 10,
+                    "type": 1,
+                    "type_str": "Analog Output"
+                },
+                "unit": 95
+            },
+            {
+                "data_type": 4,
+                "desc": "Rm 156",
+                "name": "SDH.DEM.CL41A:OVRD TIME",
+                "props": {
+                    "instance": 11,
+                    "type": 1,
+                    "type_str": "Analog Output"
+                },
+                "unit": 95
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                72,
+                0
+            ],
+            "device_id": 7200,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    }
+]
