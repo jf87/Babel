@@ -233,6 +233,7 @@ func reducePoints(a *appContext, br BabelReadings) (int, error) {
 		v.Objs = o
 		prr = append(prr, v)
 		if l > (j / 2) {
+			a.points_reduced = prr
 			break
 		}
 
