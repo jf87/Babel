@@ -1,0 +1,7 @@
+{
+    "kind": "Generic Device",
+    "location": " ",
+    "model": "All relevent points",
+    "value": "71",
+    "bacnet_types": [0,4]
+}

@@ -32,4 +32,28 @@ var routes = Routes{
 		"/api/link",
 		LinkHandler,
 	},
+	Route{
+		"Success",
+		"GET",
+		"/api/result",
+		SuccessHandler,
+	},
+	Route{
+		"Points",
+		"GET",
+		"/api/points",
+		PointsHandler,
+	},
+	Route{
+		"PointsInit",
+		"GET",
+		"/api/pointsinit",
+		PointsInitHandler,
+	},
+	Route{
+		"Sync",
+		"GET",
+		"/api/sync",
+		SyncHandler,
+	},
 }
