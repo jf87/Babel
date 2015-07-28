@@ -1,0 +1,133 @@
+[
+    {
+        "desc": "",
+        "name": "SDH.PXCM-10",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "SUPPLY AIR TEMP",
+                "name": "SDH.RAH12_SAT",
+                "props": {
+                    "instance": 23,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "SUPPLY AIR TEMP",
+                "name": "SDH.RAH11_SAT",
+                "props": {
+                    "instance": 30,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                74,
+                7
+            ],
+            "device_id": 7407,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    },
+    {
+        "desc": "",
+        "name": "SDH.PXCM-11",
+        "objs": [
+            {
+                "data_type": 4,
+                "desc": "458 CONFERENCE",
+                "name": "SDH.S4-15.ROOM TEMP",
+                "props": {
+                    "instance": 39,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "466 OPEN OFFICE",
+                "name": "SDH.S4-20.ROOM TEMP",
+                "props": {
+                    "instance": 50,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "250 CLASSROOM",
+                "name": "SDH.S2-06:ROOM TEMP",
+                "props": {
+                    "instance": 80,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "429 EMER ELECT",
+                "name": "SDH.S4-10:ROOM TEMP",
+                "props": {
+                    "instance": 256,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            },
+            {
+                "data_type": 4,
+                "desc": "477 WOMENS BATH",
+                "name": "SDH.S4-19:ROOM TEMP",
+                "props": {
+                    "instance": 286,
+                    "type": 0,
+                    "type_str": "Analog Input"
+                },
+                "unit": 64
+            }
+        ],
+        "props": {
+            "adr": [
+                0,
+                0,
+                0,
+                0,
+                74,
+                8
+            ],
+            "device_id": 7408,
+            "mac": [
+                192,
+                168,
+                1,
+                100,
+                186,
+                192
+            ],
+            "max_apdu": 1476,
+            "net": 77
+        }
+    }
+]
