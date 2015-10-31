@@ -90,7 +90,7 @@ func SetActuatorsHandler(a *appContext, w http.ResponseWriter, r *http.Request) 
 	if err := r.Body.Close(); err != nil {
 		return -1, err
 	}
-
+	fmt.Printf("%s", body)
 	if err := json.Unmarshal(body, &s); err != nil {
 		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 		w.WriteHeader(422)                                             // not possible to process
@@ -98,6 +98,7 @@ func SetActuatorsHandler(a *appContext, w http.ResponseWriter, r *http.Request) 
 			return -1, err
 		}
 	}
+	fmt.Println(s)
 
 	a.actuators[i] = int(s.Value)
 

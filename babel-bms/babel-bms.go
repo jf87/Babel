@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"log"
 	"math/rand"
 	"net/http"
@@ -49,7 +50,9 @@ func main() {
 
 	context := &appContext{actuators: a, useractuators: u}
 
+	fmt.Println("randomize")
 	go randomize(context)
+	fmt.Println("starting router")
 	router := NewRouter(context)
 	log.Fatal(http.ListenAndServe(":"+*port, router))
 
