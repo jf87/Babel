@@ -21,6 +21,7 @@ public class KeyValueListAdapter extends BaseAdapter {
     private Context mContext;
     private OnKeyValueChangedListener mListener;
     private boolean mEnabled;
+    private int mFocusPosition; // make edittext selected after refresh
     private List<Pair<String, String>> mKeyValues;
 
     public static class Pair<F, S> { // self-defined mutable pair
@@ -69,10 +70,26 @@ public class KeyValueListAdapter extends BaseAdapter {
         }
     }
 
+    class ValueOnFocusChangeListener implements View.OnFocusChangeListener {
+        private int mPosition;
+
+        public ValueOnFocusChangeListener(int position) {
+            mPosition = position;
+        }
+
+        @Override
+        public void onFocusChange(View v, boolean hasFocus) {
+            if (hasFocus) {
+                mFocusPosition = mPosition;
+            }
+        }
+    }
+
     public KeyValueListAdapter(Context context) {
         mContext = context;
         mEnabled = true;
         mKeyValues = new LinkedList<>();
+        mFocusPosition = -1;
     }
 
     public void setOnKeyValueChangedListener(OnKeyValueChangedListener listener) {
@@ -93,6 +110,7 @@ public class KeyValueListAdapter extends BaseAdapter {
 
     public void clear() {
         mKeyValues.clear();
+        mFocusPosition = -1;
     }
 
     public void setEnabled(boolean enabled) {
@@ -118,7 +136,7 @@ public class KeyValueListAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // not using convertView because i don't want to deal with removing TextChangedListener of old valueView
-        mListener = null;
+//        mListener = null;
 
         LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View itemView = inflater.inflate(R.layout.key_value_item, null);
@@ -128,14 +146,17 @@ public class KeyValueListAdapter extends BaseAdapter {
         newHolder.mValueView = (EditText) itemView.findViewById(R.id.value);
         itemView.setTag(newHolder);
 
-
         ViewHolder holder = (ViewHolder) itemView.getTag();
         Pair<String, String> keyValue = mKeyValues.get(position);
         holder.mKeyView.setText(keyValue.first);
         holder.mKeyView.setEnabled(mEnabled);
         holder.mValueView.setText(keyValue.second);
         holder.mValueView.setEnabled(mEnabled);
+        if (mFocusPosition == position) {
+            holder.mValueView.requestFocus();
+        }
         holder.mValueView.addTextChangedListener(new ValueTextWatcher(position));
+        holder.mValueView.setOnFocusChangeListener(new ValueOnFocusChangeListener(position));
 
         return itemView;
     }

@@ -1,0 +1,25 @@
+{
+    "library": [
+        {
+            "kind": "Light OnOff",
+            "location": " ",
+            "model": "Philips Hue",
+            "bacnet_types": [4, 8],
+            "value": "1"
+        },
+        {
+            "kind": "HVAC Temperature",
+            "location": " ",
+            "model": "Generic Thermostat",
+            "value": "42",
+            "bacnet_types": [0]
+        },
+        {
+            "kind": "HVAC Setpoint",
+            "location": " ",
+            "model": "Generic Thermostat",
+            "value": "42",
+            "bacnet_types": [0]
+        }
+      ]
+}

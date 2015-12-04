@@ -21,21 +21,21 @@ var routes = Routes{
 		IndexHandler,
 	},
 	Route{
-		"Actuators",
+		"Types",
 		"GET",
-		`/api/actuators/{act:[0-9]+}`,
-		ActuatorsHandler,
+		"/api/types",
+		TypesHandler,
 	},
 	Route{
-		"AllPoints",
-		"GET",
-		`/api/actuators`,
-		AllPointsHandler,
-	},
-	Route{
-		"ActuatorsSet",
+		"Link",
 		"POST",
-		`/api/actuators/{act:[0-9]+}`,
-		SetActuatorsHandler,
+		"/api/link",
+		LinkHandler,
+	},
+	Route{
+		"Success",
+		"GET",
+		"/api/result",
+		SuccessHandler,
 	},
 }

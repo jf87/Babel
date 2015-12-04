@@ -2,18 +2,18 @@
     <string name="app_name">Babel</string>
 
     <string name="type">Type</string>
-    <string name="action">Action</string>
-    <string name="start">Start</string>
+    <string name="info">Info</string>
+    <string name="send">Send</string>
 
     <string name="action_settings">Settings</string>
 
-    <string name="server">castle.cs.berkeley.edu</string>
-    <string name="port">50005</string>
+    <string name="server">192.168.178.20</string>
+    <string name="port">8888</string>
     <string name="types_path">/api/types</string>
     <string name="link_path">/api/link</string>
     <string name="result_path">/api/result</string>
 
-    <string name="no_conn">"Cannot connect to server"</string>
+    <string name="no_conn">"Cannot connect to server. Please restart the app."</string>
     <string name="server_error">"Server failure"</string>
     <string name="success">"Succeeded!"</string>
 </resources>

@@ -28,10 +28,13 @@ func randomize(a *appContext) {
 		for i, _ := range a.actuators {
 			_, ok := a.useractuators[i]
 			if !ok {
-				a.actuators[i] = r.Intn(100)
+				if i%3 == 0 {
+					a.actuators[i] = r.Intn(100)
+					//a.actuators[i] = 77
+				}
 			}
 		}
-		time.Sleep(5000 * time.Millisecond)
+		time.Sleep(1000 * time.Millisecond)
 	}
 }
 
@@ -47,6 +50,10 @@ func main() {
 	var u map[int]int
 	u = make(map[int]int)
 	//u = make([]int, 10) NOTE no need to make as we append() later and append takes care of this
+	r := rand.New(rand.NewSource(time.Now().UnixNano()))
+	for i, _ := range a {
+		a[i] = r.Intn(100)
+	}
 
 	context := &appContext{actuators: a, useractuators: u}
 

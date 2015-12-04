@@ -65,6 +65,17 @@ func ActuatorsHandler(a *appContext, w http.ResponseWriter, r *http.Request) (in
 	return 200, nil
 }
 
+func AllPointsHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, error) {
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+	w.WriteHeader(http.StatusOK)
+	if err := json.NewEncoder(w).Encode(a.actuators); err != nil {
+		fmt.Println(err)
+		return -1, err
+	}
+
+	return 200, nil
+}
+
 // set the value of an actuator, e.g., by using the Anroid app
 func SetActuatorsHandler(a *appContext, w http.ResponseWriter, r *http.Request) (int, error) {
 	var s Setpoint
