@@ -1,0 +1,27 @@
+[server]
+  Port = 8889
+  DataDir = /home/kaifei/smap/reports/
+
+[/]
+  uuid = 711fa940-101a-11e1-be50-0800200c9a66
+  Metadata/SourceName = Sutardja Dai Hall BACnet
+  Metadata/Location/Building = Sutardja Dai Hall
+  Metadata/Location/Campus = UCB
+
+[/Siemens]
+  key = Sutardja Dai Hall Siemens
+  type = pybacnet.driver.BACnetDriver
+  dburl = http://castle.cs.berkeley.edu:50005/api/points
+  initurl = http://castle.cs.berkeley.edu:50005/api/pointsinit
+  syncurl = http://castle.cs.berkeley.edu:50005/api/sync
+  period = 60
+
+#[/binary]
+#type = smap.drivers.file.FileDriver
+#Filename = ~/binary_actuator.txt
+
+#[/continuous]
+#type = smap.drivers.file.FileDriver
+#Filename = ~/continuous_actuator.txt
+#model = continuous
+#range = 0, 100

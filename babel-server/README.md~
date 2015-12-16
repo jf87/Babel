@@ -1,0 +1,5 @@
+Babel Server
+
+go install && babel-server -lib=library.json -bms=http://localhost:8080 -port=8888
+
+-port= is optional, default port is 8888.

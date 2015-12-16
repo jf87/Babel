@@ -6,3 +6,8 @@
 *.gz
 *.bbl
 *.blg
+
+#VIM temp files
+*~
+*.swp
+*.swo
